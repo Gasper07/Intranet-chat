@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Styles -->
+    <link href="http://127.0.0.1/Sites/intranet/public/css/app.css" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link media="all" type="text/css" rel="stylesheet" href="http://127.0.0.1/Sites/intranet/public/assets/css/bootstrap.css">
+    {{-- Style Menu Desplace --}}
+    <link href="http://127.0.0.1/Sites/intranet/public/assets/css/menu/component.css" rel="stylesheet">
+    <!-- Semantic Ui CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="http://127.0.0.1/Sites/intranet/public/assets/css/semantic.css">
+    <!-- STYLE FONT AWESOME -->
+    <link media="all" type="text/css" rel="stylesheet" href="http://127.0.0.1/Sites/intranet/public/assets/css/font-awesome.css">
+
+    <!-- Datepicker Files -->
+    <link media="all" type="text/css" rel="stylesheet" href="https://www.valdezmobile.com/public/assets/datePicker/css/bootstrap-datepicker3.css">
+
+    {!! Html::style('public/assets/css/bootstrap-datetimepicker.min.css') !!}
+
+    {{-- Main style --}}
+    <link href="http://127.0.0.1/Sites/intranet/public/assets/css/main.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    </script>
+</head>
+<body class="bgUser">
+    <div id="app">
+        <nav class="navbar navbar-default navbar-static-top navbarHome BgYellow">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+                    </a> --}}
+                </div>
+
+                <div class="collapse navbar-collapse collapseMenuUser" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <img src="http://127.0.0.1/Sites/intranet/public/assets/images/ico-paleta.png" alt="Paleta-Colores">
+                    <ul id="gn-menu" class="nav navbar-nav gn-menu-main">
+                        <li class="gn-trigger">
+                            <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+                            <nav class="gn-menu-wrapper">
+                                <div class="gn-scroller">
+                                    <ul class="gn-menu">
+                                        <li class="gn-search-item">
+                                            <a href="">
+                                             <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                                             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>                            
+                                            </a>
+                                        </li>
+                                        <li class="bloquesMarca marEntrada">
+                                            <a class="BgYellow fontMiriamProSemiBold colorBlackSuave">Marcar entrada</a>
+                                        </li>
+                                        <li class="bloquesMarca marSalida">
+                                            <a class="BgYellow fontMiriamProSemiBold colorBlackSuave">Marcar salida</a>
+                                        </li>
+                                        <li class="bloquesMarca accionesPerfil">
+                                            <a class="fontMiriamProRegular colorGrisMediumSuave lineJustify">Editar perfil</a>
+                                        </li>
+                                        <li class="bloquesMarca accionesPerfil">
+                                            <a class="fontMiriamProRegular colorGrisMediumSuave lineJustify">Mensajes privados</a>
+                                        </li>
+                                        <li class="bloquesMarca accionesPerfil">
+                                            <a class="fontMiriamProRegular colorGrisMediumSuave lineJustify borderLineGris">Ver galerias</a>
+                                        </li>
+                                        <li class="bloquesMarca accionesPerfil accionesBussines">
+                                            <a class="fontMiriamProRegular colorGrisSuave lineJustify">Manual de empleado</a>
+                                        </li>
+                                        <li class="bloquesMarca accionesPerfil accionesBussines">
+                                            <a class="fontMiriamProRegular colorGrisSuave lineJustify">Reglamento institucional</a>
+                                        </li>
+                                        <li class="bloquesMarca accionesPerfil accionesBussines">
+                                            <a class="fontMiriamProRegular colorGrisSuave lineJustify">Ayuda</a>
+                                        </li>
+                                    </ul>
+                                </div><!-- /gn-scroller -->
+                            </nav>
+                        </li>
+                    </ul>
+                    <ul class="centerNameUserMenu">
+                        <li class="colorBlack fontMiriamProRegular">¡Hola! Lisseth</li>
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-right navulRIght">
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @else
+                            <li class="icosMenus">
+                                <a href="#!">
+                                    <img src="http://127.0.0.1/Sites/intranet/public/assets/images/house-ido.png" class="img-responsive" alt="">                                    
+                                </a>
+                            </li>
+                            <div class="ui dropdown dropdownSemantic notifiICos fontMiriamProRegular">
+                              <a href="#!">
+                                  <img src="http://127.0.0.1/Sites/intranet/public/assets/images/notify-ico.png" class="img-responsive" alt="">
+                                  <div class="notifiCount">
+                                      <p>3</p>
+                                  </div>
+                              </a>
+                              <div class="menu">
+                                <div class="item">New</div>
+                                <div class="item">
+                                  <span class="description">ctrl + o</span>
+                                  Open...
+                                </div>
+                                <div class="item">
+                                  <span class="description">ctrl + s</span>
+                                  Save as...
+                                </div>
+                                <div class="item">
+                                  <span class="description">ctrl + r</span>
+                                  Rename
+                                </div>
+                                <div class="item">E-mail Collaborators</div>
+                              </div>
+                            </div>
+                            <li class="dropdown uSerLogue colorBlackSuave fontMiriamProRegular">
+                                <a href="#" class="dropdown-toggle colorBlackSuave" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ url('/logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endif
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        @yield('content')
+    </div>
+
+    <!-- Scripts -->
+    <script src="http://127.0.0.1/Sites/intranet/public/js/app.js"></script>
+    <script src="http://127.0.0.1/Sites/intranet/public/assets/js/menu/classie.js"></script>
+    <script src="http://127.0.0.1/Sites/intranet/public/assets/js/menu/gnmenu.js"></script>
+
+    <script>
+        new gnMenu( document.getElementById( 'gn-menu' ) );
+    </script>
+
+    <!-- Semantic Ui CSS -->
+    <script src="http://127.0.0.1/Sites/intranet/public/assets/js/semantic.js"></script>
+
+    <script>
+        $('.dropdownSemantic')
+          .dropdown({
+            transition: 'drop'
+          });
+
+   </script>
+   <script>
+      $('.button')
+        .popup({
+          inline: true
+        });
+
+      $('.rating')
+        .rating({
+          maxRating: 5,
+          disable: false,
+        });
+      $('.rating')
+       .rating('disable')
+      ;
+
+      $('.accordion')
+        .accordion({
+          selector: {
+            trigger: '.title div .fa-angle-down'
+          }
+        })
+      ;
+   </script>
+
+   <script src="http://127.0.0.1/Sites/intranet/public/assets/js/jquery-1.11.1.min.js"></script>
+   {!! Html::script('public/assets/js/moment.js') !!}
+   {!! Html::script('public/assets/js/bootstrap-datetimepicker.min.js') !!}
+   <script type="text/javascript">
+       $(function () {
+           $('#datetimepicker12').datetimepicker({
+               inline: true,
+               sideBySide: true
+           });
+       });
+   </script>
+   <script src="https://www.valdezmobile.com/public/assets/datePicker/js/bootstrap-datepicker.js"></script>
+   <script type="text/javascript">
+      $('#sandbox-container .input-daterange').datepicker({
+          format: "yyyy-mm-dd",
+          autoclose: true
+      });
+   </script>
+</body>
+</html>

@@ -1,0 +1,2479 @@
+/* COVERED */
+@font-face {
+	font-family: 'Covered';
+	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.eot');
+	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* MIRIAM PRO */
+@font-face {
+	font-family: 'MyrianPro-Regular';
+	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.eot');
+	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* MIRIAM */
+@font-face {
+	font-family: 'MyrianPro-Black';
+	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.eot');
+	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyrianPro-Bold';
+	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.eot');
+	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyrianPro-Semibold';
+	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.eot');
+	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'bebas';
+	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.eot');
+	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Multicolore';
+  src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.eot');
+  src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+    background-color: white;
+}
+
+body.bgUser{
+	background: #f5f9fc;
+}
+
+.fontMiriamProRegular{
+	font-family: 'MyrianPro-Regular';
+}
+
+.fontMiriamProSemiBold{
+	font-family: 'MyrianPro-Semibold';
+}
+
+.fontMiriamProBlack{
+	font-family: 'MyrianPro-Black';
+}
+
+.fontCovered{
+	font-family: 'Covered';
+}
+
+.colorBlack{
+	color: #000000 !important;
+}
+
+.colorBlackSuave{
+	color: #1a1a1a !important;
+}
+
+.colorGrisSuave{
+	color: #999999 !important;
+}
+
+.colorGrisMediumSuave{
+	color: #4d4d4d !important;
+}
+
+.BgYellow{
+	background: #ffd00b;
+}
+
+.lineJustify{
+	text-align: justify !important;
+}
+
+.lineCenter{
+	text-align: center !important;
+}
+
+/*******
+ LOGIN 
+ ****************/
+
+.container.loginAcceso>.row>.col-md-8.col-md-offset-2>img {
+    margin: 0 auto;
+    margin-bottom: 4%;
+    width: 30%;
+}
+
+.container.loginAcceso>.row>.col-md-8.col-md-offset-2>h2 {
+    color: #b3b3b3;
+    text-align: center;
+    font-size: 24px;    
+    margin-bottom: 4%;
+}
+
+.container.loginAcceso>.row>.col-md-8.col-md-offset-2>.panel.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f7f7f7;
+    border-color: #f7f7f7;
+    font-size: 60px;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 0;
+}
+
+.container.loginAcceso>.row>.col-md-8.col-md-offset-2>.panel.panel-default{
+    border-color: #f7f7f7;
+}
+
+.container.loginAcceso>.row>.col-md-8.col-md-offset-2>.panel {
+    background-color: #f7f7f7;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.container.loginAcceso {
+    margin-top: 4%;
+}
+
+.form-group.BlockSession>.col-md-8.col-md-offset-4>button {
+    width: 29%;
+    display: block;
+    margin: 0 auto;
+    margin-left: 15%;
+    height: 43px;
+    font-size: 19px;    
+    border-color: transparent; 
+}
+
+.form-group.BlockSession>.col-md-8.col-md-offset-4>button:hover {
+    background: #ffd00b;
+    color: #000000;
+}
+
+.form-group.BlockSession>.col-md-8.col-md-offset-4>a {
+    font-size: 17px;
+    width: 29%;
+    display: block;
+    margin: 0 auto;
+    margin-left: -6%;
+    margin-top: 3%;
+}
+
+
+
+/*********
+ MENU 
+ ***********/
+
+nav.navbar.navbar-default.navbar-static-top.navbarHome.BgYellow>div.container {
+   width: 100%;
+}
+
+.gn-menu-main {
+   font-size: 13px;
+   height: 50px;
+}
+
+div#app-navbar-collapse>.gn-menu-main>li>a {
+   padding-top: 23%;
+}
+
+ul#gn-menu {
+   background: transparent;
+   z-index: 100;
+   position: relative;
+}
+
+.gn-menu-main > li:last-child {
+   border-left: 0px solid #c6d0da;
+}
+
+.gn-icon-menu::before {
+   box-shadow: 0 0px white, 0 -6px #1a1a1a, 0 -6px white, 0 -12px #1a1a1a;
+}
+
+.gn-icon-menu.gn-selected::before {
+   box-shadow: 0 0px white, 0 -6px #5993cd, 0 -6px white, 0 -12px #5993cd;
+}
+
+.gn-icon-menu::before {
+   background: #1a1a1a;
+}
+
+div.collapseMenuUser>img {
+   float: left;
+   margin-top: 0.5%;
+}
+
+nav.gn-menu-wrapper.gn-open-part {
+   width: 17%;
+   top: 0;
+   border-top: 0px solid #c6d0da;
+}
+
+.gn-menu-wrapper.gn-open-all {
+   width: 17%;
+   top: 0;
+   border-top: 0px solid #c6d0da;
+}
+
+.gn-menu-main, .gn-menu-main ul {
+   background: #f2f2f2;
+   color: #4d4d4d;
+   border-bottom: 0;
+}
+
+.gn-scroller {
+   width: 100%;
+   padding-bottom: 14%;
+   background: #f2f2f2;
+   border-bottom: 0;
+}
+
+
+li.gn-search-item>a>img {
+   margin: 0 auto;
+   width: 68%;
+   padding-top: 8%;
+}
+
+nav.navbar.navbar-default.navbar-static-top.navbarHome.BgYellow {
+   z-index: 1000;
+}
+
+li.gn-search-item>a>p {
+   text-align: center;
+   font-size: 21px;
+}
+
+li.bloquesMarca>a {
+   margin-left: 10%;
+   margin-right: 10%;
+   text-align: center;
+   line-height: 50px;
+   font-size: 17px;
+}
+
+.gn-menu li:not(:first-child), .gn-menu li li {
+   box-shadow: inset 0 0px #c6d0da;
+}
+
+li.bloquesMarca {
+   margin-bottom: 6%;
+}
+
+li.bloquesMarca.accionesPerfil {
+   margin-bottom: 0;
+}
+
+.borderLineGris{
+  border-bottom: 1px solid #b3b3b3; 
+}
+
+a.fontMiriamProRegular.colorGrisMediumSuave.lineJustify.borderLineGris {
+  padding-bottom: 8%;
+}
+
+li.bloquesMarca.marEntrada>a, li.bloquesMarca.marSalida>a {
+  font-size: 15px;
+}
+
+li.bloquesMarca.accionesPerfil.accionesBussines>a {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.centerNameUserMenu{
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  width: 95%;
+  padding-top: 1.3%;
+  list-style: none;
+  z-index: 10;
+}
+
+ul.centerNameUserMenu>li {
+  font-size: 17px;
+}
+
+ul.nav.navbar-nav.navbar-right.navulRIght {
+  padding-right: 0.8%;
+  z-index: 200;
+  position: relative;
+  width: 17%;
+}
+
+.ui.dropdown.dropdownSemantic.notifiICos {
+  float: left;
+  top: 14px;
+}
+
+.ui.dropdown.dropdownSemantic.notifiICos.active.visible>div.menu {
+  right: 5%;
+  left: auto;
+  top: 148%;
+}
+
+.notifiCount {
+  text-align: center;
+  background: #1a1a1a;
+  position: absolute;
+  width: 90%;
+  border-radius: 50%;
+  bottom: 35%;
+  color: white;
+  left: 61%;
+  padding: 17%;
+  font-size: 11px;
+}
+
+.uSerLogue{
+  margin-left: 13%;
+}
+
+li.dropdown.uSerLogue.colorBlackSuave {
+  font-size: 18px;
+}
+
+
+/* END MENU */
+
+
+/* CONTENT POST */
+
+.container.continerWithSite {
+  width: 100%;
+  margin-bottom: 6%;
+}
+
+.container.continerWithSite>.row {
+  width: 100%;
+  margin: 0;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div {
+  padding: 0;
+  width: 47%;
+  margin-right: 3%;  
+}
+
+.ui.feed.uifeedAvatar>.event>div.label {
+  width: 11%;
+  padding: 0;
+}
+
+.ui.feed.uifeedAvatar {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.ui.feed.uifeedAvatar>.event>.content>.summary>a {
+  font-size: 16px;
+}
+
+.ui.feed.uifeedAvatar>.event>.content>.summary>.date {
+  float: right;
+  font-size: 13px;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div {
+  padding: 0;
+  background: white;
+  margin-bottom: 7%;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div>img {
+  width: 100%;
+}
+
+.ui.feed.uifeedActions {
+  padding-top: 4%;
+  padding-bottom: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.ui.feed.uifeedActions>.event>div.label {
+  width: 11%;
+  padding: 0;
+}
+
+.ui.feed.uifeedActions>.event>.content>.summary>a {
+  font-size: 16px;
+  color: #0071bc !important;
+}
+
+.ui.feed.uifeedActions>.event>.content>.summary>.date {
+  float: right;
+  font-size: 13px;
+}
+
+.ui.feed.uifeedActions>.event>div.label>img {
+  border-radius: 0;
+}
+
+.datePint.fontMiriamProRegular.colorGrisMediumSuave>img {
+  height: auto !important;
+  cursor: pointer;
+}
+
+.ui.feed.uifeedActions>.event>.content.contLike {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+.ui.feed.uifeedComnetUser {
+  padding-top: 0%;
+  padding-bottom: 4%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.ui.feed.uifeedComnetUser>.event>div.label {
+  width: 11%;
+  padding: 0;
+}
+
+.ui.feed.uifeedComnetUser>.event>.content>.summary>a {
+  font-size: 13px;
+  color: #0071bc !important;
+}
+
+.date.fontMiriamProRegular.colorGrisMediumSuave.comentUser {
+  color: #666666 !important;
+}
+
+form.ui.form.formComentUser>div>input {
+  border: 1px solid #e6e6e6;
+}
+
+form.ui.form.formComentUser {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 7%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeEventEspecial>img {
+  width: 21%;
+  margin: 0 auto;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeEventEspecial {
+  padding-top: 7%;
+  text-align: center;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeEventEspecial>h4 {
+  margin-top: 4%;
+  font-size: 29px;
+  color: #333333;
+  margin-bottom: 1%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeEventEspecial>h5 {
+  font-size: 15px;
+  margin-top: 1%;
+  color: #5a5959;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5%;
+  margin-bottom: 0%;
+}
+
+.col-md-12.typeEventEspecial>.ui.feed.uifeedActions {
+  margin-top: 1%;
+}
+
+a.removeComent {
+  position: absolute;
+ /* float: right; */
+  right: 7%;
+}
+
+a.removeComent>i {
+  color: #666666;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeAvisosPost>div {
+  background: #39b54a;
+  border-color: #39b54a;
+  box-shadow: 0px 0px 0px 0px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeAvisosPost>div>div.content {
+  color: white;
+  opacity: 1;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeAvisosPost>div>img {
+  margin-right: 4%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-md-12.typeEventCumpleanos>img {
+  width: 22%;
+  margin: 0 auto;
+}
+
+.col-md-12.typeEventCumpleanos>div>img {
+  display: inline-block;
+}
+
+.col-md-12.typeEventCumpleanos>div {
+  text-align: center;
+}
+
+.col-md-12.typeEventCumpleanos>div>img.PeopleHappy {
+  width: 20%;
+  margin-left: 4%;
+}
+
+.bgHappy{
+  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/happycomple.png');
+}
+
+.bgHappy {
+  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/happycomple.png');
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0 auto;
+  background-size: inherit;
+  background-position: center center;
+  padding-top: 22%;
+  background-size: 41%;
+}
+
+.col-md-12.typeEventCumpleanos>a.removeComent {
+  right: 3%;
+}
+
+.col-md-12.typeEventCumpleanos>a.removeComent>i {
+  font-size: 15px;
+}
+
+.col-md-12.typeEventCumpleanos>h4 {
+  margin-top: 4%;
+  font-size: 29px;
+  color: #333333;
+  margin-bottom: 1%;
+}
+
+.col-md-12.typeEventCumpleanos>h5 {
+  font-size: 15px;
+  margin-top: 1%;
+  color: #5a5959;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5%;
+  margin-bottom: 0%;
+}
+
+.col-md-12.typeEventCumpleanos {
+ text-align: center;
+}
+
+p.textCOment.fontMiriamProRegular.colorGrisMediumSuave {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos {
+  border-right: 1px solid #e6e6e6;
+  padding-right: 0%;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.bloqueRecordatorios>h1 {
+  color: #4d4d4d;
+  font-size: 33px;
+  text-align: center;
+}
+
+.captionAvisos {
+  background: #ee3940;
+  color: white;
+  padding: 4%;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.bloqueRecordatorios {
+  padding: 0;
+}
+
+.captionAvisos>p {
+  font-size: 15px;
+}
+
+.captionAvisos>h1 {
+  font-size: 30px;
+  margin-bottom: 1%;
+}
+
+.captionPromos {
+  background: white;
+  margin-top: 8%;
+  padding: 5%;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+}
+
+.captionPromos>p {
+  color: #727271;
+  font-size: 15px;
+}
+
+.captionPromos>img {
+  margin-bottom: 10%;
+}
+
+.captionPostGuardadosText>p {
+  color: #000000;
+  font-size: 31px;
+  line-height: 29px;
+}
+
+.captionPostGuardadosText {
+  margin-top: 6%;
+}
+
+.captionCalendar>.dayMonth {
+  background: #ffd00b;
+  text-align: center;
+  color: #000000;
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+
+.captionCalendar>.dayMonth>p{
+  font-size: 21px;
+  margin-bottom: 2%;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.dayMonth>h1 {
+  font-size: 99px;
+  margin-top: 0;
+  line-height: 100px;
+}
+
+
+/* CALENDAR STYLE COLUMN */
+
+.carousel-inner.carouselWithMeses {
+  text-align: center;
+  font-family: 'bebas';
+  background: white;
+}
+
+.carousel-inner.carouselWithMeses>.item>h3 {
+  color: #777777;
+  font-size: 24px;  
+  margin-top: 2%;
+}
+
+.daysCalendar>div {
+  width: 12%;
+  display: inline-block;
+  color: #898989;
+}
+
+.daysCalendar {
+  background: #efefef;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 4%;
+}
+
+.daysNumberCalendar {
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+  margin-bottom: 4%;
+}
+
+.daysNumberCalendar>div {
+  width: 12%;
+  display: inline-block;
+  color: #898989;
+  margin-bottom: 2%;
+}
+
+.dayDomingo{
+  color: #ffd00b !important;
+}
+
+.dayEvento, .dayEvento>div{
+  color: #39b54a !important;
+}
+
+.dataDays>div.ui {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 100;
+}
+
+.ui.special.popup.top.left.transition.hidden {
+    width: 54%;
+    /* left: 63% !important; */
+    right: 0;
+    z-index: 100000;
+    background: white;
+    height: auto;
+    padding: 2%;
+}
+
+.daysNumberCalendar>.dataDays>div.special {
+  background: white !important;
+  width: 43% !important;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #666666;
+  font-family: 'MyrianPro-Regular';
+  font-size: 13px;
+  left: 32% !important;
+}
+
+.dataDays>div.special:before {
+  display: none;
+}
+
+
+/* ADD EVENTO A CALENDAR */
+
+.captionAddEvento>ul>li {
+  width: 100%;
+  background: #ffd00b;
+}
+
+.captionAddEvento>ul>li>a {
+  background: #ffd00b;
+  text-align: center;
+  font-size: 11px;
+  color: #000000;
+  background-color: #ffd00b !important;
+}
+
+.captionAddEvento>ul>li>a:hover {
+  border-color: #ffd00b #ffd00b #ffd00b;
+  background: #ffd00b;
+}
+
+.captionAddEvento>ul>li>a:focus {
+  background-color: #ffd00b !important;
+  border: 1px solid #ffd00b !important;
+  border-bottom-color: #ffd00b !important;
+}
+
+.tab-content.tabconteAddComent>div {
+  width: 100%;
+  padding: 6%;
+}
+
+.tab-content.tabconteAddComent>div>form>textarea {
+  width: 100%;
+  height: 90px;
+  padding-left: 2%;
+  border: 1px solid #f2f2f2;
+}
+
+.tab-content.tabconteAddComent>div {
+  background: white;
+}
+
+div#datepicker {
+  width: 100%;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.captioNFehcIni {
+  width: 100%;
+  padding: 0;
+}
+
+.col-xs-12.col-sm-2.col-md-2.col-lg-2.captioNFehcFina {
+  width: 100%;
+  background: #ffd00b;
+}
+
+.col-xs-12.col-sm-2.col-md-2.col-lg-2.captioNFehcFina>input {
+  width: 100%;
+  background: #ffd00b;
+  border: 0;
+  font-size: 11px;
+  color: #000000;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.captioNFehcIni>input {
+  border: 1px solid #f2f2f2;
+}
+
+div#sandbox-container>h4 {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 11px;
+}
+
+.captionAddEvento>ul.nav.nav-tabs>li>a:focus {
+  background: #ffd00b !important;
+}
+
+.tab-content.tabconteAddComent {
+  margin-top: 5%;
+}
+
+.captionGaleriFotos>h3 {
+  text-align: center;
+  font-size: 21px;
+  color: #666666;
+}
+
+.captionGaleriFotos>img {
+  margin-bottom: 13%;
+}
+
+.captionGaleriFotos {
+  margin-top: 10%;
+}
+
+.captionRankingUser>h3 {
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  background: #ffd00b;
+  padding: 4%;
+}
+
+.captionRankingUser {
+  background: white;
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-top: 5%;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+}
+
+.captionRankingUser>div>a>.ui.star.rating.disabled {
+  padding-bottom: 16%;
+}
+
+.captionRankingUser>div>a>p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  color: #000000;
+}
+
+.col-md-12.capInteRankingSube>h2 {
+  text-align: center;
+  font-size: 23px;
+}
+
+.col-md-12.capInteRankingSube {
+  border-top: 1px solid #b3b3b3;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.captionUsersInLive {
+  background: white;
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-top: 5%;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+}
+
+.captionUsersInLive>div>h3 {
+  color: #727271;
+  padding-top: 3%;
+  padding-left: 5%;
+  font-size: 16px;
+}
+
+.captionCircleUser {
+  width: 18%;
+  display: inline-block;
+}
+
+.captionCircleUser>a>img {
+  border-radius: 50%;
+}
+
+.captionUsersInLive>div>div.title {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.captionUsersInLive>div>div.content {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 8% !important;
+}
+
+
+.captionCircleUser>i {
+  font-size: 40px;
+  color: #b3b3b3;
+  bottom: 6px;
+  position: relative;
+  margin-left: 15%;
+}
+
+
+.captionActivitiesRecientes {
+  background: white;
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-top: 5%;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+  height: 450px;
+}
+
+
+.icoPubli {
+  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-public.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  background-repeat: no-repeat;
+  display: inline-block;
+  bottom: 10px;
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.icoFotos {
+  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-fotografia.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.icoPagos {
+  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-pago.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  bottom: 10px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.icoProFile {
+  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-update-profile.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  background-repeat: no-repeat;
+  display: inline-block;
+  /* bottom: 10px; */
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+
+.notficiActivitie>.ui.relaxed.divided.list>.item>.content {
+  display: inline-block;
+  width: 77%;
+  margin-right: 2%;
+}
+
+.notficiActivitie>.ui.relaxed.divided.list>.item>.content>a>strong {
+  font-size: 12px;
+  color: #727271;
+  font-family: 'MyrianPro-Bold';
+}
+
+.notficiActivitie>.ui.relaxed.divided.list>.item>.content>a {
+  font-size: 12px;
+  color: #727271 !important;
+  font-family: 'MyrianPro-Regular';
+}
+
+.notficiActivitie>.ui.relaxed.divided.list>.item>.content>a>span {
+  font-size: 12px;
+  color: #0071bc !important;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.captionActivitiesRecientes>h3 {
+  color: #727271;
+  font-size: 15px;
+}
+
+.captionActivitiesRecientes>h3 {
+  color: #727271;
+  font-size: 16px;
+  padding-top: 4%;
+  padding-top: 7%;
+  padding-left: 5%;
+}
+
+.notficiActivitie>.ui.relaxed.divided.list>.ActivitiPago>.content>a {
+  color: #39b54a !important;
+  font-weight: 100;
+}
+
+.notficiActivitie>div.ui>div.item {
+  border: 0 !important;
+}
+
+.col-xs-12.col-sm-6.col-md-5.col-lg-5.captionRecordNotas>div>.captionActivitiesRecientes>.notficiActivitie>div.ui>div.item {
+  border: 0 !important;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+/* PUBLISH SECTION */
+
+.col-xs-12.col-sm-12.col-md-12.continPublish {
+  float: none;
+  box-shadow: 0px 8px 10px 0px #e2e2e2;
+  padding: 0;
+}
+
+.col-md-12.datPublich {
+  margin-top: 5%;
+}
+
+.col-md-12.datPublich>img {
+  float: right;
+  cursor: pointer;
+}
+
+form.sectionPublichUser>div {
+  float: none;
+}
+
+form.sectionPublichUser>div>textarea {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  height: 90px;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.modal-dialog.contPusblishDialogo {
+  width: 52%;
+}
+
+form.sectionPublichUser>div {
+  padding: 0;
+}
+
+.col-md-6.actionpuBlish>div {
+  padding-left: 2%;
+  padding-right: 2%;
+  float: none;
+  display: inline-block;
+  /* padding-right: 0; */
+}
+
+.col-md-6.actionpuBlish {
+  float: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div {
+  display: inline-block;
+  width: 49%;
+  float: none;
+  padding-right: 0;
+}
+
+.col-md-2.AdjuntarFoto {
+  border-right: 1px solid #e6e6e6;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div>div {
+  width: 21%;
+  padding-right: 0;
+}
+
+.col-md-6.actionpuBlish {
+  padding-left: 0;
+}
+
+.col-md-2.AlertPublish {
+  border-right: 1px solid #e6e6e6;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions {
+  margin-top: 2%;
+}
+
+.col-md-6.ButtinPublish>input {
+  width: 36%;
+  padding: 2%;
+  border: 0;
+  background: #ffd00b;
+}
+
+.col-md-6.ButtinPublish>input {
+  width: 42%;
+  padding: 3%;
+  border: 0;
+  background: #ffd00b;
+  color: #000000;
+  font-size: 17px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-md-6.ButtinPublish {
+  bottom: 10px;
+  text-align: right;
+}
+
+.modal-dialog.contPusblishDialogo>div {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+  border: 0px solid rgba(0, 0, 0, .2);
+}
+
+
+
+/* PROFILE PAGE */
+
+/* LATERAL IZQUIERDA */
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos.captionProfiles>div {
+  width: 32%;
+}
+
+.col-xs-12.col-sm-6.col-md-3.col-lg-3.captionRecordNotas.SecCalendar {
+  width: 22%;
+}
+
+.col-xs-12.col-sm-6.col-md-3.col-lg-3.captionPosteos.captionProfiles {
+  width: 22%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.sectionProfiles {
+  width: 56%;
+  height: 100%;
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.ProcessSolicitud {
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.ProcessSolicitud>a>p {
+  background: #f15a24;
+  padding: 5%;
+  color: #1a1a1a;
+  text-align: center;
+  font-family: 'MyrianPro-Semibold';
+  font-size: 15px;
+}
+
+p#titleHorrarios {
+  background: #ffd00b;
+  padding: 4%;
+  font-size: 16px;
+  color: #1a1a1a;
+  padding-left: 7%;
+  font-family: 'MyrianPro-Semibold';
+}
+
+p.ListDays {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+
+p.ListHours.fontMiriamProRegular {
+  color: #666666;
+  font-size: 14px;
+}
+
+p.ListHours.fontMiriamProRegular.DayDescans {
+  margin-bottom: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.HorariosUser {
+  margin-bottom: 6%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.sectionHorarios {
+  background: white;
+  padding: 0;
+  padding-bottom: 7%;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+}
+
+.col-xs-12.col-sm-12.col-md-12.BuzonSgenerencias {
+  margin-bottom: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.BuzonSgenerencias>a>p {
+  background: #4d4d4d;
+  padding: 5%;
+  color: white;
+  text-align: center;
+  font-family: 'MyrianPro-Semibold';
+  font-size: 15px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados>ul>li>a {
+  color: #333333;
+  font-size: 14px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados>ul>li {
+  list-style-type: none;
+  line-height: 29px;
+}
+
+
+/* CENTER PROFILE */
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>p {
+  color: #000000;
+  font-size: 21px;  
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: white;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>img {
+  margin: 0 auto;
+}
+
+.col-xs-12.col-sm-6.col-md-3.col-lg-3.captionPosteos.captionProfiles>div>div.captionUsersInLive {
+  margin-top: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>div.star>i {
+  font-size: 19px;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.ColumnsData {
+  color: #4d4d4d;
+}
+
+p.titleInformation {
+  font-family: 'MyrianPro-Semibold';
+  margin-bottom: 0%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+p.detallInformation {
+  font-family: 'MyrianPro-Regular';
+  font-size: 16px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ColumnsDataText {
+  margin-bottom: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.InformacionEmpleado {
+  border: 1px solid #e2dddd;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background: #f7f7f7;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.dataEmpleados {
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.dataEmpleados.TwoSection {
+  margin-top: 4%;
+  border-bottom: 0;
+}
+
+p.detallInformation>a {
+  color: #4d4d4d;
+}
+
+input.detallInformation {
+  font-family: 'MyrianPro-Regular';
+  font-size: 16px;
+  border: 0;
+  background: transparent;
+}
+
+input.detallInformation:disabled {
+  background: transparent;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.DataEditar>a>p {
+  color: #999999;
+  text-align: right;
+  font-size: 14px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.bgWrapDas{
+  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/contador/coloOrange.png');
+  background-size: cover;
+  /* height: 21px; */
+  height: 137px;
+  display: block;
+  bottom: 10px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.col-xs-12.col-sm-6.col-md-6.bgWrapDas>p {
+  font-size: 89px;
+  text-align: center;
+  font-family: 'MyrianPro-Black';
+}
+
+.col-xs-12.col-sm-12.col-md-12.BuzonSgenerencias>p {
+  text-align: center;
+  color: #333333;
+  font-size: 14px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.BuzonSgenerencias.DayDisponibles {
+  margin-top: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.BuzonSgenerencias.DayDisponibles {
+  margin-top: 4%;
+  margin-bottom: 7%;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 7%;
+}
+
+
+/* LATERAL DERECHO */
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.geleriFotosUser>h3 {
+  color: #666666;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.geleriFotosUser {
+  margin-top: 7%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.geleriFotosUser>img {
+  margin-bottom: 13%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.dataEventos>h3 {
+  color: #666666;
+  margin-top: 3%;
+  font-size: 21px;
+  font-family: 'MyrianPro-Semibold';
+  margin-bottom: 3%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos.captionPostesOfUser {
+  width: 100%;
+}
+
+
+
+/* PAGE RANKING DE EMPLEADOS */
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.profilesRabking {
+  width: 100%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.profilesRabking>.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>img {
+  width: 20%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.profilesRabking>.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts {
+  background: transparent;
+  box-shadow: 0px 0px 0px 0px #e2e2e2;
+  margin-bottom: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>p.PuntuancionRanlinkNumber {
+  color: #666666;
+  margin-top: 1%;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.profilesRabking {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 2%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos.captionRabkinEmpleados {
+  border: 0;
+  width: 52%;
+}
+
+.col-xs-12.col-sm-6.col-md-5.col-lg-5.captionRecordNotas.captionRanKingDats {
+  width: 48%;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.listConection {
+  width: 44%;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.bloqueRecordatorios.SuirRanking {
+  width: 56%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-6.col-md-4.col-lg-4.ProfileFotosStartsMoreUser {
+  background: transparent;
+  box-shadow: 0px 0px 0px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>.col-xs-12.col-sm-6.col-md-4.col-lg-4.ProfileFotosStartsMoreUser>img {
+  width: 62%;
+  margin: 0 auto;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.ProfileFotosStartsMoreUser>p {
+  text-align: center;
+  margin-top: 4%;
+  font-size: 16px;
+  margin-bottom: 2%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.ProfileFotosStartsMoreUser>div {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.profilesRabking.profileMoreUSaer {
+  margin-top: 2%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>.col-xs-12.col-sm-12.col-md-12.col-lg-12.profilesRabking.profileMoreUSaer {
+  border: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.Manuales>a>p {
+  background: #22b573;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.Manuales {
+  margin-bottom: 3%;
+  padding-left: 12%;
+  padding-right: 13%;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.bloqueRecordatorios.SuirRanking {
+  background: white;
+  padding: 3%;
+  padding-bottom: 7%;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.bloqueRecordatorios.SuirRanking>h1 {
+  color: #1a1a1a;
+  font-size: 33px;
+  font-family: 'Covered';
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.bloqueRecordatorios.SuirRanking>ul>li {
+  color: #808080;
+  font-size: 16px;
+  margin-bottom: 6%;
+  font-family: 'MyrianPro-Regular';
+  line-height: 22px;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.bloqueRecordatorios.SuirRanking>h2 {
+  color: #333333;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Covered';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.Manuales.PoliTi {
+  margin-bottom: 17%;
+}
+
+span.estusLive {
+  color: #8cc63f;
+  padding-right: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.backReturn>a>p {
+  background: #4d4d4d;
+  padding: 7%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.backReturn {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.listConection>div {
+  margin-bottom: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados.ForEmpleadoRnakin {
+  border-top: 1px solid #b3b3b3;
+  margin-top: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados.ForEmpleadoRnakin>ul>li>a {
+  color: #999999;
+  text-align: left;
+  font-size: 14px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados.ForEmpleadoRnakin>ul {
+  padding-left: 0 !important;
+  margin-top: 3%;
+}
+
+.captionActivitiesRecientes.activitisInRanking {
+  height: 250px;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.fechaData {
+  float: none;
+  display: inline-block;
+  width: 49%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+p.DayAgenda {
+  font-size: 10px;
+  color: #000000;
+  font-family: 'MyrianPro-Semibold';
+  text-transform: uppercase;
+}
+
+p.DayNumberAgenda {
+  font-size: 60px;
+  color: #000000;
+  font-family: 'MyrianPro-Black';
+  line-height: 37px;
+}
+
+p.typEEvento {
+  font-size: 12px;
+  color: #000000;
+  font-family: 'MyrianPro-Semibold';
+  text-align: left;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.fechaData.fechType {
+  padding: 0;
+  bottom: 13px;
+  position: relative;
+  padding-left: 3%;
+  border-right: 0;
+  /* display: block; */
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.fechaData {
+  border-right: 1px solid #000000;
+  padding-right: 0;
+}
+
+
+/* PAGE CHAT USERS */
+
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos.captionChat {
+  width: 54%;
+  border: 0;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos.captionChat>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUser {
+  background: #f7f7f7;
+  width: 100%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUserDatas {
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUserDatas>img {
+  width: 7%;
+  display: inline-block;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUser>.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUserDatas {
+  padding-left: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUser>.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUserDatas {
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-shadow: 0px 0px 0px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatWithUserDatas>p {
+  display: inline-block;
+  padding-left: 2%;
+  color: #0071bc !important;
+  font-size: 16px;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatCOntentUsers {
+  width: 100%;
+  height: 500px;
+  background: white;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatSendUsers {
+  width: 100%;
+  margin: 0;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend {
+  background: #f7f7f7;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend>form>div>textarea {
+  width: 100%;
+  border: 0;
+  height: 82px;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-4.col-lg-4.contentActionSend>img {
+  display: inline-block;
+}
+
+.col-xs-12.col-sm-12.col-md-4.col-lg-4.contentActionSend {
+  padding-top: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-4.col-lg-4.contentActionSend>input {
+  width: 49%;
+  background: #ffd00b;
+  border: 0;
+  padding: 5%;
+  font-size: 15px;
+  color: #1a1a1a;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat {
+  box-shadow: 0px 0px 0px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.dataShoWmensajes {
+  background: white;
+  height: 676px;
+  box-shadow: 0px 2px 10px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.FriendWithChat {
+  padding: 0;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.RemoveChatWithUser {
+  text-align: right;
+  padding-top: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.RemoveChatWithUser>form>i {
+  color: #666666;
+  font-size: 16px;
+}
+
+.col-xs-12.col-sm-6.col-md-8.col-lg-8.blqueDatasUser>p.TitleUserMen {
+  color: #0071bc !important;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  font-size: 13px;
+}
+
+.col-xs-12.col-sm-6.col-md-8.col-lg-8.blqueDatasUser {
+  padding: 0;
+}
+
+p.cont_previwMenSage {
+  color: #666666;
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.TimeSendMenssage>p {
+  color: #b3b3b3;
+  font-size: 9px;
+  text-align: right;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.RemoveChatWithUser>form {
+  top: 6px;
+  position: relative;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.listConection.lineChat>.captionUsersInLive {
+  margin-top: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SearchSection {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SearchSection>form>div>div {
+  padding: 0;
+}
+
+form.formSearchChat>div>div>div>input {
+  border: 0px solid #ccc;
+}
+
+form.formSearchChat>div>div>div>span>button {
+  border: 0px solid #ccc;
+}
+
+form.formSearchChat>div>div {
+  border: 1px solid #e6e6e6;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  background: white;
+  height: 500px;
+  padding: 0;
+  box-shadow: 0px 2px 10px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitrados {
+  padding: 0;
+}
+
+form.formSearchChat>div {
+  width: 100%;
+  margin: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque {
+  padding: 0;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>div>p {
+  color: #0071bc !important;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  font-size: 13px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>div {
+  padding: 0;
+  padding-left: 4%;
+} 
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>div>img {
+  width: 66%;
+  margin: 0 auto;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>.col-xs-12.col-sm-6.col-md-8.col-lg-8.blqueDatasUser>p {
+  margin-top: 8%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  margin-top: 6%;
+}
+
+/* CALENDAR STYLE */
+
+.col-xs-12.col-sm-12.col-md-5.col-lg-5.DaysCalendars>div {
+  padding: 0;
+}
+
+.dayMonth>h1.DayNumberAgenda {
+  line-height: 70px;
+  font-family: 'MyrianPro-Black';
+}
+
+.captionAddEvento.addEventeGenral {
+  margin-top: 8%;
+}
+
+.container.continerWithSite.contCalnedar {
+  margin-top: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.CarouselDataCalendar>.calendarDatas>div#carousel-example-generic>.carousel-inner.carouselWithMeses>.item.nameMonth>h3 {
+  font-size: 27px;
+  text-transform: uppercase;
+  font-family: 'bebas';
+  font-weight: 100;
+}
+
+.CarouselDataCalendar>.calendarDatas>div#carousel-example-generic>.carousel-inner.carouselWithMeses>.item.nameMonth>.daysCalendar>div.dataDays {
+  font-size: 24px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.CarouselDataCalendar>.calendarDatas>div#carousel-example-generic>.carousel-inner.carouselWithMeses>.item.nameMonth>.daysCalendar>div.dataDays {
+  font-size: 20px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  width: 13.5%;
+}
+
+.CarouselDataCalendar>.calendarDatas>div#carousel-example-generic>.carousel-inner.carouselWithMeses>.item.nameMonth>.daysNumberCalendar>div  {
+  font-size: 25px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  width: 13%;
+}
+
+.col-xs-12.col-sm-12.col-md-7.col-lg-7.CarouselDataCalendar>div>div>a {
+  background: transparent;
+  bottom: 313px;
+  color: #808080;
+  opacity: 1;
+}
+
+.col-xs-12.col-sm-12.col-md-7.col-lg-7.CarouselDataCalendar>div>div>a>span {
+  font-size: 23px;
+}
+
+.CarouselDataCalendar>.calendarDatas>div#carousel-example-generic>.carousel-inner.carouselWithMeses>.item.nameMonth>.daysNumberCalendar>div>div {
+  font-size: 22px;
+}
+
+.ui.special.popup.top.left.transition.visible>div {
+  font-size: 16px;
+}
+
+.col-xs-12.col-sm-12.col-md-7.col-lg-7.CarouselDataCalendar>div>div {
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+}
+
+.container.continerWithSite.contCalnedar>div>div>div.DaysCalendars {
+  width: 36%;
+}
+
+.container.continerWithSite.contCalnedar>div>div>div.CarouselDataCalendar {
+   width: 64%;
+}
+
+.container.continerWithSite.contCalnedar>div>div.mesCalendars {
+  border-right: 1px solid #e6e6e6;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.v>h1 {
+  color: #4d4d4d;
+  font-size: 43px;
+  font-family: 'MyrianPro-Black';
+  margin-bottom: 0;
+  line-height: 35px;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vTypeEvento>h2 {
+  color: #666666;
+  font-size: 24px;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vTypeEvento {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.v {
+  margin-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vDataPublic>h2 {
+  color: #4d4d4d;
+  font-size: 18px;
+  font-family: 'MyrianPro-Regular';
+  margin-top: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.sectionCalendarType {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vDataPublicType>p {
+  color: #666666;
+  font-size: 17px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vDataPublicType>p>span {
+  color: #666666;
+  font-size: 36px;
+  font-family: 'MyrianPro-Black';
+  margin-right: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.fechasEventos>span {
+  color: #666666;
+  font-size: 36px;
+  font-family: 'MyrianPro-Black';
+  display: inline-block;
+  margin-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  width: 21%;
+  text-align: center;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.fechasEventos>p {
+  color: #666666;
+  font-size: 17px;
+  font-family: 'MyrianPro-Regular';
+  display: inline-block;
+  bottom: 5px;
+  position: relative;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.ChatWithUserDatas.vDataPublicTypeUSer>img {
+  display: inline-block;
+  width: 16%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.ChatWithUserDatas.vDataPublicTypeUSer>p {
+  display: inline-block;
+  margin-left: 3%;
+  font-size: 13px;
+  color: #0071bc !important;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.fechasEventos {
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vDataPublicType {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vDataPublic {
+  padding-left: 10%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.ChatWithUserDatas.vDataPublicTypeUSer {
+  padding-left: 10%;
+}
+
+
+
+/* PROFILE VISITANTE */
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionProfileMy>p {
+  color: #000000;
+  font-size: 21px;
+  text-align: center;
+  font-family: 'MyrianPro-Semibold';
+  margin-bottom: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionProfileMy>img {
+  width: 59%;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionProfileMy>a>p {
+  text-align: center;
+  background: #4d4d4d;
+  color: white;
+  padding: 6%;
+  margin-bottom: 8%;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.HorariosUser.horriosVisitProfile {
+  margin-top: 7%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados.datManualVIsitante>ul {
+  border-top: 1px solid #b3b3b3;
+  padding-top: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados.datManualVIsitante {
+  margin-top: 3%;
+}
+
+
+
+
+/* PAGE SOLICITUD DE PERMISO */
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.remenber>h3 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 23px;
+  font-family: 'Covered';
+  font-weight: 100;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.permission>h3 {
+  color: #666666;
+  font-size: 17px;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.permission {
+  background: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.permission {
+  margin-top: 4%;
+}
+
+form.formMotivoPermission>textarea {
+  width: 100%;
+  padding-left: 2%;
+  border: 1px solid #e6e6e6;
+  padding-top: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.selecDatTime>a>p {
+  background: #808080;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: 'MyrianPro-Semibold';
+  padding: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.selecDatTime {
+  margin-bottom: 5%;
+  padding: 0;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.SelecHourPermission>h1 {
+  color: #b3b3b3;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+  margin-bottom: 10%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.calendarPermission>h1 {
+  color: #b3b3b3;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.SelecDescuentPermission>h1 {
+  color: #b3b3b3;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+  margin-bottom: 10%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.blockSelectPermission {
+  margin-top: 4%;
+}
+
+div#datetimepicker12>.bootstrap-datetimepicker-widget.timepicker-sbs>div>.timepicker.col-md-6 {
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.selecDatTime.selecDaySeven>a>p {
+  background: #333333;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SubmitSolicituPermission>input {
+  background: #ffd00b;
+  border: 0;
+  color: #1a1a1a;
+  font-size: 15px;
+  padding: 2%;
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SendSolicitud>h1 {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'MyrianPro-Semibold';
+  margin-bottom: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SendSolicitud>h4 {
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+  margin-top: 0;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SendSolicitud {
+  margin-top: 5%;
+  background: white;
+  padding: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.solicitudAceptada>h1 {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'MyrianPro-Semibold';
+  margin-bottom: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.solicitudAceptada>h4 {
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+  margin-top: 0;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.solicitudAceptada {
+  margin-top: 5%;
+  background: white;
+  padding: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.solicitudAceptada>.col-xs-12.col-sm-12.col-md-12.BuzonSgenerencias.DayDisponibles {
+  width: 43%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  float: none;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+
+
+/* MOTIVO DE EMERGENCIA */
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.motioEmergency {
+  background: white;
+  padding: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.motioEmergency>h3 {
+  color: #666666;
+  font-size: 17px;
+  margin-bottom: 2%;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.motioEmergency>h5 {
+  color: #666666;
+  font-size: 14px;
+  margin-top: 0;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+}
+
+.col-md-2.AdjuntarFotoEmergency {
+  border-right: 0px solid #e6e6e6;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions.actionINEmergency>div>p {
+  color: #b3b3b3;
+  font-size: 11px;
+  padding-left: 4%;
+  margin-top: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.motioEmergency {
+  box-shadow: 0px 4px 10px 0px #e2e2e2;
+  padding-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.motioEmergency>.col-xs-12.col-sm-12.col-md-12.continPublish {
+  box-shadow: 0px 0px 0px 0px #e2e2e2;
+} 
+
+
+
+/* PAGE EVALUUACION A PERSONAL */
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal>h3 {
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-family: 'MyrianPro-Bold';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal>h3>span {
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal {
+  background: white;
+  padding: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal>div {
+  margin-top: 2%;
+}
+
+
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados.captionEvsaluation {
+  width: 21%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.LinksForEmpleados.captionEvsaluation>ul {
+  border-top: 1px solid #b3b3b3;
+  padding-top: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.sectionProfiles.sectionPermissionRequest.sectionEvalutionToPersonal>div {
+  height: 700px;
+}
+
+.col-md-12.datPublich.datapublichEvalution>img {
+  padding-top: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.manualitiEvaluation {
+  bottom: -627px;
+  display: block;
+  float: none;
+  border-top: 1px solid #b3b3b3;
+  padding-top: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.imagEvaluition>img {
+  bottom: -635px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+/* PAGE EVALUACION CANDIDATE DETALL */
+
+.col-xs-12.col-sm-6.col-md-5.col-lg-5.detallNameProfile {
+  text-align: left;
+  margin-top: 3%;
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts.profilesForDetall {
+  padding-top: 0;
+  margin-top: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal>.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>.col-xs-12.col-sm-12.col-md-12.col-lg-12.textConesta>p {
+  font-size: 15px;
+  color: #333333;
+  font-family: 'Multicolore';
+}
+
+.textConesta>ul>li {
+  width: 13%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.textConesta>ul>li>a>img {
+  width: 54% !important;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.textConesta>ul>li>a>p {
+  font-size: 11px;
+  font-family: 'Multicolore';
+  color: #444242;
+  margin-top: 6%;
+}
+
+ul.Redconocistes>li>div {
+  float: none;
+  position: absolute;
+  display: block;
+  width: 7.5%;
+  bottom: 30%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal>.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>.col-xs-12.col-sm-12.col-md-12.col-lg-12.TitleLISt>p {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 100;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bgQuesdtions {
+  background-image: url('http://127.0.0.1/Sites/intranet/public/assets/images/bg-questions.jpg');
+  background-size: cover;\
+  padding: 0;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  margin-top: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.sectionProfiles.sectionPermissionRequest.sectionEvalutionToPersonal>.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal.evaluationDetallQuestion {
+  height: 100%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SendFormDataRes>input {
+  background: #ffd00b;
+  border: 0;
+  padding: 2%;
+  color: #333333;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+  width: 36%;
+  border-radius: 9px;
+  margin-top: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.evaluationEwstionMa {
+  bottom: -2000px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.imagEvaluition>img.evaluationEwstionMa {
+  bottom: -2000px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.NextEvalue>p {
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 0;
+  font-family: 'MyrianPro-Bold';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>div>img {
+  width: 84%;
+  margin: 0 auto;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>div>p {
+  color: #333333;
+  font-size: 17px;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.dataNamesUsers {
+  text-align: left;
+  padding: 0;
+  margin-top: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.dataEvaluatioNFIna>h3 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 3%;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+}
+
+
+/* FINISH EVALUATION */
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal.FinishMEnsageEvalution>h3 {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Covered';
+  color: #333333; 
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal.FinishMEnsageEvalution>h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  color: #333333;
+  font-family: 'MyrianPro-Regular';
+}
+
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal.FinishMEnsageEvalution {
+  padding-top: 32%;
+}

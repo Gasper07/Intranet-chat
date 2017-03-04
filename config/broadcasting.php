@@ -38,6 +38,9 @@ return [
             'options' => [
                 //
             ],
+            'host' => null,
+            'port' => null,
+            'timeout' => null,
         ],
 
         'redis' => [

@@ -23,7 +23,16 @@
 	});
 	Auth::routes();
 
-	Route::resource('chat', 'ChatController');
+	// Route::resource('chat', 'ChatController');
+	Route::get('/chat', function() {
+	    $pusher = App::make('pusher');
+
+	    $pusher->trigger( 'test-channel',
+	                      'test-event', 
+	                      array('text' => 'Preparing the Pusher Laracon.eu workshop!'));
+
+	    return view('chat.index');
+	});
 
 /*
 |--------------------------------------------------------------------------

@@ -4,7 +4,7 @@
 <div class="container loginAcceso">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <img src="http://127.0.0.1/Sites/intranet/public/assets/images/logo-intranet.png" class="img-responsive" alt="">
+            <img src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/logo-intranet.png" class="img-responsive" alt="">
             <h2 class="fontMiriamProRegular">Entérate. Crece. Pertenece.</h2>
             <div class="panel panel-default">
                 <div class="panel-heading fontMiriamProRegular">¡Bienvenido!</div>

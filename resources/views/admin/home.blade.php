@@ -305,12 +305,12 @@
                     <p>29 de Diciembre de 2016 a las 7:30 p.m.</p>
                   </div>
                   <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1 secFotoUser">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                   </div>
                   <div class="col-xs-12 col-sm-7 col-md-11 col-lg-11 sectioForMEnsagen">
                     
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nameUisersMensage">
-                      <h3>Lisseth Rivas <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarIco.png" alt=""></h3>
+                      <h3>Lisseth Rivas <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt=""></h3>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 typeUisersMensage">
                       <p>Oportunidades de empleo, pagos, inicio de proyectos,   apertura de sucursales, días feriados, actividades internas, etc.</p>
@@ -334,7 +334,7 @@
                     <p>29 de Diciembre de 2016 a las 7:30 p.m.</p>
                   </div>
                   <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1 secFotoUser">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                   </div>
                   <div class="col-xs-12 col-sm-7 col-md-11 col-lg-11 sectioForMEnsagen">
                     
@@ -363,7 +363,7 @@
                     <p>29 de Diciembre de 2016 a las 7:30 p.m.</p>
                   </div>
                   <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1 secFotoUser">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                   </div>
                   <div class="col-xs-12 col-sm-7 col-md-11 col-lg-11 sectioForMEnsagen">
                     
@@ -392,7 +392,7 @@
                     <p>29 de Diciembre de 2016 a las 7:30 p.m.</p>
                   </div>
                   <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1 secFotoUser">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                   </div>
                   <div class="col-xs-12 col-sm-7 col-md-11 col-lg-11 sectioForMEnsagen">
                     
@@ -421,7 +421,7 @@
                     <p>29 de Diciembre de 2016 a las 7:30 p.m.</p>
                   </div>
                   <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1 secFotoUser">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                   </div>
                   <div class="col-xs-12 col-sm-7 col-md-11 col-lg-11 sectioForMEnsagen">
                     
@@ -611,10 +611,10 @@
 
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sectionPublichIcos">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">          
-          <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/AnuncioPublicAdmin.png" alt="">
+          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/AnuncioPublicAdmin.png" alt="">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/addpubliImgae.png" alt="">
+          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/addpubliImgae.png" alt="">
         </div>
       </div>
       {{-- END RECORDATORIOS --}}

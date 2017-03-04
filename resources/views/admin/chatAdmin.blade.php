@@ -48,7 +48,7 @@
       <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 captionPosteos captionChat">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatWithUser">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatWithUserDatas">
-             <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
              <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
            </div>
         </div>
@@ -66,8 +66,8 @@
                  <textarea name="" placeholder="Escribe aquí"></textarea>           
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contentActionSend">
-                 <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarIco.png" alt="">
-                 <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarFoto.png" alt="">
+                 <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
+                 <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
                  <input type="submit" value="Enviar">
               </div>
             </form>
@@ -82,7 +82,7 @@
 
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 FriendWithChat">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-              <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
             </div>
             <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
               <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette <span> dice: </span></p>
@@ -95,7 +95,7 @@
 
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 FriendWithChat">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-              <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
             </div>
             <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
               <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette <span> dice: </span></p>
@@ -118,22 +118,22 @@
                 
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-leo.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
                   </a>
                 </div>
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-donald.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
                   </a>
                 </div>
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-lise.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
                   </a>
                 </div>
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-leo.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
                   </a>
                 </div>
                 <div class="captionCircleUser">
@@ -143,22 +143,22 @@
               <div class="content">
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-leo.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
                   </a>
                 </div>
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-donald.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
                   </a>
                 </div>
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-lise.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
                   </a>
                 </div>
                 <div class="captionCircleUser">
                   <a href="" class="userLive">
-                    <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/user-leo.png" alt="">            
+                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
                   </a>
                 </div>
               </div>
@@ -189,7 +189,7 @@
                 <a href="">
                   <form action="chatUsers_submit" method="get" accept-charset="utf-8">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
@@ -202,7 +202,7 @@
                 <a href="">
                   <form action="chatUsers_submit" method="get" accept-charset="utf-8">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
@@ -215,7 +215,7 @@
                 <a href="">
                   <form action="chatUsers_submit" method="get" accept-charset="utf-8">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
@@ -228,7 +228,7 @@
                 <a href="">
                   <form action="chatUsers_submit" method="get" accept-charset="utf-8">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
@@ -241,7 +241,7 @@
                 <a href="">
                   <form action="chatUsers_submit" method="get" accept-charset="utf-8">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
@@ -254,7 +254,7 @@
                 <a href="">
                   <form action="chatUsers_submit" method="get" accept-charset="utf-8">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
@@ -267,7 +267,7 @@
                 <a href="">
                   <form action="chatUsers_submit" method="get" accept-charset="utf-8">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
@@ -280,9 +280,9 @@
           </div>
 
           <div class="col-md-12 datPublich publishChatAdmin">
-            <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/chatGrupo.png" alt="" data-toggle="modal" data-target="#myModalCHat">
-            <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/addpubliImgae.png" alt="" data-toggle="modal" data-target="#myModal">
-            <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/AnuncioPublicAdmin.png" alt="">
+            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/chatGrupo.png" alt="" data-toggle="modal" data-target="#myModalCHat">
+            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/addpubliImgae.png" alt="" data-toggle="modal" data-target="#myModal">
+            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/AnuncioPublicAdmin.png" alt="">
           </div>
 
 
@@ -306,16 +306,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
                   <div class="col-md-6 actionpuBlish">
                     <div class="col-md-2 Adjuntar">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AdjuntarFoto">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarFoto.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
                     </div>
                     <div class="col-md-2 DestacarPuslish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/destacarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AlertPublish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/alertIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
                     </div>
                   </div>
                   <div class="col-md-6 ButtinPublish">
@@ -393,16 +393,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
                   <div class="col-md-6 actionpuBlish">
                     <div class="col-md-2 Adjuntar">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AdjuntarFoto">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarFoto.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
                     </div>
                     <div class="col-md-2 DestacarPuslish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/destacarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AlertPublish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/alertIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
                     </div>
                   </div>
                   <div class="col-md-6 ButtinPublish">

@@ -32,7 +32,7 @@
 
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ProfileFotosStarts profilesForDetall">
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 detallImgProfile">
-              <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">              
+              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">              
             </div>   
             <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 detallNameProfile">
               <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
@@ -52,7 +52,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -62,7 +62,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -72,7 +72,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -82,7 +82,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -101,7 +101,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -111,7 +111,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -121,7 +121,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -131,7 +131,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -150,7 +150,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -160,7 +160,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -170,7 +170,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -180,7 +180,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -198,7 +198,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -208,7 +208,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -218,7 +218,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -228,7 +228,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -246,7 +246,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -256,7 +256,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -266,7 +266,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -276,7 +276,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -294,7 +294,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -304,7 +304,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -314,7 +314,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -324,7 +324,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -342,7 +342,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -352,7 +352,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -362,7 +362,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -372,7 +372,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -390,7 +390,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -400,7 +400,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -410,7 +410,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -420,7 +420,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -438,7 +438,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -448,7 +448,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -458,7 +458,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -468,7 +468,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -486,7 +486,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">                
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim2">
@@ -496,7 +496,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                      <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                     </div>
                  </li>
                  <li class="cssIILim3">
@@ -506,7 +506,7 @@
                      <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
                  <li class="cssIILim4">
@@ -516,7 +516,7 @@
                       <input type="hidden" class="CCOL" data-id="orden_limpieza" value="" name="COL">   
                    </a>
                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                     <img class="img-responsive activeSeleccionCarita" src="http://127.0.0.1/Sites/intranet/public/assets/images/selectActive.png" alt="selectActive">
+                     <img class="img-responsive activeSeleccionCarita" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/selectActive.png" alt="selectActive">
                    </div>
                  </li>
 
@@ -532,7 +532,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 captionRecordNotas SecCalendar">
          <div class="col-xs-12 col-sm-12 col-md-12 imagEvaluition ">
-          <img class="img-responsive evaluationEwstionMa" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/IcoPublich.png" alt="" data-toggle="modal" data-target="#myModal">
+          <img class="img-responsive evaluationEwstionMa" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/IcoPublich.png" alt="" data-toggle="modal" data-target="#myModal">
          </div>
       </div>
     </div>
@@ -552,16 +552,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
                   <div class="col-md-6 actionpuBlish">
                     <div class="col-md-2 Adjuntar">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AdjuntarFoto">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarFoto.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
                     </div>
                     <div class="col-md-2 DestacarPuslish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/destacarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AlertPublish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/alertIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
                     </div>
                   </div>
                   <div class="col-md-6 ButtinPublish">

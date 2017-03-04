@@ -35,7 +35,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 captionRecordNotas SecCalendar">
          <div class="col-xs-12 col-sm-12 col-md-12 imagEvaluition">
-          <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/IcoPublich.png" alt="" data-toggle="modal" data-target="#myModal">
+          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/IcoPublich.png" alt="" data-toggle="modal" data-target="#myModal">
          </div>
       </div>
     </div>
@@ -55,16 +55,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
                   <div class="col-md-6 actionpuBlish">
                     <div class="col-md-2 Adjuntar">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AdjuntarFoto">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarFoto.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
                     </div>
                     <div class="col-md-2 DestacarPuslish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/destacarIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
                     </div>
                     <div class="col-md-2 AlertPublish">
-                      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/alertIco.png" alt="">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
                     </div>
                   </div>
                   <div class="col-md-6 ButtinPublish">

@@ -85,35 +85,35 @@
           <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
             <i class="fa fa-times" aria-hidden="true"></i>
           </form>
-          <img class="img-responsive" id="contenedor" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" src="http://127.0.0.1/Sites/intranet/public/assets/images/icons/carpetaVacia.png" alt="">
+          <img class="img-responsive" id="contenedor" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/carpetaVacia.png" alt="">
           <p>Carpeta vacía</p>
         </div>
         <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
           <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
             <i class="fa fa-times" aria-hidden="true"></i>
           </form>
-          <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/icons/carpetaLLena.png" alt="">
+          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/carpetaLLena.png" alt="">
           <p>Carpeta llena</p>
         </div>
         <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2" id="parrafo" draggable="true" ondragstart="drag(this, event)">
           <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
             <i class="fa fa-times" aria-hidden="true"></i>
           </form>
-          <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/icons/dcumento.png" alt="">
+          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/dcumento.png" alt="">
           <p>Politicas</p>
         </div>
         <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
           <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
             <i class="fa fa-times" aria-hidden="true"></i>
           </form>
-          <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/icons/dcumento.png" alt="">
+          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/dcumento.png" alt="">
           <p>Politicas</p>
         </div>
         <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
           <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
             <i class="fa fa-times" aria-hidden="true"></i>
           </form>
-          <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/icons/addFile.png" alt="">
+          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/addFile.png" alt="">
           <p>Politicas</p>
         </div>
       </div>
@@ -126,8 +126,8 @@
 
     </div>
     <div class="col-md-12 datPublich publishChatAdmin publichDocuemnts">
-      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/addpubliImgae.png" alt="" data-toggle="modal" data-target="#myModal">
-      <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/AnuncioPublicAdmin.png" alt="">
+      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/addpubliImgae.png" alt="" data-toggle="modal" data-target="#myModal">
+      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/AnuncioPublicAdmin.png" alt="">
     </div>
   </div>
 </section>
@@ -146,16 +146,16 @@
             <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
               <div class="col-md-6 actionpuBlish">
                 <div class="col-md-2 Adjuntar">
-                  <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarIco.png" alt="">
+                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
                 </div>
                 <div class="col-md-2 AdjuntarFoto">
-                  <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/adjuntarFoto.png" alt="">
+                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
                 </div>
                 <div class="col-md-2 DestacarPuslish">
-                  <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/destacarIco.png" alt="">
+                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
                 </div>
                 <div class="col-md-2 AlertPublish">
-                  <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/avatar/alertIco.png" alt="">
+                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
                 </div>
               </div>
               <div class="col-md-6 ButtinPublish">

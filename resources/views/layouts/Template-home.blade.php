@@ -57,7 +57,7 @@
 
                 <div class="collapse navbar-collapse collapseMenuUser" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    <img src="http://127.0.0.1/Sites/intranet/public/assets/images/ico-paleta.png" alt="Paleta-Colores">
+                    <img src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/ico-paleta.png" alt="Paleta-Colores">
                     <ul id="gn-menu" class="nav navbar-nav gn-menu-main">
                         <li class="gn-trigger">
                             <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
@@ -66,7 +66,7 @@
                                     <ul class="gn-menu">
                                         <li class="gn-search-item">
                                             <a href="">
-                                             <img class="img-responsive" src="http://127.0.0.1/Sites/intranet/public/assets/images/profile-user-circle.png" alt="">
+                                             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                                              <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>                            
                                             </a>
                                         </li>
@@ -112,12 +112,12 @@
                         @else
                             <li class="icosMenus">
                                 <a href="#!">
-                                    <img src="http://127.0.0.1/Sites/intranet/public/assets/images/house-ido.png" class="img-responsive" alt="">                                    
+                                    <img src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/house-ido.png" class="img-responsive" alt="">                                    
                                 </a>
                             </li>
                             <div class="ui dropdown dropdownSemantic notifiICos fontMiriamProRegular">
                               <a href="#!">
-                                  <img src="http://127.0.0.1/Sites/intranet/public/assets/images/notify-ico.png" class="img-responsive" alt="">
+                                  <img src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/notify-ico.png" class="img-responsive" alt="">
                                   <div class="notifiCount">
                                       <p>3</p>
                                   </div>
@@ -221,7 +221,7 @@
            });
        });
    </script>
-   
+
    {!! Html::script('public/assets/datePicker/js/bootstrap-datepicker.js') !!}
    <script type="text/javascript">
       $('#sandbox-container .input-daterange').datepicker({

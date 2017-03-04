@@ -27,6 +27,8 @@
 	    return view('chat');
 	});
 
+	Route::get('/chatdemo', 'ChatController@index');
+
 /*
 |--------------------------------------------------------------------------
 | Home Users

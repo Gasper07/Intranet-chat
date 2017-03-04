@@ -23,7 +23,7 @@
 	});
 	Auth::routes();
 
-	Route::get('/', function () {
+	Route::get('/chat', function () {
 	    return view('chat');
 	});
 

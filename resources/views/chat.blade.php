@@ -44,7 +44,7 @@
 	
 	<script type="text/javascript">			
 	// Enter your own Pusher App key
-	var pusher = new Pusher('7bb2de607cf92f0b1c8c');
+	var pusher = new Pusher('1699db0a3a3aec4d93c6');
 	// Enter a unique channel you wish your users to be subscribed in.
 	var channel = pusher.subscribe('test_channel');
 	channel.bind('my_event', function(data) {

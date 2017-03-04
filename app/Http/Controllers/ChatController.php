@@ -24,6 +24,7 @@ class ChatController extends Controller
     public function index()
     {
         $chatChannel = $this->chatChannel;
+        dd($chatChannel);
  
         return view('chat.index', compact('chatChannel'));
     }

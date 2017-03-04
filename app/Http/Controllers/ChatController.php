@@ -53,13 +53,15 @@ class ChatController extends Controller
             'timestamp' => date('Y-m-d H:i:s')
         ];
 
-        dd($message);
+
  
         try {
             $this->pusher->trigger($this->chatChannel, 'new-message', $message);
             return response()->json(['status' => '1']);
+            print_r('esatus one');
         } catch (\Exception $e) {
             return response()->json(['status' => '0']);
+            print_r('esatus cero');
         }
     }
 

@@ -140,7 +140,7 @@
         console.log(pusher+'pusher');
         console.log(channel+'canal');
  
-    channel.bind('new-message', addMessage);
+    channel.bind('new-message', addMessage('new-message'));
 </script>
  
 </body>

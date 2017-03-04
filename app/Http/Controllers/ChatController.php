@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Request as facedesrequest;
+use Illuminate\Support\Facades\Redirect;
 use lib\Pusher;
 
-class HomeController extends Controller
+class ChatController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -25,8 +27,9 @@ class HomeController extends Controller
      */
 
     
-    public function index()
+    public function index(Request $request)
     {
+        $data = facedesrequest::all();
         // Change the following with your app details:
         // Create your own pusher account @ https://app.pusher.com
         $app_id = '309483'; // App ID

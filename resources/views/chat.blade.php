@@ -100,7 +100,7 @@
 				message: '<strong>' + $('.chat_box .input_name').val() + '</strong>: ' + message
 			}
 			// Send the message to the server
-			ajaxCall('message_relay.php', chat_message);
+			ajaxCall('chatdemo', chat_message);
 			
 			// Clear the message input field
 			$('.chat_box .input_message').val('');

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Request as facedesrequest;
 use Illuminate\Support\Facades\Redirect;
-require('../../../lib/Pusher.php');
+use App\pusher\Pusher;
 
 class ChatController extends Controller
 {

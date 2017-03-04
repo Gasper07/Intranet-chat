@@ -1,8 +1,8 @@
 /* COVERED */
 @font-face {
 	font-family: 'Covered';
-	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.eot');
-	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/covered/CoveredByYourGrace.svg') format('svg');
+	src: url('../fonts/covered/CoveredByYourGrace.eot');
+	src: local('☺'), url('../fonts/covered/CoveredByYourGrace.woff') format('woff'), url('../fonts/covered/CoveredByYourGrace.ttf') format('truetype'), url('../fonts/covered/CoveredByYourGrace.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -10,8 +10,8 @@
 /* MIRIAM PRO */
 @font-face {
 	font-family: 'MyrianPro-Regular';
-	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.eot');
-	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro_31655.svg') format('svg');
+	src: url('../fonts/miriam/Myriad-Pro_31655.eot');
+	src: local('☺'), url('../fonts/miriam/Myriad-Pro_31655.woff') format('woff'), url('../fonts/miriam/Myriad-Pro_31655.ttf') format('truetype'), url('../fonts/miriam/Myriad-Pro_31655.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -19,24 +19,24 @@
 /* MIRIAM */
 @font-face {
 	font-family: 'MyrianPro-Black';
-	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.eot');
-	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Black.svg') format('svg');
+	src: url('../fonts/miriam/MyriadPro-Black.eot');
+	src: local('☺'), url('../fonts/miriam/MyriadPro-Black.woff') format('woff'), url('../fonts/miriam/MyriadPro-Black.ttf') format('truetype'), url('../fonts/miriam/MyriadPro-Black.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'MyrianPro-Bold';
-	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.eot');
-	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/Myriad-Pro-Bold_31631.svg') format('svg');
+	src: url('../fonts/miriam/Myriad-Pro-Bold_31631.eot');
+	src: local('☺'), url('../fonts/miriam/Myriad-Pro-Bold_31631.woff') format('woff'), url('../fonts/miriam/Myriad-Pro-Bold_31631.ttf') format('truetype'), url('../fonts/miriam/Myriad-Pro-Bold_31631.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'MyrianPro-Semibold';
-	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.eot');
-	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/miriam/MyriadPro-Semibold.svg') format('svg');
+	src: url('../fonts/miriam/MyriadPro-Semibold.eot');
+	src: local('☺'), url('../fonts/miriam/MyriadPro-Semibold.woff') format('woff'), url('../fonts/miriam/MyriadPro-Semibold.ttf') format('truetype'), url('../fonts/miriam/MyriadPro-Semibold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -44,16 +44,16 @@
 
 @font-face {
 	font-family: 'bebas';
-	src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.eot');
-	src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/bebas/BEBAS___.svg') format('svg');
+	src: url('../fonts/bebas/BEBAS___.eot');
+	src: local('☺'), url('../fonts/bebas/BEBAS___.woff') format('woff'), url('../fonts/bebas/BEBAS___.ttf') format('truetype'), url('../fonts/bebas/BEBAS___.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
   font-family: 'Multicolore';
-  src: url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.eot');
-  src: local('☺'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.woff') format('woff'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.ttf') format('truetype'), url('http://127.0.0.1/Sites/intranet/public/assets/fonts/multicore/Multicolore.svg') format('svg');
+  src: url('../fonts/multicore/Multicolore.eot');
+  src: local('☺'), url('../fonts/multicore/Multicolore.woff') format('woff'), url('../fonts/multicore/Multicolore.ttf') format('truetype'), url('../fonts/multicore/Multicolore.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -551,11 +551,11 @@ a.removeComent>i {
 }
 
 .bgHappy{
-  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/happycomple.png');
+  background: url('../images/happycomple.png');
 }
 
 .bgHappy {
-  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/happycomple.png');
+  background: url('../images/happycomple.png');
   background-repeat: no-repeat;
   text-align: center;
   margin: 0 auto;
@@ -956,7 +956,7 @@ div#sandbox-container>h4 {
 
 
 .icoPubli {
-  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-public.png');
+  background: url('../images/avatar/ico-public.png');
   background-size: cover;
   width: 9%;
   height: 21px;
@@ -970,7 +970,7 @@ div#sandbox-container>h4 {
 }
 
 .icoFotos {
-  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-fotografia.png');
+  background: url('../images/avatar/ico-fotografia.png');
   background-size: cover;
   width: 9%;
   height: 21px;
@@ -983,7 +983,7 @@ div#sandbox-container>h4 {
 }
 
 .icoPagos {
-  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-pago.png');
+  background: url('../images/avatar/ico-pago.png');
   background-size: cover;
   width: 9%;
   height: 21px;
@@ -997,7 +997,7 @@ div#sandbox-container>h4 {
 }
 
 .icoProFile {
-  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/avatar/ico-update-profile.png');
+  background: url('../images/avatar/ico-update-profile.png');
   background-size: cover;
   width: 9%;
   height: 21px;
@@ -1355,7 +1355,7 @@ input.detallInformation:disabled {
 }
 
 .bgWrapDas{
-  background: url('http://127.0.0.1/Sites/intranet/public/assets/images/contador/coloOrange.png');
+  background: url('../images/contador/coloOrange.png');
   background-size: cover;
   /* height: 21px; */
   height: 137px;
@@ -2389,7 +2389,7 @@ ul.Redconocistes>li>div {
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.bgQuesdtions {
-  background-image: url('http://127.0.0.1/Sites/intranet/public/assets/images/bg-questions.jpg');
+  background-image: url('../images/bg-questions.jpg');
   background-size: cover;\
   padding: 0;
   padding-top: 3%;

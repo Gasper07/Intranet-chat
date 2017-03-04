@@ -31,7 +31,6 @@ class ChatController extends Controller
     public function index(Request $request)
     {
         $data = facedesrequest::all();
-        // dd($data);
         // Change the following with your app details:
         // Create your own pusher account @ https://app.pusher.com
         $app_id = '309483'; // App ID

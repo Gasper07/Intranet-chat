@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Request as facedesrequest;
 use Illuminate\Support\Facades\Redirect;
 
-require __DIR__.'/app/pusher/Pusher.php';
+require __DIR__.'lib/Pusher.php';
 
 class ChatController extends Controller
 {

@@ -137,12 +137,10 @@
  
     let pusher = new Pusher('{{ env("PUSHER_KEY") }}'),
         channel = pusher.subscribe('{{ $chatChannel }}');
-        sw = channel.bind('{{ new-message }}');
         console.log(pusher+'pusher');
         console.log(channel+'canal');
-        console.log(sw+'ws23');
  
-    channel.bind('new-message', addMessage('new-message'));
+    channel.bind('new-message', addMessage);
 </script>
  
 </body>

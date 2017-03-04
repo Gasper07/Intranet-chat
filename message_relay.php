@@ -3,9 +3,9 @@ require('lib/Pusher.php');
 
 // Change the following with your app details:
 // Create your own pusher account @ https://app.pusher.com
-$app_id = '309483'; // App ID
-$app_key = '1699db0a3a3aec4d93c6'; // App Key
-$app_secret = '17a8b609741fa2891df9'; // App Secret
+$app_id = '107923'; // App ID
+$app_key = '7bb2de607cf92f0b1c8c'; // App Key
+$app_secret = '5d5d008285995ee3bedb'; // App Secret
 $pusher = new Pusher($app_key, $app_secret, $app_id);
 
 // Check the receive message

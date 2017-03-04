@@ -15,11 +15,11 @@
 	//}	//};		
 	</script>		
 	
-	<style="text/css">	
-		.messages_display {height: 300px; overflow: auto;}	
-			
-		.messages_display .message_item {padding: 0; margin: 0; }		
-		.bg-danger {padding: 10px;}
+	<style = "text/css">	
+	<!--		
+	.messages_display {height: 300px; overflow: auto;}		
+	.messages_display .message_item {padding: 0; margin: 0; }		
+	.bg-danger {padding: 10px;}	-->	
 	</style>		
 </head>
 <body>

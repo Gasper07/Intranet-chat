@@ -10,30 +10,26 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+
     <!-- Styles -->
-    <link href="http://127.0.0.1/Sites/intranet/public/css/app.css" rel="stylesheet">
+    {!! Html::style('public/css/app.css') !!}
     <!-- Bootstrap CSS-->
-    <link media="all" type="text/css" rel="stylesheet" href="http://127.0.0.1/Sites/intranet/public/assets/css/bootstrap.css">
+    {!! Html::style('public/assets/css/bootstrap.css') !!}
     {{-- Style Menu Desplace --}}
-    <link href="http://127.0.0.1/Sites/intranet/public/assets/css/menu/component.css" rel="stylesheet">
+    {!! Html::style('public/assets/css/menu/component.css') !!}
     <!-- Semantic Ui CSS -->
-    <link media="all" type="text/css" rel="stylesheet" href="http://127.0.0.1/Sites/intranet/public/assets/css/semantic.css">
+    {!! Html::style('public/assets/css/semantic.css') !!}
     <!-- STYLE FONT AWESOME -->
-    <link media="all" type="text/css" rel="stylesheet" href="http://127.0.0.1/Sites/intranet/public/assets/css/font-awesome.css">
-
+    {!! Html::style('public/assets/css/font-awesome.css') !!}
     <!-- Datepicker Files -->
-    <link media="all" type="text/css" rel="stylesheet" href="https://www.valdezmobile.com/public/assets/datePicker/css/bootstrap-datepicker3.css">
-
+    {!! Html::style('public/assets/datePicker/css/bootstrap-datepicker3.css') !!}
     {!! Html::style('public/assets/css/bootstrap-datetimepicker.min.css') !!}
-
     {{-- ClockPicker --}}
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/Sites/intranet/public/assets/css/clock/bootstrap-clockpicker.min.css">
-
+    {!! Html::style('public/assets/css/clock/bootstrap-clockpicker.min.css') !!}
     {{-- ColorPicker --}}
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/Sites/intranet/public/assets/css/admin/colorpicker/spectrum.css">
-
+    {!! Html::style('public/assets/css/admin/colorpicker/spectrum.css') !!}
     {{-- Main style --}}
-    <link href="http://127.0.0.1/Sites/intranet/public/assets/css/admin/main.css" rel="stylesheet">
+    {!! Html::style('public/assets/css/admin/main.css') !!}
 
     <!-- Scripts -->
     <script>
@@ -227,16 +223,16 @@
     </div>
 
     <!-- Scripts -->
-    <script src="http://127.0.0.1/Sites/intranet/public/js/app.js"></script>
-    <script src="http://127.0.0.1/Sites/intranet/public/assets/js/menu/classie.js"></script>
-    <script src="http://127.0.0.1/Sites/intranet/public/assets/js/menu/gnmenu.js"></script>
+    {!! Html::script('public/js/app.js') !!}
+    {!! Html::script('public/assets/js/menu/classie.js') !!}
+    {!! Html::script('public/assets/js/menu/gnmenu.js') !!}
 
     <script>
         new gnMenu( document.getElementById( 'gn-menu' ) );
     </script>
 
-    <!-- Semantic Ui CSS -->
-    <script src="http://127.0.0.1/Sites/intranet/public/assets/js/semantic.js"></script>
+    <!-- Semantic Ui js -->
+    {!! Html::script('public/assets/js/semantic.js') !!}
 
     <script>
         $('.dropdownSemantic')
@@ -276,11 +272,12 @@
 
    </script>
 
-   <script src="http://127.0.0.1/Sites/intranet/public/assets/js/jquery-1.11.1.min.js"></script>
+    {!! Html::script('public/assets/js/jquery-1.11.1.min.js') !!}
 
    {{-- ClockPicker --}}
-   <script type="text/javascript" src="http://127.0.0.1/Sites/intranet/public/assets/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="http://127.0.0.1/Sites/intranet/public/assets/js/clock/bootstrap-clockpicker.min.js"></script>
+    {!! Html::script('public/assets/js/bootstrap.min.js') !!}
+    {!! Html::script('public/assets/js/clock/bootstrap-clockpicker.min.js') !!}
+    
    <script type="text/javascript">
      $('.clockpicker').clockpicker()
          .find('input').change(function() {
@@ -308,7 +305,7 @@
            });
        });
    </script>
-   <script src="https://www.valdezmobile.com/public/assets/datePicker/js/bootstrap-datepicker.js"></script>
+    {!! Html::script('public/assets/datePicker/js/bootstrap-datepicker.js') !!}
    <script type="text/javascript">
       $('#sandbox-container .input-daterange').datepicker({
           format: "yyyy-mm-dd",
@@ -330,7 +327,7 @@
    
    </script>
 
-   <script src="http://127.0.0.1/Sites/intranet/public/assets/js/admin/colorpicker/spectrum.js"></script>
+    {!! Html::script('public/assets/js/admin/colorpicker/spectrum.js') !!}
    <script>
      function printColor(color) {
         var text = "You chose... " + color.toHexString();    
@@ -355,6 +352,8 @@
          ]
      });
    </script>
-   <script src="http://127.0.0.1/Sites/intranet/public/assets/js/admin/main.js"></script>
+    {!! Html::script('public/assets/js/admin/main.js') !!}
+
+   
 </body>
 </html>

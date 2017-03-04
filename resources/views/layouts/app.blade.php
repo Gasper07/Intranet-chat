@@ -11,8 +11,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="http://127.0.0.1/Sites/intranet/public/css/app.css" rel="stylesheet">
-    <link href="http://127.0.0.1/Sites/intranet/public/assets/css/main.css" rel="stylesheet">
+    {!! Html::style('public/css/app.css') !!}
+    {!! Html::style('public/assets/css/main.css') !!}
 
     <!-- Scripts -->
     <script>
@@ -83,6 +83,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="http://127.0.0.1/Sites/intranet/public/js/app.js"></script>
+    {!! Html::script('public/js/app.js') !!}
 </body>
 </html>

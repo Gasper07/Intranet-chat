@@ -109,6 +109,8 @@
  
     // Agregar mensaje al html
     function addMessage(data) {
+
+        console.log(data+'la data');
  
         let el = createMessageEl();
  
@@ -135,6 +137,8 @@
  
     let pusher = new Pusher('{{ env("PUSHER_KEY") }}'),
         channel = pusher.subscribe('{{ $chatChannel }}');
+        console.log(pusher+'pusher');
+        console.log(channel+'canal');
  
     channel.bind('new-message', addMessage);
 </script>

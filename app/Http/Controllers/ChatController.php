@@ -52,6 +52,8 @@ class ChatController extends Controller
             'avatar'    => 'http://lorempixel.com/100/100/',
             'timestamp' => date('Y-m-d H:i:s')
         ];
+
+        dd($message);
  
         try {
             $this->pusher->trigger($this->chatChannel, 'new-message', $message);

@@ -1,4 +1,4 @@
-@extends('layouts.Template-home')
+@extends('layouts.Template-chat-users')
 
 @section('content')
 <div class="container continerWithSite">
@@ -13,7 +13,21 @@
         {{-- bloque chat --}}
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatCOntentUsers">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentChat">
-            
+            <div class="col-md-6 chat_box">           
+              <div class="form-control messages_display"></div>     
+              <br />            
+              <div class="form-group">        
+                <label>Name</label>       
+                <input type="text" class="input_name form-control" placeholder="Name" />      
+              </div>            
+              <div class="form-group">        
+                <label>Message</label>        
+                <textarea class="input_message form-control" placeholder="Message"></textarea>      
+              </div>            
+              <div class="form-group input_send_holder">        
+                <input type="submit" value="Send" class="btn btn-primary input_send" />     
+              </div>          
+            </div>  
           </div>
         </div>
         {{-- bloque enviar Mensaje --}}

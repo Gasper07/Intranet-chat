@@ -21,11 +21,11 @@
         {{-- bloque enviar Mensaje --}}
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatSendUsers">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentSend">
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 contenTexaArea">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 contenTexaArea chat_box">
                <textarea name="" class="input_message form-control"  placeholder="Escribe aquí"></textarea>  
                {{-- <input type="text" class="input_name form-control" placeholder="Name" />            --}}
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contentActionSend">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contentActionSend chat_box">
                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
                <input type="submit" value="Enviar" class="input_send">

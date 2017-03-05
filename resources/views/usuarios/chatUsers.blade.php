@@ -13,7 +13,10 @@
         {{-- bloque chat --}}
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatCOntentUsers">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentChat chat_box">    
-            <div class="form-control messages_display">
+            <div class="form-control messages_display col-xs-12 col-sm-6 col-md-6 col-lg-6 chatOfUser">
+              
+            </div>     
+            <div class="form-control messages_display col-xs-12 col-sm-6 col-md-6 col-lg-6 chatMy">
               
             </div>    
           </div>

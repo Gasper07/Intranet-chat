@@ -1855,10 +1855,17 @@ form.formSearchChat>div {
   padding: 0; 
   margin: 0; 
 }
-   
+
 .bg-danger {
   padding: 10px;
 }
+
+.messages_display {
+  height: 500px;
+  overflow: auto;
+  border: 0;
+}
+
 
 /* CALENDAR STYLE */
 

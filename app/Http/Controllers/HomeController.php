@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -22,6 +23,10 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+    public function AllUsers(){
+        $Users = User::all();
+        return $Users;
+    }
     
     public function index()
     {
@@ -45,7 +50,10 @@ class HomeController extends Controller
 
     public function ChatEmpleados()
     {
-        return view('usuarios.chatUsers');
+        // $ChatWithUsers = User::all();
+        $getUsers = $this->AllUsers();
+
+        return view('usuarios.chatUsers', compac('getUsers'));
     }
 
     public function Calendar()

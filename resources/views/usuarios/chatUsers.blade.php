@@ -156,18 +156,18 @@
               {{-- CHATS ALLS --}}
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitrados">
 
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                <a href="">
-                  <form action="chatUsers_submit" method="get" accept-charset="utf-8">
+              @foreach($getUsers as $users)
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
+                  <a href="#!" data-iduserchat="{{ $users->id }}">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
                       <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
-                    </div>
-                  </form>                  
-                </a>                
-              </div>  
+                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">{{ $users->name }}</p>
+                    </div>             
+                  </a>                
+                </div>  
+              @endforeach
               
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
                 <a href="">

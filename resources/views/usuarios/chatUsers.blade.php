@@ -26,7 +26,7 @@
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentSend">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 contenTexaArea chat_box">
                <textarea name="" class="input_message form-control"  placeholder="Escribe aquí"></textarea>  
-               {{-- <input type="text" class="input_name form-control" placeholder="Name" />            --}}
+               <input type="hidden" class="input_name DatIdUserChat" value="" />           
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contentActionSend chat_box">
                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
@@ -154,7 +154,7 @@
             </div>
 
               {{-- CHATS ALLS --}}
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitrados">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitrados columnChatss">
 
               @foreach($getUsers as $users)
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">

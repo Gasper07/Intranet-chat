@@ -53,7 +53,7 @@ class HomeController extends Controller
         // $ChatWithUsers = User::all();
         $getUsers = $this->AllUsers();
 
-        return view('usuarios.chatUsers', compac('getUsers'));
+        return view('usuarios.chatUsers', compact('getUsers'));
     }
 
     public function Calendar()

@@ -313,5 +313,7 @@
       $('.chat_box .input_send').click();
      });
    </script>
+
+   {!! Html::script('public/assets/js/main.js') !!}
 </body>
 </html>

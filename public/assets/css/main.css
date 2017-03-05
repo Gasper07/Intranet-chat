@@ -1846,6 +1846,20 @@ form.formSearchChat>div {
   margin-top: 6%;
 }
 
+.messages_display {
+  height: 300px; 
+  overflow: auto;
+}
+
+.messages_display .message_item {
+  padding: 0; 
+  margin: 0; 
+}
+   
+.bg-danger {
+  padding: 10px;
+}
+
 /* CALENDAR STYLE */
 
 .col-xs-12.col-sm-12.col-md-5.col-lg-5.DaysCalendars>div {

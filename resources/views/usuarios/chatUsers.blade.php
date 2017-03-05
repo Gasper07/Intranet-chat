@@ -12,22 +12,10 @@
         </div>
         {{-- bloque chat --}}
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatCOntentUsers">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentChat">
-            <div class="col-md-6 chat_box">           
-              <div class="form-control messages_display"></div>     
-              <br />            
-              <div class="form-group">        
-                <label>Name</label>       
-                <input type="text" class="input_name form-control" placeholder="Name" />      
-              </div>            
-              <div class="form-group">        
-                <label>Message</label>        
-                <textarea class="input_message form-control" placeholder="Message"></textarea>      
-              </div>            
-              <div class="form-group input_send_holder">        
-                <input type="submit" value="Send" class="btn btn-primary input_send" />     
-              </div>          
-            </div>  
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentChat chat_box">    
+            <div class="form-control messages_display">
+              
+            </div>    
           </div>
         </div>
         {{-- bloque enviar Mensaje --}}
@@ -35,12 +23,13 @@
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentSend">
             <form action="chatUsers_submit" method="get" accept-charset="utf-8">
               <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 contenTexaArea">
-                 <textarea name="" placeholder="Escribe aquí"></textarea>           
+                 <textarea name="" class="input_message form-control"  placeholder="Escribe aquí"></textarea>  
+                 {{-- <input type="text" class="input_name form-control" placeholder="Name" />            --}}
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contentActionSend">
                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
-                 <input type="submit" value="Enviar">
+                 <input type="submit" value="Enviar" class="input_send">
               </div>
             </form>
             

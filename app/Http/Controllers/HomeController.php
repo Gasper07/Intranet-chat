@@ -77,14 +77,14 @@ class HomeController extends Controller
                 if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
                     $date = new \Carbon\Carbon($keyConversationBetwwenUser->created_at);                    
                     $Fechas = $date->format('d-m-Y');
-                    if(count($arrayMensagesFechas) == 0){
+                    if(count($arrayMensagesFechas) < 1 ){
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
                         $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         
                     }else{
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
-                            print_r($keyarrayMensagesFechas['fecha_conver']);
+                            print_r($keyarrayMensagesFechas[0]['fecha_conver']);
                             if($keyarrayMensagesFechas['fecha_conver'] == $Fechas){
                                 print_r('ece');
                                 $getMensages = $keyConversationBetwwenUser->conversations;

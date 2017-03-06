@@ -94,16 +94,22 @@ class HomeController extends Controller
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
                                 $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            }else{
+                                $getMensages = $keyConversationBetwwenUser->conversations;
+                                array_push($arrayMensages,$getMensages);
+                                $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                                array_push($arrayMensagesFechas,$newFechaConversation);
                             }
                         };   
-                        $bande = $bande+1;                   
+                        // $bande = $bande+1;                   
                        
-                    }elseif($bande == 2) {     
-                        $getMensages = $keyConversationBetwwenUser->conversations;
-                        array_push($arrayMensages,$getMensages);
-                        $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                        array_push($arrayMensagesFechas,$newFechaConversation);
-                    }          
+                    }
+                    // elseif($bande == 2) {     
+                    //     $getMensages = $keyConversationBetwwenUser->conversations;
+                    //     array_push($arrayMensages,$getMensages);
+                    //     $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                    //     array_push($arrayMensagesFechas,$newFechaConversation);
+                    // }          
                     
                     // $cosntructCoversation = array($keyConversationBetwwenUser->conversations);
                 }

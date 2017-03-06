@@ -92,11 +92,11 @@ class HomeController extends Controller
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
                                 if(count($arrayMensagesFechas) == 1){
-                                    print_r('es uno');
+                                    $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                                 }else{
                                     print_r('es mayor');
                                 }
-                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                                
                                 // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                             }else{
                                 print_r('ebtrNew');

@@ -91,7 +91,7 @@ class HomeController extends Controller
                                 print_r('ece');
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
-                                if(count($keyarrayMensagesFechas) == 1){
+                                if(count($arrayMensagesFechas) == 1){
                                     print_r('es uno');
                                 }else{
                                     print_r('es mayor');

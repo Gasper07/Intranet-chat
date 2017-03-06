@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
 		    	$.each(result, function(index, element) {
-		    		var vieElname = element.name;
+		    		var vieElname = element;
 		    		var vieIn = index;
 		    		console.log(vieElname);
 		    		console.log(vieIn);

@@ -14,7 +14,7 @@ if(isset($_POST['message']) && !empty($_POST['message'])) {
 	
 	// Return the received message
 	if($pusher->trigger('test_channel', 'my_event', $data)) {				
-		echo 'success';			
+		echo 'success comple';			
 	} else {		
 		echo 'error';	
 	}

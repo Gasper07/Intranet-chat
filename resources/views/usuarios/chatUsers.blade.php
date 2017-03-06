@@ -160,6 +160,7 @@
               @foreach($getUsers as $users)
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
                   <a href="#!" data-iduserchat="{{ $users->id }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
                       <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
                     </div>

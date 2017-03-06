@@ -57,6 +57,14 @@ class HomeController extends Controller
         return view('usuarios.chatUsers', compact('getUsers'));
     }
 
+    public function storeChat(Request $request){
+        if($request->ajax()) {
+            $dataId = $request->idForChat;
+            dd($dataId);
+            $idUserForChat   = facedesrequest::input('open_app');  
+        }
+    }
+
     public function Calendar()
     {
         return view('usuarios.calendario');

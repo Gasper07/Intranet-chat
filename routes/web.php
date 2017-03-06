@@ -23,11 +23,11 @@
 	});
 	Auth::routes();
 
-	Route::get('/chat', function () {
-	    return view('chat');
-	});
+	// Route::get('/chat', function () {
+	//     return view('chat');
+	// });
 
-	Route::get('/chatdemo', 'ChatController@index');
+	// Route::get('/chatdemo', 'ChatController@index');
 
 /*
 |--------------------------------------------------------------------------
@@ -68,6 +68,7 @@
 |
 */
 	Route::get('/chatUsers', 'HomeController@ChatEmpleados');
+	Route::post('/chatUsers', 'HomeController@storeChat');
 
 
 /*

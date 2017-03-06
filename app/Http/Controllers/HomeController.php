@@ -64,7 +64,7 @@ class HomeController extends Controller
             $arrayFechas = array();
             $arrayMensages = array();
             $arrayMensagesFechas = array();
-            $bande = 0;
+            $arrayVerifiFechas = array();
 
             $id_ForChat = $request->idForChat;
             $idUserLogin = Auth::user()->id;
@@ -89,19 +89,11 @@ class HomeController extends Controller
                     }elseif($bande == 1) {
                         // array_pop($arrayMensagesFechas)
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
-                            if($keyarrayMensagesFechas['fecha_conver'] == $Fechas){
-                                print_r('es igualw');
-                                $getMensages = $keyConversationBetwwenUser->conversations;
-                                array_push($arrayMensages,$getMensages);
-                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                            }else{
-                                $getMensages = $keyConversationBetwwenUser->conversations;
-                                array_push($arrayMensages,$getMensages);
-                                $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                                array_push($arrayMensagesFechas,$newFechaConversation);
-                            }
+                            array_push($arrayVerifiFechas,$keyarrayMensagesFechas);
+                            
                         };   
-                        
+                        print_r($arrayVerifiFechas);
+
                         // $bande = $bande+1;                   
                        
                     }

@@ -75,7 +75,8 @@ class HomeController extends Controller
 
             foreach ($ConversationBetwwenUser as $keyConversationBetwwenUser) {
                 if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
-                    $Fechas = $keyConversationBetwwenUser->created_at;
+                    $date = new \Carbon\Carbon($keyConversationBetwwenUser->created_at);                    
+                    $Fechas = $date->format('d-m-Y');
                     if(count($arrayMensagesFechas) == 0){
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayFechas,$Fechas);
@@ -84,6 +85,7 @@ class HomeController extends Controller
                     }else{
                         foreach ($arrayFechas as $keyFechas) {
                             if($keyFechas == $Fechas){
+                                print_r('ece');
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
                             }

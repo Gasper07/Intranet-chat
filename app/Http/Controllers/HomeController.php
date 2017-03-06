@@ -84,6 +84,7 @@ class HomeController extends Controller
                         
                     }else{
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
+                            dd($arrayMensagesFechas);
                             dd($keyarrayMensagesFechas);
                             if($keyarrayMensagesFechas['fecha_conver'] == $Fechas){
                                 print_r('ece');

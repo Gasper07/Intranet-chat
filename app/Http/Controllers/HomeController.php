@@ -64,6 +64,7 @@ class HomeController extends Controller
             $arrayFechas = array();
             $arrayMensages = array();
             $arrayMensagesFechas = array();
+            $bande = 0;
 
             $id_ForChat = $request->idForChat;
             $idUserLogin = Auth::user()->id;
@@ -77,7 +78,7 @@ class HomeController extends Controller
                 if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
                     $date = new \Carbon\Carbon($keyConversationBetwwenUser->created_at);                    
                     $Fechas = $date->format('d-m-Y');
-                    $bande = 0;
+                    
                     if($bande == 0){
                         print_r('proband');
                         $getMensages = $keyConversationBetwwenUser->conversations;
@@ -87,6 +88,8 @@ class HomeController extends Controller
                         $bande = $bande+1;
                     }elseif($bande > 0) {
                         array_pop($arrayMensagesFechas);
+                        // $key = array_search($Fechas, $arrayMensagesFechas);
+                        // print_r()
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
                         $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);

@@ -65,9 +65,11 @@ class HomeController extends Controller
 
             $queryConversationUser = User::findOrFail($id_ForChat);
             $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->where('id_user_conversation','=',$id_ForChat);
-            $arraysCOnversations = array('data_user' => $queryConversationUser,'data_user_Between_user' => $ConversationBetwwenUser );
+            
+            echo json_encode(array($queryConversationUser,$ConversationBetwwenUser));     
+            // $arraysCOnversations = array('data_user' => $queryConversationUser,'data_user_Between_user' => $ConversationBetwwenUser );
 
-            echo json_encode($arraysCOnversations);     
+            // echo json_encode($arraysCOnversations);     
         }
     }
 

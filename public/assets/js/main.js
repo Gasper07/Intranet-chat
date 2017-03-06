@@ -24,13 +24,18 @@ jQuery(document).ready(function($) {
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
-		    	$.each(result, function(index, element) {
-		    		var vieElname = element;
-		    		var vieIn = index;
-		    		console.log(vieElname);
-		    		console.log(vieIn);
-		    	});
-		        console.log('almacenado');
+		    	var columns_array=jQuery.parseJSON(result);
+		    	columns=columns_array[0];
+		    	columns1=columns_array[0];
+
+		    	// $.each(result, function(index, element) {
+		    	// 	var vieElname = element;
+		    	// 	var vieIn = index;
+		    	// 	console.log(vieElname);
+		    	// 	console.log(vieIn);
+		    	// });
+		        console.log(columns);
+		        console.log(columns1);
 		    },
 		    error: function() {
 		        console.log('Error');

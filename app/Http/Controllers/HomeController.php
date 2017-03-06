@@ -90,7 +90,7 @@ class HomeController extends Controller
                         // array_pop($arrayMensagesFechas)
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
                             if($keyarrayMensagesFechas['fecha_conver'] == $Fechas){
-                                print_r('es igual');
+                                print_r('es igualw');
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
                                 $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);

@@ -60,16 +60,24 @@ class HomeController extends Controller
 
     public function storeChat(Request $request){
         if($request->ajax()) {
+            $arrayCOnversation = array();
             $id_ForChat = $request->idForChat;
             $idUserLogin = Auth::user()->id;
 
             $queryConversationUser = User::findOrFail($id_ForChat);
             // $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->where('id_user_conversation','=',$id_ForChat);
-            $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->where('id_user_conversation','=',$id_ForChat)->get();
+            $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->get();
+            foreach ($ConversationBetwwenUser as $keyConversationBetwwenUser) {
+                if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
+                    $cosntructCoversation = $keyConversationBetwwenUser->conversations;
+                }
+                array_push($arrayCOnversation, $cosntructCoversation);
+            }
+            print_r($arrayCOnversation);
 
 
             // echo json_encode($queryConversationUser);
-            echo json_encode($ConversationBetwwenUser);
+            echo json_encode($$arrayCOnversation);
             // echo json_encode(array('result1'=>$queryConversationUser,'result2'=>$ConversationBetwwenUser));  
             // $arraysCOnversations = array('data_user' => $queryConversationUser,'data_user_Between_user' => $ConversationBetwwenUser );
 

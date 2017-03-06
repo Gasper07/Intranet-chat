@@ -80,7 +80,8 @@ class HomeController extends Controller
                     if(count($arrayMensagesFechas) < 1 ){
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
-                        $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                        $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                        array_push($arrayMensagesFechas,$newFechaConversation);
                         
                     }else{
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {

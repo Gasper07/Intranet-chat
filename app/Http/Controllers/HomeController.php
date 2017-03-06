@@ -87,9 +87,9 @@ class HomeController extends Controller
                         array_push($arrayMensagesFechas,$newFechaConversation);
                         $bande = $bande+1;
                     }elseif($bande > 0) {
-                        array_pop($arrayMensagesFechas);
-                        // $key = array_search($Fechas, $arrayMensagesFechas);
-                        // print_r()
+                        // array_pop($arrayMensagesFechas);
+                        $key = array_search($Fechas, $arrayMensagesFechas);
+                        print_r($key);
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
                         $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);

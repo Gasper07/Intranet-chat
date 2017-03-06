@@ -92,11 +92,12 @@ class HomeController extends Controller
                                 array_push($arrayMensages,$getMensages);
                                 $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                             }else{
+                                print_r('ebtrNew');
                                 $arrayMensages =array();
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
-                                $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                                array_push($arrayMensagesFechas,$newFechaConversation);
+                                $newFechaConversationMore = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                                array_push($arrayMensagesFechas,$newFechaConversationMore);
                             }
                         }
                     }

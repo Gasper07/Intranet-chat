@@ -79,25 +79,25 @@ class HomeController extends Controller
                     $Fechas = $date->format('d-m-Y');
                     if(count($arrayMensagesFechas) == 0){
                         $getMensages = $keyConversationBetwwenUser->conversations;
-                        array_push($arrayFechas,$Fechas);
                         array_push($arrayMensages,$getMensages);
+                        $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         
                     }else{
-                        foreach ($arrayFechas as $keyFechas) {
-                            if($keyFechas == $Fechas){
+                        foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
+                            if($keyFechas['fecha_conver'] == $Fechas){
                                 print_r('ece');
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
+                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                             }else{
                                 $getMensages = $keyConversationBetwwenUser->conversations;
-                                array_push($arrayFechas,$Fechas);
                                 array_push($arrayMensages,$getMensages);
                                 $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                                 array_push($arrayMensagesFechas,$newFechaConversation);
                             }
                         }
                     }
-                    $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                    
                     
                     // $cosntructCoversation = array($keyConversationBetwwenUser->conversations);
                 }

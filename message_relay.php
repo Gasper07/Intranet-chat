@@ -25,7 +25,7 @@ if(isset($_POST['message']) && !empty($_POST['message'])) {
 	// Return the received message
 	if($pusher->trigger('test_channel', 'my_event', $data)) {			
 		//MySqli Insert Query
-		$insert_row = $mysqli->query("INSERT INTO chats_users (id, conversations, id_user, id_user_conversation) VALUES('', '"$Menssage"', '55', '"$id_userConversation"')");
+		$insert_row = $mysqli->query("INSERT INTO chats_users (id, conversations, id_user, id_user_conversation) VALUES('', '$Menssage', '55', '$id_userConversation')");
 		mysqli_close($mysqli);
 	
 		echo 'success';			

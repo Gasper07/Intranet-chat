@@ -65,6 +65,7 @@ class HomeController extends Controller
             $arrayMensages = array();
             $arrayMensagesFechas = array();
             $arrayVerifiFechas = array();
+            $bande = 0;
 
             $id_ForChat = $request->idForChat;
             $idUserLogin = Auth::user()->id;
@@ -89,9 +90,14 @@ class HomeController extends Controller
                     }elseif($bande == 1) {
                         // array_pop($arrayMensagesFechas)
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
-                            array_push($arrayVerifiFechas,$keyarrayMensagesFechas);
-                            
+                            array_push($arrayVerifiFechas,$keyarrayMensagesFechas);                            
                         };   
+
+                        // if(in_array($Fechas, $arrayVerifiFechas)){
+                        //     print_r('exis');
+                        // }else{
+
+                        // }
                         print_r($arrayVerifiFechas);
 
                         // $bande = $bande+1;                   

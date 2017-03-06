@@ -284,8 +284,9 @@
      $('body').on('click', '.chat_box .input_send', function(e) {
       e.preventDefault();
       
-      var message=$('.chat_box .input_message').val();
-      var id_Usuario_conversation=$('.chat_box .input_name').val();
+      var message =$('.chat_box .input_message').val();
+      var id_Usuario_conversation =$('.chat_box .input_name').val();
+      var id_Usuario =$('.chat_box .input_id_user_logi').val();
       
       // Validate Name field
       if (id_Usuario_conversation === '') {
@@ -295,6 +296,8 @@
         // Define ajax data
         var chat_message={
           id_Usuario_conversation: $('.chat_box .input_name').val(),
+          id_Usuario: $('.chat_box .input_id_user_logi').val(),
+          conversation: message,
           message: '<strong>' + $('.chat_box .input_name').val() + '</strong>: ' + message
         }
         // Send the message to the server

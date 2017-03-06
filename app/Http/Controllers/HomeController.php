@@ -88,6 +88,12 @@ class HomeController extends Controller
                                 print_r('ece');
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);
+                            }else{
+                                $getMensages = $keyConversationBetwwenUser->conversations;
+                                array_push($arrayFechas,$Fechas);
+                                array_push($arrayMensages,$getMensages);
+                                $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                                array_push($arrayMensagesFechas,$newFechaConversation);
                             }
                         }
                     }

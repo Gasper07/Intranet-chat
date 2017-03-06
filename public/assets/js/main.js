@@ -27,6 +27,12 @@ jQuery(document).ready(function($) {
 		    	var columns_array=jQuery.parseJSON(result);
 		    	columns=columns_array[0];
 		    	columns1=columns_array[0];
+		    	$.each(result, function(i, item){
+	              var data21 = item.result1;
+	              var data22 = item.result2;
+	              console.log(data21);
+	              console.log(data22);
+	            });
 
 		    	// $.each(result, function(index, element) {
 		    	// 	var vieElname = element;

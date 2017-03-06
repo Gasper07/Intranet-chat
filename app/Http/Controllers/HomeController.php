@@ -61,18 +61,43 @@ class HomeController extends Controller
     public function storeChat(Request $request){
         if($request->ajax()) {
             $arrayCOnversation = array();
+            $arrayFechas = array();
+            $arrayMensages = array();
+            $arrayMensagesFechas = array();
+
             $id_ForChat = $request->idForChat;
             $idUserLogin = Auth::user()->id;
 
             $queryConversationUser = User::findOrFail($id_ForChat);
             // $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->where('id_user_conversation','=',$id_ForChat);
+
             $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->get();
+
             foreach ($ConversationBetwwenUser as $keyConversationBetwwenUser) {
                 if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
-                    $cosntructCoversation = $keyConversationBetwwenUser->conversations;
+                    $Fechas = $keyConversationBetwwenUser->created_at;
+                    if(count($arrayMensagesFechas) == 0){
+                        $getMensages = $keyConversationBetwwenUser->conversations;
+                        array_push($arrayFechas,$Fechas);
+                        array_push($arrayMensages,$getMensages);
+                        
+                    }else{
+                        foreach ($arrayFechas as $keyFechas) {
+                            if($keyFechas == $Fechas){
+                                $getMensages = $keyConversationBetwwenUser->conversations;
+                                array_push($arrayMensages,$getMensages);
+                            }
+                        }
+                    }
+                    $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                    
+                    // $cosntructCoversation = array($keyConversationBetwwenUser->conversations);
                 }
-                array_push($arrayCOnversation, $cosntructCoversation);
+                // array_push($arrayCOnversation, $cosntructCoversation);
             }
+
+            dd($arrayMensagesFechas);
+
             print_r($arrayCOnversation);
 
 

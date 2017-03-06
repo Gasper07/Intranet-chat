@@ -85,27 +85,21 @@ class HomeController extends Controller
                         array_push($arrayMensagesFechas,$newFechaConversation);
                         
                     }else{
-                        foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
-                            print_r($keyarrayMensagesFechas['fecha_conver']);
-                            if($keyarrayMensagesFechas['fecha_conver'] == $Fechas){
-                                print_r('ece');
-                                $getMensages = $keyConversationBetwwenUser->conversations;
-                                array_push($arrayMensages,$getMensages);
-                                if(count($arrayMensagesFechas) == 1){
-                                    $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                                }else{
-                                   $keyarrayMensagesFechas['mensages'] = $arrayMensages;
-                                }
-                                
-                                // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                            }else{
-                                print_r('ebtrNew');
-                                $arrayMensages =array();
-                                $getMensages = $keyConversationBetwwenUser->conversations;
-                                array_push($arrayMensages,$getMensages);
-                                $newFechaConversationMore = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                                array_push($arrayMensagesFechas,$newFechaConversationMore);
-                            }
+                        // $search_array = array('first' => 1, 'second' => 4);
+                        if (array_key_exists($Fechas, $arrayMensagesFechas)) {
+                            print_r('exite');
+                            $getMensages = $keyConversationBetwwenUser->conversations;
+                            array_push($arrayMensages,$getMensages);
+                            // if(count($arrayMensagesFechas) == 1){
+                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            // }
+                        }else{
+                            print_r('no existe');
+                            $arrayMensages =array();
+                            $getMensages = $keyConversationBetwwenUser->conversations;
+                            array_push($arrayMensages,$getMensages);
+                            $newFechaConversationMore = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            array_push($arrayMensagesFechas,$newFechaConversationMore);
                         }
                     }
                     

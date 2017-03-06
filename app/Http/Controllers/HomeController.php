@@ -59,9 +59,9 @@ class HomeController extends Controller
 
     public function storeChat(Request $request){
         if($request->ajax()) {
-            $dataId = $request->idForChat;
-            dd($dataId);
-            $idUserForChat   = facedesrequest::input('open_app');  
+            $id_ForChat = $request->idForChat;
+            $queryConversationUser = $Users = User::findOrFail($id_ForChat);
+            echo json_encode($queryConversationUser);     
         }
     }
 

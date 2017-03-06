@@ -24,6 +24,12 @@ jQuery(document).ready(function($) {
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
+		    	$.each(result, function(index, element) {
+		    		var vieEl = element;
+		    		var vieIn = index;
+		    		console.log(vieEl);
+		    		console.log(vieIn);
+		    	}
 		        console.log('almacenado');
 		    },
 		    error: function() {

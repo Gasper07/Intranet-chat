@@ -25,11 +25,11 @@ jQuery(document).ready(function($) {
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
 		    	$.each(result, function(index, element) {
-		    		var vieEl = element;
+		    		var vieElname = element.name;
 		    		var vieIn = index;
-		    		console.log(vieEl);
+		    		console.log(vieElname);
 		    		console.log(vieIn);
-		    	}
+		    	});
 		        console.log('almacenado');
 		    },
 		    error: function() {

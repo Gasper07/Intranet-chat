@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 use App\User;
 use App\Chats;
 
@@ -60,7 +61,10 @@ class HomeController extends Controller
     public function storeChat(Request $request){
         if($request->ajax()) {
             $id_ForChat = $request->idForChat;
+            $idUserLogin = Auth::user()->id;
+
             $queryConversationUser = $Users = User::findOrFail($id_ForChat);
+            $ConversationBetwwenUser = $Users = Chats::where('id_user','=',$idUserLogin)->where('id_user_conversation','=',$id_ForChat);
             echo json_encode($queryConversationUser);     
         }
     }

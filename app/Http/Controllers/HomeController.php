@@ -77,34 +77,20 @@ class HomeController extends Controller
                 if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
                     $date = new \Carbon\Carbon($keyConversationBetwwenUser->created_at);                    
                     $Fechas = $date->format('d-m-Y');
-                    if(count($arrayMensagesFechas) == 0 ){
+                    $bande = 0;
+                    if($bande == 0){
                         print_r('proband');
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
                         $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         array_push($arrayMensagesFechas,$newFechaConversation);
-                        
-                    }else{
-                        // $search_array = array('first' => 1, 'second' => 4);
-                        $indice = array_search($Fechas,$arrayMensagesFechas,false);
-                        if ($indice !== false) {
-                            print_r('no existe');
-                            $arrayMensages =array();
-                            $getMensages = $keyConversationBetwwenUser->conversations;
-                            array_push($arrayMensages,$getMensages);
-                            $newFechaConversationMore = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                            array_push($arrayMensagesFechas,$newFechaConversationMore);
-                            
-                        }else{
-                            print_r('exite');
-                            $getMensages = $keyConversationBetwwenUser->conversations;
-                            array_push($arrayMensages,$getMensages);
-                            // if(count($arrayMensagesFechas) == 1){
-                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                            // }
-                        }
-                    }
-                    
+                    }elseif($bande > 0) {
+                        array_pop($arrayMensagesFechas);
+                        $getMensages = $keyConversationBetwwenUser->conversations;
+                        array_push($arrayMensages,$getMensages);
+                        $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                        array_push($arrayMensagesFechas,$newFechaConversation);
+                    }                  
                     
                     // $cosntructCoversation = array($keyConversationBetwwenUser->conversations);
                 }

@@ -89,11 +89,9 @@ class HomeController extends Controller
                             print_r($keyarrayMensagesFechas['fecha_conver']);
                             if($keyarrayMensagesFechas['fecha_conver'] == $Fechas){
                                 print_r('ece');
-                                $getMensagesAnterioir = $keyarrayMensagesFechas['mensages'];
                                 $getMensages = $keyConversationBetwwenUser->conversations;
-                                $arrayOfMensages = array($getMensagesAnterioir,$getMensages);
-                                array_push($arrayMensages,$arrayOfMensages);
-                                $keyarrayMensagesFechas['mensages'] = $arrayMensages;
+                                array_push($arrayMensages,$getMensages);
+                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                                 // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                             }else{
                                 print_r('ebtrNew');

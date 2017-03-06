@@ -78,6 +78,7 @@ class HomeController extends Controller
                     $date = new \Carbon\Carbon($keyConversationBetwwenUser->created_at);                    
                     $Fechas = $date->format('d-m-Y');
                     if(count($arrayMensagesFechas) < 1 ){
+                        print_r('proband');
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
                         $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);

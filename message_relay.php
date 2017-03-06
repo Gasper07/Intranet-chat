@@ -12,7 +12,7 @@ $mysqli = new mysqli("btzb9icdm-mysql.services.clever-cloud.com", "u6v5e7r3xhfoa
 
 /* check connection */
 if (mysqli_connect_errno()) {
-    printf("Error de conexión: %s\n", mysqli_connect_error());
+    prin_r("Error de conexión: %s\n", mysqli_connect_error());
     exit();
 }
 
@@ -26,7 +26,7 @@ if(isset($_POST['message']) && !empty($_POST['message'])) {
 	// Return the received message
 	if($pusher->trigger('test_channel', 'my_event', $data)) {		
 		$mysqli->query("INSERT INTO chats_users ('id','conversations','id_user','created_at','updated_at') VALUES ('',$data['message'],'5','','') ");
-		printf("Se creó con éxtio la tabla myCity.\n");
+		prin_r("Se creó con éxtio la tabla myCity.\n");
 		mysqli_close($mysqli);		
 
 		echo 'success';			

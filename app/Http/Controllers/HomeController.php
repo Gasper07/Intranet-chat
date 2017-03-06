@@ -84,8 +84,8 @@ class HomeController extends Controller
                         
                     }else{
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
-                            print_r($keyarrayMensagesFechas);
-                            if($keyarrayMensagesFechas == $Fechas){
+                            print_r($keyarrayMensagesFechas['fecha_conver']);
+                            if($keyarrayMensagesFechas['fecha_conver'] == $Fechas){
                                 print_r('ece');
                                 $getMensages = $keyConversationBetwwenUser->conversations;
                                 array_push($arrayMensages,$getMensages);

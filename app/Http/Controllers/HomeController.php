@@ -94,7 +94,7 @@ class HomeController extends Controller
                                 if(count($arrayMensagesFechas) == 1){
                                     $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                                 }else{
-                                    print_r('es mayor');
+                                   $keyarrayMensagesFechas['mensages'] = $arrayMensages;
                                 }
                                 
                                 // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);

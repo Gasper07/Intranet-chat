@@ -285,16 +285,16 @@
       e.preventDefault();
       
       var message=$('.chat_box .input_message').val();
-      var name=$('.chat_box .input_name').val();
+      var id_Usuario_conversation=$('.chat_box .input_name').val();
       
       // Validate Name field
-      if (name === '') {
+      if (id_Usuario_conversation === '') {
         bootbox.alert('<br /><p class="bg-danger">Please enter a Name.</p>');
       
       } else if (message !== '') {
         // Define ajax data
         var chat_message={
-          name: $('.chat_box .input_name').val(),
+          id_Usuario_conversation: $('.chat_box .input_name').val(),
           message: '<strong>' + $('.chat_box .input_name').val() + '</strong>: ' + message
         }
         // Send the message to the server

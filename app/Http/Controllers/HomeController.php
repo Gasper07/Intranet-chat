@@ -86,20 +86,22 @@ class HomeController extends Controller
                         
                     }else{
                         // $search_array = array('first' => 1, 'second' => 4);
-                        if (array_key_exists($Fechas, $arrayMensagesFechas)) {
-                            print_r('exite');
-                            $getMensages = $keyConversationBetwwenUser->conversations;
-                            array_push($arrayMensages,$getMensages);
-                            // if(count($arrayMensagesFechas) == 1){
-                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                            // }
-                        }else{
+                        $indice = array_search($Fechas,$arrayMensagesFechas,false);
+                        if ($indice !== false) {
                             print_r('no existe');
                             $arrayMensages =array();
                             $getMensages = $keyConversationBetwwenUser->conversations;
                             array_push($arrayMensages,$getMensages);
                             $newFechaConversationMore = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                             array_push($arrayMensagesFechas,$newFechaConversationMore);
+                            
+                        }else{
+                            print_r('exite');
+                            $getMensages = $keyConversationBetwwenUser->conversations;
+                            array_push($arrayMensages,$getMensages);
+                            // if(count($arrayMensagesFechas) == 1){
+                                $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            // }
                         }
                     }
                     

@@ -97,7 +97,7 @@ class HomeController extends Controller
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
                                if($value['fecha_conver'] == $Fechas){
                                   $mensagesAnterior = $value['mensages'];
-                                  foreach ($mensagesAnteriore as $keymensagesAnterior) {
+                                  foreach ($mensagesAnterior as $keymensagesAnterior) {
                                       array_push($newGruopMensages,$keymensagesAnterior);
                                   }
                                   $getMensages = $keyConversationBetwwenUser->conversations;

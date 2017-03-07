@@ -96,15 +96,15 @@ class HomeController extends Controller
 
                         if(in_array($Fechas, $arrayVerifiFechas)){
                             print_r('exis');
-                            // $getMensages = $keyConversationBetwwenUser->conversations;
-                            // array_push($arrayMensages,$getMensages);
-                            // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            $getMensages = $keyConversationBetwwenUser->conversations;
+                            array_push($arrayMensages,$getMensages);
+                            $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         }else{
                             print_r('no exis');
-                            // $getMensages = $keyConversationBetwwenUser->conversations;
-                            // array_push($arrayMensages,$getMensages);
-                            // $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                            // array_push($arrayMensagesFechas,$newFechaConversation);
+                            $getMensages = $keyConversationBetwwenUser->conversations;
+                            array_push($arrayMensages,$getMensages);
+                            $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            array_push($arrayMensagesFechas,$newFechaConversation);
                         }
                         // print_r($arrayVerifiFechas);
 

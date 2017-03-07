@@ -104,7 +104,7 @@ class HomeController extends Controller
                                   }
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($newGruopMensages,$getMensages);
-                                  unset($array[$positionOfArray]);
+                                  unset($arrayMensagesFechas[$positionOfArray]);
                                   // $removeElementSelccionado = array_pop($stack);
                                   $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $newGruopMensages);
                                   array_push($arrayMensagesFechas,$newFechaConversation);

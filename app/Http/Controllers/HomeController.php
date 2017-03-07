@@ -90,7 +90,7 @@ class HomeController extends Controller
                         // array_pop($arrayMensagesFechas)
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
                             // print_r($keyarrayMensagesFechas['fecha_conver']);
-                            dd($arrayMensagesFechas);
+                            dd($keyarrayMensagesFechas);
                             $fech = $keyarrayMensagesFechas['fecha_conver'];
                             array_push($arrayVerifiFechas,$fech);                            
                         };   

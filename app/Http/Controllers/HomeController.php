@@ -79,22 +79,29 @@ class HomeController extends Controller
 
             foreach ($ConversationBetwwenUser as $keyConversationBetwwenUser) {
                 if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
+                    /*Convertimos fechas*/
                     $date = new \Carbon\Carbon($keyConversationBetwwenUser->created_at);                    
                     $Fechas = $date->format('d-m-Y');
-                    
+                    /*Creamos primer array para iniciar*/
                     if($bande == 0){
+                        /*Guardamos el mensaje en el array*/
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
+                        /*Guardamos la fechas en el array*/
                         $getDates = $Fechas;
                         array_push($arrayGetDates,$getDates);
+                        /*Creamos nuestro bloque de fecha y mensajes enviados*/
                         $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         array_push($arrayMensagesFechas,$newFechaConversation);
                         $bande = $bande+1;
-                    }elseif($bande == 1) {
-                        
-                        if(in_array($Fechas, $arrayGetDates)){                            
-
+                    }elseif($bande == 1) {     
+                        /*** 
+                        Busca dentro del array de fechas, si dentro del array de fechas, la fecha que viene esta 
+                        repetida entonces, entonces vas a agrupar le mensaje dentro del bloque de fecha existente
+                        ***/
+                        if(in_array($Fechas, $arrayGetDates)){     
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
+                                /* Si del array de mensajes y fechas la fecha es igual, entonces  descomponeme el array*/
                                if($value['fecha_conver'] == $Fechas){
                                   $newGruopMensages = array();
                                   $positionOfArray =$keyarrayMensagesFechas;
@@ -105,14 +112,11 @@ class HomeController extends Controller
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($newGruopMensages,$getMensages);
                                   unset($arrayMensagesFechas[$positionOfArray]);
-                                  // $removeElementSelccionado = array_pop($stack);
                                   $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $newGruopMensages);
                                   array_push($arrayMensagesFechas,$newFechaConversation);
 
                                }
                             }
-
-                            // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         }else{
                             $arrayMensages = array();
                             $getMensages = $keyConversationBetwwenUser->conversations;
@@ -121,30 +125,10 @@ class HomeController extends Controller
                             array_push($arrayGetDates,$getDates);
                             $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                             array_push($arrayMensagesFechas,$newFechaConversation);
-                        }
-                        // print_r($arrayVerifiFechas);
-
-                        // $bande = $bande+1;                   
-                       
+                        }                                 
                     }
-                    // elseif($bande == 2) {     
-                    //     $getMensages = $keyConversationBetwwenUser->conversations;
-                    //     array_push($arrayMensages,$getMensages);
-                    //     $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
-                    //     array_push($arrayMensagesFechas,$newFechaConversation);
-                    // }          
-                    
-                    // $cosntructCoversation = array($keyConversationBetwwenUser->conversations);
                 }
-                // array_push($arrayCOnversation, $cosntructCoversation);
             }
-
-            dd($arrayMensagesFechas);
-
-            print_r($arrayCOnversation);
-
-
-            // echo json_encode($queryConversationUser);
             echo json_encode($arrayCOnversation);
             // echo json_encode(array('result1'=>$queryConversationUser,'result2'=>$ConversationBetwwenUser));  
             // $arraysCOnversations = array('data_user' => $queryConversationUser,'data_user_Between_user' => $ConversationBetwwenUser );

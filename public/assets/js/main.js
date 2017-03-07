@@ -29,7 +29,13 @@ jQuery(document).ready(function($) {
 		    		var vieIn = index;
 		    		console.log(vieElname);
 		    	});
+
 		        console.log('almacenado');
+		    	$.each(result, function(index, element) {
+		    		var data = jQuery.parseJSON(element);
+		    		var dateMensagge = data.fecha_conver;
+		    		console.log(dateMensagge);
+		    	});
 		    },
 		    error: function() {
 		        console.log('Error');

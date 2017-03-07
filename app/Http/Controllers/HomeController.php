@@ -93,7 +93,7 @@ class HomeController extends Controller
                             // dd($arrayMensagesFechas[$i]['fecha_conver']);
                            $fech = $arrayMensagesFechas[$i]['fecha_conver'];
                            array_push($arrayVerifiFechas,$fech);  
-                            echo '<pre>'; print($arrayVerifiFechas); echo '</pre>';
+                           echo '<pre>'; print_r($arrayVerifiFechas); echo '</pre>';
                         }   
                         // dd($arrayVerifiFechas);
 

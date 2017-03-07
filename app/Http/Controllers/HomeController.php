@@ -81,7 +81,6 @@ class HomeController extends Controller
                     $Fechas = $date->format('d-m-Y');
                     
                     if($bande == 0){
-                        print_r('proband');
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
                         $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
@@ -93,12 +92,19 @@ class HomeController extends Controller
                             array_push($arrayVerifiFechas,$keyarrayMensagesFechas);                            
                         };   
 
-                        // if(in_array($Fechas, $arrayVerifiFechas)){
-                        //     print_r('exis');
-                        // }else{
-
-                        // }
-                        print_r($arrayVerifiFechas);
+                        if(in_array($Fechas, $arrayVerifiFechas)){
+                            print_r('exis');
+                            // $getMensages = $keyConversationBetwwenUser->conversations;
+                            // array_push($arrayMensages,$getMensages);
+                            // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                        }else{
+                            print_r('no exis');
+                            // $getMensages = $keyConversationBetwwenUser->conversations;
+                            // array_push($arrayMensages,$getMensages);
+                            // $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            // array_push($arrayMensagesFechas,$newFechaConversation);
+                        }
+                        // print_r($arrayVerifiFechas);
 
                         // $bande = $bande+1;                   
                        

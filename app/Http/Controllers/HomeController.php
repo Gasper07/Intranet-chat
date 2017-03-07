@@ -88,13 +88,11 @@ class HomeController extends Controller
                         $bande = $bande+1;
                     }elseif($bande == 1) {
                         // array_pop($arrayMensagesFechas)
-                        $cantidadBlques = count($arrayMensagesFechas);
-                        for ($i=0; $i < $cantidadBlques; $i++) { 
-                            // dd($arrayMensagesFechas[$i]['fecha_conver']);
-                           $fech = $arrayMensagesFechas[$i]['fecha_conver'];
-                           array_push($arrayVerifiFechas,$fech);  
-                           echo '<pre>'; print_r($arrayVerifiFechas); echo '</pre>';
-                        }   
+                        foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $dates) {
+                            // print_r($keyarrayMensagesFechas['fecha_conver']);
+                            $fech = $dates;
+                            array_push($arrayVerifiFechas,$fech);                            
+                        };   
                         // dd($arrayVerifiFechas);
 
                         if(in_array($Fechas, $arrayVerifiFechas)){

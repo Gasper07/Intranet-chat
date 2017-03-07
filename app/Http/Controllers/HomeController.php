@@ -103,7 +103,8 @@ class HomeController extends Controller
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($newGruopMensages,$getMensages);
                                   echo '<pre>'; print_r($newGruopMensages);  echo '</pre>';
-                                  $value['mensages'] = $newGruopMensages;
+                                  $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $newGruopMensages);
+                                  array_push($arrayMensagesFechas,$newFechaConversation);
 
                                }
                             }

@@ -32,6 +32,7 @@ jQuery(document).ready(function($) {
 		    		var mensages = '';
 		    		$.each(arrayMensagge, function(index, element) {
 		    			mensages = element;
+		    			$('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatMy').append('<div class="col-lg-12 MensaGedate getUserSend"><div class="col-lg-12 GetAllMensage"><div class="col-lg-12 wrapMensage"><p>'+mensages+'</p></div></div></div>')
 		    			console.log(mensages);
 	    			});
 		    		console.log(dataFecha);

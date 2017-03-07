@@ -201,7 +201,7 @@ class HomeController extends Controller
             $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
             asort($SendAndRecive);
 
-            dd($SendAndRecive);
+            // dd($SendAndRecive);
 
             echo json_encode($SendAndRecive);
 

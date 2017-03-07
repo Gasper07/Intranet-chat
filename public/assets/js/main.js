@@ -25,6 +25,7 @@ jQuery(document).ready(function($) {
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
 		    	$.each(result, function(index, element) {
+		    		var elem = element;
 		    		var dataFecha = element.fecha_conver;
 		    		var dataWithUserSend = element.userSend;
 		    		var dataWithUserReceive = element.userReceive;

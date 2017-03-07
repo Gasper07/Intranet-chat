@@ -146,7 +146,7 @@ class HomeController extends Controller
                 if($keyConversationBetwwenUser2->id_user == $id_ForChat){
                     /*Convertimos fechas*/
                     $date2 = new \Carbon\Carbon($keyConversationBetwwenUser2->created_at);                    
-                    $Fechas2 = $date->format('d-m-Y');
+                    $Fechas2 = $date2->format('d-m-Y');
                     /*Creamos primer array para iniciar*/
                     if($bande2 == 0){
                         /*Guardamos el mensaje en el array*/
@@ -158,7 +158,7 @@ class HomeController extends Controller
                         /*Creamos nuestro bloque de fecha y mensajes enviados*/
                         $newFechaConversation2 = array('fecha_conver' => $Fechas2,'mensages' => $arrayMensages2);
                         array_push($arrayMensagesFechas2,$newFechaConversation2);
-                        $bande2 = $bande+1;
+                        $bande2 = $bande2+1;
                     }elseif($bande2 == 1) {     
                         /*** 
                         Busca dentro del array de fechas, si dentro del array de fechas, la fecha que viene esta 
@@ -185,7 +185,7 @@ class HomeController extends Controller
                         }else{
                             $arrayMensages2 = array();
                             $getMensages2 = $keyConversationBetwwenUser2->conversations;
-                            array_push($arrayMensages,$getMensages2);
+                            array_push($arrayMensages2,$getMensages2);
                             $getDates2 = $Fechas2;
                             array_push($arrayGetDates2,$getDates2);
                             $newFechaConversation2 = array('fecha_conver' => $Fechas2,'mensages' => $arrayMensages2);

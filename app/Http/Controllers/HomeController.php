@@ -148,7 +148,7 @@ class HomeController extends Controller
                     /*Convertimos fechas*/
                     $date2 = new \Carbon\Carbon($keyConversationBetwwenUser2->created_at);                    
                     $Fechas2 = $date2->format('d-m-Y');
-                    $time2 = $date->format('H:i:s');
+                    $time2 = $date2->format('H:i:s');
                     /*Creamos primer array para iniciar*/
                     if($bande2 == 0){
                         /*Guardamos el mensaje en el array*/

@@ -75,7 +75,7 @@ class HomeController extends Controller
             $queryConversationUser = User::findOrFail($id_ForChat);
             // $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->where('id_user_conversation','=',$id_ForChat);
 
-            $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->get();
+            $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->orWhere('id_user_conversation', $idUserLogin)->get();
 
             foreach ($ConversationBetwwenUser as $keyConversationBetwwenUser) {
                 if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){

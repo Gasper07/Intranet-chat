@@ -90,9 +90,10 @@ class HomeController extends Controller
                         // array_pop($arrayMensagesFechas)
                         $cantidadBlques = count($arrayMensagesFechas);
                         for ($i=0; $i < $cantidadBlques; $i++) { 
-                            print('entro');
+                            // dd($arrayMensagesFechas[$i]['fecha_conver']);
                            $fech = $arrayMensagesFechas[$i]['fecha_conver'];
                            array_push($arrayVerifiFechas,$fech);  
+                            echo '<pre>'; print($arrayVerifiFechas); echo '</pre>';
                         }   
                         // dd($arrayVerifiFechas);
 

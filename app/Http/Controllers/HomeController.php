@@ -167,10 +167,10 @@ class HomeController extends Controller
                         if(in_array($Fechas2, $arrayGetDates2)){     
                             foreach ($arrayMensagesFechas2 as $keyarrayMensagesFechas2 => $value2) {
                                 /* Si del array de mensajes y fechas la fecha es igual, entonces  descomponeme el array*/
-                               if($value['fecha_conver'] == $Fechas2){
+                               if($value2['fecha_conver'] == $Fechas2){
                                   $newGruopMensages2 = array();
                                   $positionOfArray2 =$keyarrayMensagesFechas2;
-                                  $mensagesAnterior2 = $value['mensages'];
+                                  $mensagesAnterior2 = $value2['mensages'];
                                   foreach ($mensagesAnterior2 as $keymensagesAnterior2) {
                                       array_push($newGruopMensages2,$keymensagesAnterior2);
                                   }

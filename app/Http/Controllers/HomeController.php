@@ -196,6 +196,7 @@ class HomeController extends Controller
             }
 
             $SendAndRecive = array($arrayMensagesFechas,$arrayMensagesFechas2);
+            dd($SendAndRecive);
 
             echo json_encode($SendAndRecive);
 

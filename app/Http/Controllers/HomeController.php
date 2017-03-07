@@ -91,13 +91,12 @@ class HomeController extends Controller
                         $bande = $bande+1;
                     }elseif($bande == 1) {
                         
-                        if(in_array($Fechas, $arrayGetDates)){
-                            
+                        if(in_array($Fechas, $arrayGetDates)){                            
 
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
                                if($value['fecha_conver'] == $Fechas){
-                                  echo '<pre>'; print_r('es igual');  echo '</pre>';
                                   $mensagesAnterior = $value['mensages'];
+                                  echo '<pre>'; print_r($mensagesAnterior);  echo '</pre>';
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($mensagesAnterior,$getMensages);
                                }

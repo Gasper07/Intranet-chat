@@ -96,6 +96,7 @@ class HomeController extends Controller
 
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
                                if($value['fecha_conver'] == $Fechas){
+                                  $newGruopMensages = array();
                                   $mensagesAnterior = $value['mensages'];
                                   foreach ($mensagesAnterior as $keymensagesAnterior) {
                                       array_push($newGruopMensages,$keymensagesAnterior);

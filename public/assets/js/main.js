@@ -25,37 +25,20 @@ jQuery(document).ready(function($) {
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
 		    	$.each(result, function(index, element) {
-		    		console.log(element);
-			    	$.each(element, function(index, element2) {
-			    		var dataFecha = element2.fecha_conver;
-			    		var arrayMensagge = element2.mensages;
-			    		var mensages = '';
-			    		$.each(arrayMensagge, function(index, element2) {
-			    			mensages = element2;
-		    			});
-			    		// console.log(dataFecha);
-			    		console.log(arrayMensagge);
-			    		// console.log(mensages);
-			    	});
+		    		var dataFecha = element.fecha_conver;
+		    		var dataWithUserSend = element.userSend;
+		    		var dataWithUserReceive = element.userReceive;
+		    		var arrayMensagge = element.mensages;
+		    		var mensages = '';
+		    		$.each(arrayMensagge, function(index, element) {
+		    			mensages = element;
+		    			console.log(mensages);
+	    			});
+		    		console.log(dataFecha);
+		    		console.log(arrayMensagge);
+		    	});
 
-			        console.log('almacenado dea');
-
-	    	    	$.each(element, function(index, element3) {
-	    	    		var dataFecha2 = element3.fecha_conver;
-	    	    		var arrayMensagge2 = element3.mensages;
-	    	    		var mensages2 = '';
-	    	    		$.each(arrayMensagge2, function(index, element3) {
-	    	    			mensages2 = element3;
-	        			});
-	    	    		// console.log(dataFecha2);
-	    	    		console.log(arrayMensagge2);
-	    	    		// console.log(mensages2);
-	    	    	});
-	    		});
-
-		    	
-
-		        
+		        console.log('almacenado');
 		    	// $.each(result, function(index, element) {
 		    	// 	var data = jQuery.parseJSON(element);
 		    	// 	var dateMensagge = data.fecha_conver;

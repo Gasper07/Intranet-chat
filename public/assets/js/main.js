@@ -40,6 +40,7 @@ jQuery(document).ready(function($) {
 		    			}
 		    			console.log(mensages);
 	    			});
+		    		console.log(elem);
 		    		console.log(dataFecha);
 		    		console.log(arrayMensagge);
 		    	});

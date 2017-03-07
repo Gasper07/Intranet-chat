@@ -98,6 +98,7 @@ class HomeController extends Controller
                                   $mensagesAnterior = $value['mensages'];
                                   echo '<pre>'; print_r($mensagesAnterior);  echo '</pre>';
                                   $getMensages = $keyConversationBetwwenUser->conversations;
+                                  echo '<pre>'; print_r($getMensages);  echo '</pre>';
                                   array_push($mensagesAnterior,$getMensages);
                                }
                             }

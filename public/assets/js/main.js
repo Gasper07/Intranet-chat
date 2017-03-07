@@ -37,13 +37,13 @@ jQuery(document).ready(function($) {
 		    		/**** si son mensajes que el user envio, lo coloca en un extremo, si no lo coloca al otro
 		    		extremo****/
 	    			if(dataWithUserSend == 1){
-	    			  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatMy').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'"><div class="col-lg-12 GetAllMensage"></div></div>');	
+	    			  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatMy').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'"><div class="col-lg-12 GetAllMensage">'+dataFecha+'</div></div>');	
 		  	    		$.each(arrayMensagge, function(index, element) {
 		  	    			mensages = element;
 		  	    			$('.getSenMenIds'+elem+'>.GetAllMensage').append('<div class="col-lg-12 wrapMensage envMensga'+elem+'"><p>'+mensages+'</p></div>');
 		      			});
 	    			}else{
-    				  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserReceive getReceMenIds'+elem+'"><div class="col-lg-12 GetAllMensage"></div></div>');	
+    				  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserReceive getReceMenIds'+elem+'"><div class="col-lg-12 GetAllMensage">'+dataFecha+'</div></div>');	
 			    	  $.each(arrayMensagge, function(index, element) {
 			    	    mensages = element;
 			    		$('.getReceMenIds'+elem+'>.GetAllMensage').append('<div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div>');

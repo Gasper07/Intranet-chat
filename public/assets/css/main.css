@@ -1883,6 +1883,25 @@ form.formSearchChat>div {
   /* position: absolute; */
   background-color: #f1f0f0;
   border-radius: 10px;
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage>div {
+  color: #fff;
+  margin: 1px 0;
+}
+
+.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage>div>p {
+  padding: 6px 12px;
+  width: auto;
+  float: left;
+  display: block;
+  text-align: right;
+  background-color: #0071bc;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
 }
 
 

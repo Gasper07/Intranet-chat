@@ -199,7 +199,7 @@ class HomeController extends Controller
 
             // $SendAndRecive = array($arrayMensagesFechas,$arrayMensagesFechas2);
             $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
-            asort($SendAndRecive);
+            rsort($SendAndRecive);
 
             // dd($SendAndRecive);
 

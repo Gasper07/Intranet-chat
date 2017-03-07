@@ -26,9 +26,14 @@ jQuery(document).ready(function($) {
 		    success: function(result, index, value, data) {
 		    	$.each(result, function(index, element) {
 		    		var dataFecha = element.fecha_conver;
-		    		var dataMensagge = element.mensages;
+		    		var arrayMensagge = element.mensages;
+		    		var mensages = '';
+		    		$.each(arrayMensagge, function(index, element) {
+		    			mensages = element;
+	    			});
 		    		console.log(dataFecha);
-		    		console.log(dataMensagge);
+		    		console.log(arrayMensagge);
+		    		console.log(mensages);
 		    	});
 
 		        console.log('almacenado');

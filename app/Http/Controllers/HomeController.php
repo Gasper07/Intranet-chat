@@ -101,7 +101,7 @@ class HomeController extends Controller
                         $getDates = $Fechas;
                         array_push($arrayGetDates,$getDates);
                         /*Creamos nuestro bloque de fecha y mensajes enviados*/
-                        $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                        $newFechaConversation = array('fecha_conver' => $Fechas,'userSend' => 1,'mensages' => $arrayMensages);
                         array_push($arrayMensagesFechas,$newFechaConversation);
                         $bande = $bande+1;
                     }elseif($bande == 1) {     
@@ -122,7 +122,7 @@ class HomeController extends Controller
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($newGruopMensages,$getMensages);
                                   unset($arrayMensagesFechas[$positionOfArray]);
-                                  $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $newGruopMensages);
+                                  $newFechaConversation = array('fecha_conver' => $Fechas,'userSend' => 1,'mensages' => $newGruopMensages);
                                   array_push($arrayMensagesFechas,$newFechaConversation);
 
                                }
@@ -133,7 +133,7 @@ class HomeController extends Controller
                             array_push($arrayMensages,$getMensages);
                             $getDates = $Fechas;
                             array_push($arrayGetDates,$getDates);
-                            $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            $newFechaConversation = array('fecha_conver' => $Fechas,'userSend' => 1,'mensages' => $arrayMensages);
                             array_push($arrayMensagesFechas,$newFechaConversation);
                         }                                 
                     }
@@ -156,7 +156,7 @@ class HomeController extends Controller
                         $getDates2 = $Fechas2;
                         array_push($arrayGetDates2,$getDates2);
                         /*Creamos nuestro bloque de fecha y mensajes enviados*/
-                        $newFechaConversation2 = array('fecha_conver' => $Fechas2,'mensages' => $arrayMensages2);
+                        $newFechaConversation2 = array('fecha_conver' => $Fechas2,'userReceive' => 1,'mensages' => $arrayMensages2);
                         array_push($arrayMensagesFechas2,$newFechaConversation2);
                         $bande2 = $bande2+1;
                     }elseif($bande2 == 1) {     
@@ -177,7 +177,7 @@ class HomeController extends Controller
                                   $getMensages2 = $keyConversationBetwwenUser2->conversations;
                                   array_push($newGruopMensages2,$getMensages2);
                                   unset($arrayMensagesFechas2[$positionOfArray2]);
-                                  $newFechaConversation2 = array('fecha_conver' => $Fechas2,'mensages' => $newGruopMensages2);
+                                  $newFechaConversation2 = array('fecha_conver' => $Fechas2,'userReceive' => 1,'mensages' => $newGruopMensages2);
                                   array_push($arrayMensagesFechas2,$newFechaConversation2);
 
                                }
@@ -188,7 +188,7 @@ class HomeController extends Controller
                             array_push($arrayMensages2,$getMensages2);
                             $getDates2 = $Fechas2;
                             array_push($arrayGetDates2,$getDates2);
-                            $newFechaConversation2 = array('fecha_conver' => $Fechas2,'mensages' => $arrayMensages2);
+                            $newFechaConversation2 = array('fecha_conver' => $Fechas2,'userReceive' => 1,'mensages' => $arrayMensages2);
                             array_push($arrayMensagesFechas2,$newFechaConversation2);
                         }                                 
                     }

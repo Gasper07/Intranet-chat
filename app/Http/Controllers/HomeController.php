@@ -140,7 +140,7 @@ class HomeController extends Controller
                 }
             }
 
-            echo json_encode($arrayMensagesFechas);
+            
 
             foreach ($ConversationBetwwenUser2 as $keyConversationBetwwenUser2) {
                 if($keyConversationBetwwenUser2->id_user == $id_ForChat){
@@ -195,7 +195,8 @@ class HomeController extends Controller
                 }
             }
 
-            echo json_encode($arrayMensagesFechas2);
+            echo json_encode($arrayMensagesFechas,$arrayMensagesFechas2);
+
             // echo json_encode(array('result1'=>$queryConversationUser,'result2'=>$ConversationBetwwenUser));  
             // $arraysCOnversations = array('data_user' => $queryConversationUser,'data_user_Between_user' => $ConversationBetwwenUser );
 

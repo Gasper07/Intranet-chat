@@ -25,30 +25,36 @@ jQuery(document).ready(function($) {
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
 		    	$.each(result, function(index, element) {
-		    		var dataFecha = element.fecha_conver;
-		    		var arrayMensagge = element.mensages;
-		    		var mensages = '';
-		    		$.each(arrayMensagge, function(index, element) {
-		    			mensages = element;
-	    			});
-		    		console.log(dataFecha);
-		    		console.log(arrayMensagge);
-		    		console.log(mensages);
-		    	});
+			    	$.each(element, function(index, element2) {
+			    		var dataFecha = element2.fecha_conver;
+			    		var arrayMensagge = element2.mensages;
+			    		var mensages = '';
+			    		$.each(arrayMensagge, function(index, element2) {
+			    			mensages = element2;
+		    			});
+			    		console.log(dataFecha);
+			    		console.log(arrayMensagge);
+			    		console.log(mensages);
+			    	});
 
-		        console.log('almacenado dea');
+			        console.log('almacenado dea');
 
-    	    	$.each(result, function(index, element) {
-    	    		var dataFecha2 = element.fecha_conver;
-    	    		var arrayMensagge2 = element.mensages;
-    	    		var mensages2 = '';
-    	    		$.each(arrayMensagge2, function(index, element) {
-    	    			mensages2 = element;
-        			});
-    	    		console.log(dataFecha2);
-    	    		console.log(arrayMensagge2);
-    	    		console.log(mensages2);
-    	    	});
+	    	    	$.each(element, function(index, element3) {
+	    	    		var dataFecha2 = element3.fecha_conver;
+	    	    		var arrayMensagge2 = element3.mensages;
+	    	    		var mensages2 = '';
+	    	    		$.each(arrayMensagge2, function(index, element3) {
+	    	    			mensages2 = element3;
+	        			});
+	    	    		console.log(dataFecha2);
+	    	    		console.log(arrayMensagge2);
+	    	    		console.log(mensages2);
+	    	    	});
+	    		});
+
+		    	
+
+		        
 		    	// $.each(result, function(index, element) {
 		    	// 	var data = jQuery.parseJSON(element);
 		    	// 	var dateMensagge = data.fecha_conver;

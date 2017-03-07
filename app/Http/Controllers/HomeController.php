@@ -89,6 +89,7 @@ class HomeController extends Controller
                     }elseif($bande == 1) {
                         // array_pop($arrayMensagesFechas)
                         foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
+                            print_r($keyarrayMensagesFechas);
                             array_push($arrayVerifiFechas,$keyarrayMensagesFechas);                            
                         };   
 

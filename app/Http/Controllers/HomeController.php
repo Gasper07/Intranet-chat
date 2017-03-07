@@ -88,9 +88,9 @@ class HomeController extends Controller
                         $bande = $bande+1;
                     }elseif($bande == 1) {
                         // array_pop($arrayMensagesFechas)
-                        foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $dates) {
+                        foreach ($arrayMensagesFechas as $keyarrayMensagesFechas) {
                             // print_r($keyarrayMensagesFechas['fecha_conver']);
-                            $fech = $dates['fecha_conver'];
+                            $fech = $keyarrayMensagesFechas[0]['fecha_conver'];
                             echo '<pre>'; print_r($fech); echo '</pre>';
                             array_push($arrayVerifiFechas,$fech);                            
                         };   
@@ -103,6 +103,7 @@ class HomeController extends Controller
                             $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         }else{
                             print_r('no exis');
+                            $arrayMensages = array();
                             $getMensages = $keyConversationBetwwenUser->conversations;
                             array_push($arrayMensages,$getMensages);
                             $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);

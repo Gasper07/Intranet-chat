@@ -97,14 +97,14 @@ class HomeController extends Controller
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
                                if($value['fecha_conver'] == $Fechas){
                                   $newGruopMensages = array();
+                                  $positionOfArray =$keyarrayMensagesFechas;
                                   $mensagesAnterior = $value['mensages'];
                                   foreach ($mensagesAnterior as $keymensagesAnterior) {
                                       array_push($newGruopMensages,$keymensagesAnterior);
                                   }
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($newGruopMensages,$getMensages);
-                                  echo '<pre> sin value'; print_r($keyarrayMensagesFechas);  echo '</pre>';
-                                  echo '<pre> value'; print_r($value);  echo '</pre>';
+                                  unset($array[$positionOfArray]);
                                   // $removeElementSelccionado = array_pop($stack);
                                   $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $newGruopMensages);
                                   array_push($arrayMensagesFechas,$newFechaConversation);

@@ -78,7 +78,7 @@ class HomeController extends Controller
             $ConversationBetwwenUser = Chats::where('id_user','=',$idUserLogin)->orWhere('id_user_conversation', $idUserLogin)->get();
 
             foreach ($ConversationBetwwenUser as $keyConversationBetwwenUser) {
-                if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat){
+                if($keyConversationBetwwenUser->id_user_conversation == $id_ForChat or $keyConversationBetwwenUser->id_user_conversation == $idUserLogin){
                     /*Convertimos fechas*/
                     $date = new \Carbon\Carbon($keyConversationBetwwenUser->created_at);                    
                     $Fechas = $date->format('d-m-Y');

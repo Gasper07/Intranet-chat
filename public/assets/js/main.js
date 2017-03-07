@@ -24,20 +24,22 @@ jQuery(document).ready(function($) {
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
+	    		var elem = result.length;
 		    	$.each(result, function(index, element) {
-		    		var elem = element;
 		    		var dataFecha = element.fecha_conver;
 		    		var dataWithUserSend = element.userSend;
 		    		var dataWithUserReceive = element.userReceive;
 		    		var arrayMensagge = element.mensages;
 		    		var mensages = '';
+	    			if(dataWithUserSend == 1){
+	    			  // $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatMy').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'"><div class="col-lg-12 GetAllMensage"></div></div>');	
+	    			  
+	    			}else{
+    				  // $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend"><div class="col-lg-12 GetAllMensage"><div class="col-lg-12 wrapMensage"><p>'+mensages+'</p></div></div></div>');	
+	    			}
 		    		$.each(arrayMensagge, function(index, element) {
 		    			mensages = element;
-		    			if(dataWithUserSend == 1){
-		    			  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatMy').append('<div class="col-lg-12 MensaGedate getUserSend"><div class="col-lg-12 GetAllMensage"><div class="col-lg-12 wrapMensage"><p>'+mensages+'</p></div></div></div>');	
-		    			}else{
-	    				  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend"><div class="col-lg-12 GetAllMensage"><div class="col-lg-12 wrapMensage"><p>'+mensages+'</p></div></div></div>');	
-		    			}
+		    			
 		    			console.log(mensages);
 	    			});
 		    		console.log(elem);

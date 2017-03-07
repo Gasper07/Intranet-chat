@@ -36,11 +36,11 @@ jQuery(document).ready(function($) {
 		  	    		// $.each(arrayMensagge, function(index, element) {
 		  	    		// 	mensages = element;
 		  	    		// 	var createClass = '.envMensga'+elem+'';
-		  	    		// 	jQuery(createClass).wrapAll('<div class="nuevaClase" />');
+		  	    		// 	jQuery(createClass).wrapAll('<div class="getSenMenIds'+elem+'" />');
 		  	    		// 	console.log(mensages);
 		      			// });
 	    			}else{
-    				  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend"><div class="col-lg-12 GetAllMensage"><div class="col-lg-12 wrapMensage"><p>'+mensages+'</p></div></div></div>');	
+    				  // $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend"><div class="col-lg-12 GetAllMensage"><div class="col-lg-12 wrapMensage"><p>'+mensages+'</p></div></div></div>');	
 	    			}
 		    		
 		    		console.log(elem);

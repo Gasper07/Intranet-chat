@@ -36,7 +36,19 @@ jQuery(document).ready(function($) {
 		    		console.log(mensages);
 		    	});
 
-		        console.log('almacenado');
+		        console.log('almacenado dea');
+
+    	    	$.each(result, function(index, element) {
+    	    		var dataFecha2 = element.fecha_conver;
+    	    		var arrayMensagge2 = element.mensages;
+    	    		var mensages2 = '';
+    	    		$.each(arrayMensagge2, function(index, element) {
+    	    			mensages2 = element;
+        			});
+    	    		console.log(dataFecha2);
+    	    		console.log(arrayMensagge2);
+    	    		console.log(mensages2);
+    	    	});
 		    	// $.each(result, function(index, element) {
 		    	// 	var data = jQuery.parseJSON(element);
 		    	// 	var dateMensagge = data.fecha_conver;

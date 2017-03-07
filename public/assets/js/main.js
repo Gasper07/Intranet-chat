@@ -25,17 +25,18 @@ jQuery(document).ready(function($) {
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
 		    	$.each(result, function(index, element) {
-		    		var vieElname = element;
-		    		var vieIn = index;
-		    		console.log(vieElname);
+		    		var dataFecha = element.fecha_conver;
+		    		var dataMensagge = element.mensages;
+		    		console.log(dataFecha);
+		    		console.log(dataMensagge);
 		    	});
 
 		        console.log('almacenado');
-		    	$.each(result, function(index, element) {
-		    		var data = jQuery.parseJSON(element);
-		    		var dateMensagge = data.fecha_conver;
-		    		console.log(dateMensagge);
-		    	});
+		    	// $.each(result, function(index, element) {
+		    	// 	var data = jQuery.parseJSON(element);
+		    	// 	var dateMensagge = data.fecha_conver;
+		    	// 	console.log(dateMensagge);
+		    	// });
 		    },
 		    error: function() {
 		        console.log('Error');

@@ -103,7 +103,9 @@ class HomeController extends Controller
                                   }
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($newGruopMensages,$getMensages);
-                                  echo '<pre>'; print_r($newGruopMensages);  echo '</pre>';
+                                  echo '<pre> sin value'; print_r($keyarrayMensagesFechas);  echo '</pre>';
+                                  echo '<pre> value'; print_r($value);  echo '</pre>';
+                                  // $removeElementSelccionado = array_pop($stack);
                                   $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $newGruopMensages);
                                   array_push($arrayMensagesFechas,$newFechaConversation);
 

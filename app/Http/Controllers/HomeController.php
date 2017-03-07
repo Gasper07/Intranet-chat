@@ -129,7 +129,7 @@ class HomeController extends Controller
                     }
                 }
             }
-            echo json_encode($arrayCOnversation);
+            echo json_encode($arrayMensagesFechas);
             // echo json_encode(array('result1'=>$queryConversationUser,'result2'=>$ConversationBetwwenUser));  
             // $arraysCOnversations = array('data_user' => $queryConversationUser,'data_user_Between_user' => $ConversationBetwwenUser );
 

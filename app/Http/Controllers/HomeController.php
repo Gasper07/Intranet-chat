@@ -95,6 +95,11 @@ class HomeController extends Controller
                             print_r('exis');
                             $getMensages = $keyConversationBetwwenUser->conversations;
                             array_push($arrayMensages,$getMensages);
+
+                            foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
+                               echo '<pre>'; print_r($value);  echo '</pre>';
+                            }
+
                             $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         }else{
                             print_r('no exis');

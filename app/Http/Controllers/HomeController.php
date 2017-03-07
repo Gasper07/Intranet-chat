@@ -66,6 +66,7 @@ class HomeController extends Controller
             $arrayMensagesFechas = array();
             $arrayGetDates = array();
             $arrayVerifiFechas = array();
+            $newGruopMensages = array();
             $bande = 0;
 
             $id_ForChat = $request->idForChat;
@@ -96,10 +97,14 @@ class HomeController extends Controller
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
                                if($value['fecha_conver'] == $Fechas){
                                   $mensagesAnterior = $value['mensages'];
-                                  echo '<pre>'; print_r($mensagesAnterior);  echo '</pre>';
+                                  foreach ($mensagesAnteriore as $keymensagesAnterior) {
+                                      array_push($newGruopMensages,$keymensagesAnterior);
+                                  }
                                   $getMensages = $keyConversationBetwwenUser->conversations;
-                                  echo '<pre>'; print_r($getMensages);  echo '</pre>';
-                                  array_push($mensagesAnterior,$getMensages);
+                                  array_push($newGruopMensages,$getMensages);
+                                  echo '<pre>'; print_r($newGruopMensages);  echo '</pre>';
+                                  $value['mensages'] = $newGruopMensages;
+
                                }
                             }
 

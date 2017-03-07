@@ -97,6 +97,9 @@ class HomeController extends Controller
 
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
                                echo '<pre>'; print_r($value['fecha_conver']);  echo '</pre>';
+                               if($value['fecha_conver'] == $Fechas){
+                                  $value['mensages'] = $arrayMensages;
+                               }
                             }
 
                             // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);

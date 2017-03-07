@@ -24,44 +24,35 @@ jQuery(document).ready(function($) {
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
 		    dataType: 'json',
 		    success: function(result, index, value, data) {
-	    		// var elem = result.length;
+		    	// Iniciamos contador
 	    		var elem = 1;
 		    	$.each(result, function(index, element) {
+		    		// Obtenemos los datos
 		    		elem = elem+1;
 		    		var dataFecha = element.fecha_conver;
 		    		var dataWithUserSend = element.userSend;
 		    		var dataWithUserReceive = element.userReceive;
 		    		var arrayMensagge = element.mensages;
 		    		var mensages = '';
+		    		/**** si son mensajes que el user envio, lo coloca en un extremo, si no lo coloca al otro
+		    		extremo****/
 	    			if(dataWithUserSend == 1){
 	    			  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatMy').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'"><div class="col-lg-12 GetAllMensage"></div></div>');	
 		  	    		$.each(arrayMensagge, function(index, element) {
 		  	    			mensages = element;
-		  	    			$('.getSenMenIds'+elem+'>.GetAllMensage').append('<div class="col-lg-12 wrapMensage envMensga'+elem+'"><p>'+mensages+'</p></div>')
-		  	    			console.log(mensages);
+		  	    			$('.getSenMenIds'+elem+'>.GetAllMensage').append('<div class="col-lg-12 wrapMensage envMensga'+elem+'"><p>'+mensages+'</p></div>');
 		      			});
-		      			// var createClass = '.envMensga'+elem+'';
-		      			// jQuery(createClass).wrapAll('<div class="getSenMenIds'+elem+'" />');
 	    			}else{
     				  $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserReceive getReceMenIds'+elem+'"><div class="col-lg-12 GetAllMensage"></div></div>');	
 			    	  $.each(arrayMensagge, function(index, element) {
 			    	    mensages = element;
-			    		$('.getReceMenIds'+elem+'>.GetAllMensage').append('<div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div>')
-			    		console.log(mensages);
+			    		$('.getReceMenIds'+elem+'>.GetAllMensage').append('<div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div>');
 		    		  });
 	    			}
 		    		
-		    		console.log(elem);
-		    		console.log(dataFecha);
-		    		console.log(arrayMensagge);
 		    	});
 
 		        console.log('almacenado');
-		    	// $.each(result, function(index, element) {
-		    	// 	var data = jQuery.parseJSON(element);
-		    	// 	var dateMensagge = data.fecha_conver;
-		    	// 	console.log(dateMensagge);
-		    	// });
 		    },
 		    error: function() {
 		        console.log('Error');

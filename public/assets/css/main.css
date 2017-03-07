@@ -1870,6 +1870,21 @@ form.formSearchChat>div {
   width: 50%;
 }
 
+.col-lg-12.MensaGedate.getUserReceive>div.GetAllMensage>div {
+  color: rgba(0, 0, 0, 1);
+  margin: 1px 0;
+}
+
+.col-lg-12.MensaGedate.getUserReceive>div.GetAllMensage>div>p {
+  padding: 6px 12px;
+  width: auto;
+  float: left;
+  display: block;
+  /* position: absolute; */
+  background-color: #f1f0f0;
+  border-radius: 10px;
+}
+
 
 /* CALENDAR STYLE */
 

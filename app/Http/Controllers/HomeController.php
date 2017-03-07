@@ -64,6 +64,7 @@ class HomeController extends Controller
             $arrayFechas = array();
             $arrayMensages = array();
             $arrayMensagesFechas = array();
+            $arrayGetDates = array();
             $arrayVerifiFechas = array();
             $bande = 0;
 
@@ -83,21 +84,14 @@ class HomeController extends Controller
                     if($bande == 0){
                         $getMensages = $keyConversationBetwwenUser->conversations;
                         array_push($arrayMensages,$getMensages);
+                        $getDates = $Fechas;
+                        array_push($arrayGetDates,$getDates);
                         $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         array_push($arrayMensagesFechas,$newFechaConversation);
                         $bande = $bande+1;
                     }elseif($bande == 1) {
-                        // array_pop($arrayMensagesFechas)
-                        foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $listing) {
-                            // print_r($keyarrayMensagesFechas['fecha_conver']);
-                            // $fech = $keyarrayMensagesFechas[0]['fecha_conver'];
-                            $fech = $arrayMensagesFechas[$keyarrayMensagesFechas]['fecha_conver'];
-                            echo '<pre>'; print_r($fech); echo '</pre>';
-                            array_push($arrayVerifiFechas,$fech);                            
-                        };   
-                        // dd($arrayVerifiFechas);
-
-                        if(in_array($Fechas, $arrayVerifiFechas)){
+                        
+                        if(in_array($Fechas, $arrayGetDates)){
                             print_r('exis');
                             $getMensages = $keyConversationBetwwenUser->conversations;
                             array_push($arrayMensages,$getMensages);
@@ -107,6 +101,8 @@ class HomeController extends Controller
                             $arrayMensages = array();
                             $getMensages = $keyConversationBetwwenUser->conversations;
                             array_push($arrayMensages,$getMensages);
+                            $getDates = $Fechas;
+                            array_push($arrayGetDates,$getDates);
                             $newFechaConversation = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                             array_push($arrayMensagesFechas,$newFechaConversation);
                         }

@@ -92,17 +92,15 @@ class HomeController extends Controller
                     }elseif($bande == 1) {
                         
                         if(in_array($Fechas, $arrayGetDates)){
-                            print_r('exis');
                             $getMensages = $keyConversationBetwwenUser->conversations;
                             array_push($arrayMensages,$getMensages);
 
                             foreach ($arrayMensagesFechas as $keyarrayMensagesFechas => $value) {
-                               echo '<pre>'; print_r($value);  echo '</pre>';
+                               echo '<pre>'; print_r($value['fecha_conver']);  echo '</pre>';
                             }
 
-                            $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
+                            // $arrayMensagesFechas = array('fecha_conver' => $Fechas,'mensages' => $arrayMensages);
                         }else{
-                            print_r('no exis');
                             $arrayMensages = array();
                             $getMensages = $keyConversationBetwwenUser->conversations;
                             array_push($arrayMensages,$getMensages);

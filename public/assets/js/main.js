@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 		    		var mensages = '';
 		    		/**** si son mensajes que el user envio, lo coloca en un extremo, si no lo coloca al otro
 		    		extremo****/
-    			    $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatMy').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'"><div class="col-lg-12 GetAllMensage">'+dataFecha+'</div></div>');	
+    			    $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'"><div class="col-lg-12 GetAllMensage">'+dataFecha+'</div></div>');	
 	    			if(dataWithUserSend == 1){
 		  	    		$.each(arrayMensagge, function(index, element) {
 		  	    			mensages = element;

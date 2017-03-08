@@ -140,7 +140,7 @@ class HomeController extends Controller
                     }
                 }
             }
-            print_r($arrayMensagesFechas);
+            echo '<pre>';print_r($arrayMensagesFechas);echo '</pre>';
 
             
 
@@ -198,7 +198,7 @@ class HomeController extends Controller
                 }
             }
 
-            print_r($arrayMensagesFechas2);
+            echo '<pre>';print_r($arrayMensagesFechas2);echo '</pre>';
 
             // $SendAndRecive = array($arrayMensagesFechas,$arrayMensagesFechas2);
             $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);

@@ -1875,24 +1875,12 @@ form.formSearchChat>div {
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserReceive>div.GetAllMensage>div>p {
-  padding: 6px 12px;
-  width: auto;
-  float: left;
-  display: block;
-  /* position: absolute; */
-  background-color: #f1f0f0;
-  border-radius: 10px;
-  font-family: 'MyrianPro-Regular';
-  font-size: 13px;
-}
-
 .col-lg-12.MensaGedate.getUserSend>div.GetAllMensage>div {
   color: #fff;
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage>div>p {
+.col-lg-12.MensaGedate.getUserSend>div.col-lg-12.GetAllMensage.Menrceive>div>p {
   padding: 6px 12px;
   width: auto;
   float: left;
@@ -1904,12 +1892,19 @@ form.formSearchChat>div {
   font-size: 13px;
 }
 
-.col-lg-12.GetAllMensage {
-  color: rgba(0, 0, 0, .40);
-  font-size: 12px;
+
+.col-lg-12.MensaGedate.getUserReceive>div.col-lg-12.GetAllMensage.menSend>div>p {
+  padding: 6px 12px;
+  width: auto;
+  float: left;
+  display: block;
+  /* position: absolute; */
+  background-color: #f1f0f0;
+  border-radius: 10px;
   font-family: 'MyrianPro-Regular';
-  margin-bottom: 3%;
+  font-size: 13px;
 }
+
 
 .form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser {
   overflow: hidden;
@@ -1918,6 +1913,13 @@ form.formSearchChat>div {
 .form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser {
   overflow: initial;
   width: 100%;
+}
+
+.col-lg-12.MensaGedate {
+  color: rgba(0, 0, 0, .40);
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
+  margin-bottom: 2%;
 }
 
 

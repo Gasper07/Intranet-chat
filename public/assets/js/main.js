@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 		});
 
 		$.ajax({
-		    url: 'http://127.0.0.1/Sites/Intranet-chat/chatUsers',
+		    url: 'http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/chatUsers',
 		    type: 'POST',
 		    headers: { 'X-CSRF-Token': $('input[name=_tokens]').attr('value') },
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",

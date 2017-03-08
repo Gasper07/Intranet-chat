@@ -1917,6 +1917,7 @@ form.formSearchChat>div {
 
 .form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser {
   overflow: initial;
+  width: 100%;
 }
 
 

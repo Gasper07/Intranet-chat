@@ -36,16 +36,16 @@ jQuery(document).ready(function($) {
 		    		var mensages = '';
 		    		/**** si son mensajes que el user envio, lo coloca en un extremo, si no lo coloca al otro
 		    		extremo****/
-    			    $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'"></div>');	
+    			    $('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'">'+dataFecha+'</div>');	
 	    			if(dataWithUserSend == 1){
 		  	    		$.each(arrayMensagge, function(index, element) {
 		  	    			mensages = element;
-		  	    			$('.getSenMenIds'+elem+'').append('<div class="col-lg-12 GetAllMensage menSend">'+dataFecha+'<div class="col-lg-12 wrapMensage envMensga'+elem+'"><p>'+mensages+'</p></div></div>');
+		  	    			$('.getSenMenIds'+elem+'').append('<div class="col-lg-12 GetAllMensage menSend"><div class="col-lg-12 wrapMensage envMensga'+elem+'"><p>'+mensages+'</p></div></div>');
 		      			});
 	    			}else{    				  
 			    	  $.each(arrayMensagge, function(index, element) {
 			    	    mensages = element;
-			    		$('.getSenMenIds'+elem+'').append('<div class="col-lg-12 GetAllMensage Menrceive">'+dataFecha+'<div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div></div>');
+			    		$('.getSenMenIds'+elem+'').append('<div class="col-lg-12 GetAllMensage Menrceive"><div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div></div>');
 		    		  });
 	    			}
 		    		

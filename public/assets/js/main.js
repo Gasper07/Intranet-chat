@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 		});
 
 		$.ajax({
-		    url: '/chatUsers',
+		    url: 'http://127.0.0.1/Sites/Intranet-chat/chatUsers',
 		    type: 'POST',
 		    headers: { 'X-CSRF-Token': $('input[name=_tokens]').attr('value') },
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 		    success: function(result, index, value, data) {
 		    	// Iniciamos contador
 	    		var elem = 1;
-	    		$('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser>div').remove();
+	    		$('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box>div').remove();
 		    	$.each(result, function(index, element) {
 		    		// Obtenemos los datos
 		    		elem = elem+1;
@@ -39,17 +39,18 @@ jQuery(document).ready(function($) {
 		    		extremo****/
     			    
 	    			if(dataWithUserSend == 1){
-	    				$('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+' getSednes">'+dataFecha+'</div>');	
+	    			  $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+'">'+dataFecha+'</div>');	
 		  	    		$.each(arrayMensagge, function(index, element) {
 		  	    			mensages = element;
-		  	    			$('.getSednes').append('<div class="col-lg-12 GetAllMensage menSend"><div class="col-lg-12 wrapMensage envMensga'+elem+'"><p>'+mensages+'</p></div></div>');
+		  	    			$('.getSenMenIds'+elem+'').append('<div class="col-lg-12 wrapMensage envMensga'+elem+'"><p>'+mensages+'</p></div>');
 		      			});
-	    			}else{    				  
-	    				$('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds'+elem+' getREceive" >'+dataFecha+'</div>');	
-			    	    $.each(arrayMensagge, function(index, element) {
-			    	      mensages = element;
-			    		  $('.getREceive').append('<div class="col-lg-12 GetAllMensage Menrceive"><div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div></div>');
-		    		    });
+	    			}else{
+					  $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').append('<div class="col-lg-12 MensaGedate getUserReceive getSenMenIds'+elem+'">'+dataFecha+'</div>');	
+			    	  $.each(arrayMensagge, function(index, element) {
+			    	    mensages = element;
+			    	    console.log($(this));
+			    		$('.getSenMenIds'+elem+'').append('<div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div>');
+		    		  });
 	    			}
 		    		
 		    	});

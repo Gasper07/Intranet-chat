@@ -102,7 +102,7 @@ class HomeController extends Controller
                         $getDates = $Fechas;
                         array_push($arrayGetDates,$getDates);
                         /*Creamos nuestro bloque de fecha y mensajes enviados*/
-                        $newFechaConversation = array('fecha_conver' => $Fechas,'time_send' => $time,'userSend' => 1,'mensages' => $arrayMensages);
+                        $newFechaConversation = array('fecha_conver' => $Fechas,'time_send' => $time,'userSend' => 1,'userReceive' => 0,'mensages' => $arrayMensages);
                         array_push($arrayMensagesFechas,$newFechaConversation);
                         $bande = $bande+1;
                     }elseif($bande == 1) {     
@@ -123,7 +123,7 @@ class HomeController extends Controller
                                   $getMensages = $keyConversationBetwwenUser->conversations;
                                   array_push($newGruopMensages,$getMensages);
                                   unset($arrayMensagesFechas[$positionOfArray]);
-                                  $newFechaConversation = array('fecha_conver' => $Fechas,'time_send' => $time,'userSend' => 1,'mensages' => $newGruopMensages);
+                                  $newFechaConversation = array('fecha_conver' => $Fechas,'time_send' => $time,'userSend' => 1,'userReceive' => 0,'mensages' => $newGruopMensages);
                                   array_push($arrayMensagesFechas,$newFechaConversation);
 
                                }
@@ -134,13 +134,12 @@ class HomeController extends Controller
                             array_push($arrayMensages,$getMensages);
                             $getDates = $Fechas;
                             array_push($arrayGetDates,$getDates);
-                            $newFechaConversation = array('fecha_conver' => $Fechas,'time_send' => $time,'userSend' => 1,'mensages' => $arrayMensages);
+                            $newFechaConversation = array('fecha_conver' => $Fechas,'time_send' => $time,'userSend' => 1,'userReceive' => 0,'mensages' => $arrayMensages);
                             array_push($arrayMensagesFechas,$newFechaConversation);
                         }                                 
                     }
                 }
             }
-
             
 
             foreach ($ConversationBetwwenUser2 as $keyConversationBetwwenUser2) {
@@ -158,7 +157,7 @@ class HomeController extends Controller
                         $getDates2 = $Fechas2;
                         array_push($arrayGetDates2,$getDates2);
                         /*Creamos nuestro bloque de fecha y mensajes enviados*/
-                        $newFechaConversation2 = array('fecha_conver' => $Fechas2,'time_send2' => $time2,'userReceive' => 1,'mensages' => $arrayMensages2);
+                        $newFechaConversation2 = array('fecha_conver' => $Fechas2,'time_send' => $time2,'userReceive' => 1,'userSend' => 0,'mensages' => $arrayMensages2);
                         array_push($arrayMensagesFechas2,$newFechaConversation2);
                         $bande2 = $bande2+1;
                     }elseif($bande2 == 1) {     
@@ -179,7 +178,7 @@ class HomeController extends Controller
                                   $getMensages2 = $keyConversationBetwwenUser2->conversations;
                                   array_push($newGruopMensages2,$getMensages2);
                                   unset($arrayMensagesFechas2[$positionOfArray2]);
-                                  $newFechaConversation2 = array('fecha_conver' => $Fechas2,'time_send2' => $time2,'userReceive' => 1,'mensages' => $newGruopMensages2);
+                                  $newFechaConversation2 = array('fecha_conver' => $Fechas2,'time_send' => $time2,'userReceive' => 1,'userSend' => 0,'mensages' => $newGruopMensages2);
                                   array_push($arrayMensagesFechas2,$newFechaConversation2);
 
                                }
@@ -190,25 +189,46 @@ class HomeController extends Controller
                             array_push($arrayMensages2,$getMensages2);
                             $getDates2 = $Fechas2;
                             array_push($arrayGetDates2,$getDates2);
-                            $newFechaConversation2 = array('fecha_conver' => $Fechas2,'time_send2' => $time2,'userReceive' => 1,'mensages' => $arrayMensages2);
+                            $newFechaConversation2 = array('fecha_conver' => $Fechas2,'time_send' => $time2,'userReceive' => 1,'userSend' => 0,'mensages' => $arrayMensages2);
                             array_push($arrayMensagesFechas2,$newFechaConversation2);
                         }                                 
                     }
                 }
             }
 
-            // $SendAndRecive = array($arrayMensagesFechas,$arrayMensagesFechas2);
-            $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
-            sort($SendAndRecive);
+            /** Unimos las conversaciones y los ordenamos por fechas */
+            $UnionConversation = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
+            sort($UnionConversation);
 
-            // dd($SendAndRecive);
+            // Busco el total de posiciones
+            foreach ($UnionConversation as $keyUnionConversation => $valueUnion) {
+                $numeroPocicion =$keyUnionConversation;
+            }
+
+            $restandoUnaPocicion =$numeroPocicion-1;
+            /** Al total obtenido le resto uno para luego buscar el array que contenta la pociion 
+            anteriormente creada, la idea es buscar el penultimo valor **/
+            foreach ($UnionConversation as $key2UnionConversation => $value2UnionConversation) {
+                if($key2UnionConversation == $restandoUnaPocicion){
+                    $PenultimoValueArray = $value2UnionConversation;
+                }
+            }
+
+            // Get ultimo registro
+            $UltimoValueInsert = end($UnionConversation);
+
+            /**conprovamos quien fue el ultimo en escribir y si la hora fue mayor */
+            if($UltimoValueInsert['userSend'] == 1 && $UltimoValueInsert['time_send'] > $PenultimoValueArray['time_send']){
+              // Si el ultimo que escribio en la conversacion fue el que esta logiado, traeme este orden
+              $SendAndRecive = array_merge_recursive($arrayMensagesFechas2, $arrayMensagesFechas);
+              sort($SendAndRecive);
+            }else{
+              $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
+              sort($SendAndRecive);
+            }
 
             echo json_encode($SendAndRecive);
-
-            // echo json_encode(array('result1'=>$queryConversationUser,'result2'=>$ConversationBetwwenUser));  
-            // $arraysCOnversations = array('data_user' => $queryConversationUser,'data_user_Between_user' => $ConversationBetwwenUser );
-
-            // echo json_encode($arraysCOnversations);     
+ 
         }
     }
 

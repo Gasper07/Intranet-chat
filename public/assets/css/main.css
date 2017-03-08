@@ -1875,17 +1875,17 @@ form.formSearchChat>div {
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage.Menrceive>div {
+.col-lg-12.MensaGedate.getUserSend>div>div.GetAllMensage.Menrceive>div {
   color: #fff;
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage.menSend>div {
+.col-lg-12.MensaGedate.getUserSend>div>div.GetAllMensage.menSend>div {
   color: rgba(0, 0, 0, 1);
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.col-lg-12.GetAllMensage.Menrceive>div>p {
+.col-lg-12.MensaGedate.getUserSend>div>div.col-lg-12.GetAllMensage.Menrceive>div>p {
   padding: 6px 12px;
   width: auto;
   float: left;
@@ -1898,10 +1898,10 @@ form.formSearchChat>div {
 }
 
 
-.col-lg-12.MensaGedate.getUserSend>div.col-lg-12.GetAllMensage.menSend>div>p {
+.col-lg-12.MensaGedate.getUserSend>div>div.col-lg-12.GetAllMensage.menSend>div>p {
   padding: 6px 12px;
   width: auto;
-  float: left;
+  float: right;
   display: block;
   /* position: absolute; */
   background-color: #f1f0f0;
@@ -1920,7 +1920,7 @@ form.formSearchChat>div {
   width: 100%;
 }
 
-.col-lg-12.MensaGedate {
+.col-lg-12.MensaGedate>div {
   color: rgba(0, 0, 0, .40);
   font-size: 12px;
   font-family: 'MyrianPro-Regular';

@@ -1875,8 +1875,13 @@ form.formSearchChat>div {
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage>div {
+.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage.Menrceive>div {
   color: #fff;
+  margin: 1px 0;
+}
+
+.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage.menSend>div {
+  color: rgba(0, 0, 0, 1);
   margin: 1px 0;
 }
 
@@ -1893,7 +1898,7 @@ form.formSearchChat>div {
 }
 
 
-.col-lg-12.MensaGedate.getUserReceive>div.col-lg-12.GetAllMensage.menSend>div>p {
+.col-lg-12.MensaGedate.getUserSend>div.col-lg-12.GetAllMensage.menSend>div>p {
   padding: 6px 12px;
   width: auto;
   float: left;

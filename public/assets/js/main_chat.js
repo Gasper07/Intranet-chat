@@ -3,7 +3,7 @@
 	  // Enter a unique channel you wish your users to be subscribed in.
 	  var channel=pusher.subscribe('test_channel');
 	  channel.bind('my_event', function(data) {
-	  	$('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds">fecha</div>');	
+	  	// $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds">fecha</div>');	
 	    // Add the new message to the container
 	    $('.getUserSend').append('<div class="col-lg-12 wrapMensage envMensga"><p>'+data.message+'</p></div>');
 	    // Display the send button

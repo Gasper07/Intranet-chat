@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 		});
 
 		$.ajax({
-		    url: 'http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/chatUsers',
+		    url: 'http://127.0.0.1/Sites/Intranet-chat/chatUsers',
 		    type: 'POST',
 		    headers: { 'X-CSRF-Token': $('input[name=_tokens]').attr('value') },
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
@@ -63,4 +63,18 @@ jQuery(document).ready(function($) {
 		}); 
 
 	});
+});
+
+// FILTER BUSQUEDA CANDIDATE CHAT
+
+$(document).ready(function () {
+    (function ($) {
+        $('#filtrar').keyup(function () {
+            var rex = new RegExp($(this).val(), 'i');
+            $('.AlluserReegitradosPorBloque>a').hide();
+            $('.AlluserReegitradosPorBloque>a').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+        })
+    }(jQuery));
 });

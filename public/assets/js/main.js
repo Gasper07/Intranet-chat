@@ -26,6 +26,7 @@ jQuery(document).ready(function($) {
 		    success: function(result, index, value, data) {
 		    	// Iniciamos contador
 	    		var elem = 1;
+	    		$('.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser>div').remove();
 		    	$.each(result, function(index, element) {
 		    		// Obtenemos los datos
 		    		elem = elem+1;

@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
 		    		
 		    	});
 
-		        console.log('almacenado 3');
+		        console.log('almacenado 3 develo');
 		    },
 		    error: function() {
 		        console.log('Error');

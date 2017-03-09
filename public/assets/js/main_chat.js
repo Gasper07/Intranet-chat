@@ -9,16 +9,7 @@
 	    $('.input_send_holder').html('<input type="submit" value="Send" class="btn btn-primary input_send" />');
 	    // Scroll to the bottom of the container when a new message becomes available
 	    $(".messages_display").scrollTop($(".messages_display")[0].scrollHeight);
-
-	    var me = channel.members.me;
-        var userId = me.id;
-        var userInfo = me.info;
-        console.log(me);
-        console.log(userId);
-        console.log(userInfo);
 	  });
-
-	
 	 
 	 // AJAX request
 	 function ajaxCall(ajax_url, ajax_data) {

@@ -18,7 +18,11 @@ jQuery(document).ready(function($) {
 		});
 
 		$.ajax({
+<<<<<<< HEAD
 		    url: 'http://127.0.0.1/sitios/Intranet-chat/chatUsers',
+=======
+		    url: 'http://127.0.0.1/Sites/Intranet-chat/chatUsers',
+>>>>>>> origin/master
 		    type: 'POST',
 		    headers: { 'X-CSRF-Token': $('input[name=_tokens]').attr('value') },
 		    data: "idForChat="+dataIdUser+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",

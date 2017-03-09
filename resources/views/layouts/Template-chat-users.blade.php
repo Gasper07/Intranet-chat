@@ -187,7 +187,7 @@
     </script>
 
     <!-- Semantic Ui CSS -->
-    {!! Html::script('public/assets/js/semantic.js') !!}
+    <script class="diSemantic" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/js/semantic.js"></script>
 
     <script>
         $('.dropdownSemantic')
@@ -218,9 +218,14 @@
           }
         })
       ;
+
+      
+
+
    </script>
 
    {!! Html::script('public/assets/js/jquery-1.11.1.min.js') !!}
+
    {!! Html::script('public/assets/js/moment.js') !!}
    {!! Html::script('public/assets/js/bootstrap-datetimepicker.min.js') !!}
    <script type="text/javascript">

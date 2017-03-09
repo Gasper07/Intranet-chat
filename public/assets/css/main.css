@@ -1,53 +1,53 @@
 /* COVERED */
 @font-face {
-	font-family: 'Covered';
-	src: url('../fonts/covered/CoveredByYourGrace.eot');
-	src: local('☺'), url('../fonts/covered/CoveredByYourGrace.woff') format('woff'), url('../fonts/covered/CoveredByYourGrace.ttf') format('truetype'), url('../fonts/covered/CoveredByYourGrace.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Covered';
+  src: url('../fonts/covered/CoveredByYourGrace.eot');
+  src: local('☺'), url('../fonts/covered/CoveredByYourGrace.woff') format('woff'), url('../fonts/covered/CoveredByYourGrace.ttf') format('truetype'), url('../fonts/covered/CoveredByYourGrace.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* MIRIAM PRO */
 @font-face {
-	font-family: 'MyrianPro-Regular';
-	src: url('../fonts/miriam/Myriad-Pro_31655.eot');
-	src: local('☺'), url('../fonts/miriam/Myriad-Pro_31655.woff') format('woff'), url('../fonts/miriam/Myriad-Pro_31655.ttf') format('truetype'), url('../fonts/miriam/Myriad-Pro_31655.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'MyrianPro-Regular';
+  src: url('../fonts/miriam/Myriad-Pro_31655.eot');
+  src: local('☺'), url('../fonts/miriam/Myriad-Pro_31655.woff') format('woff'), url('../fonts/miriam/Myriad-Pro_31655.ttf') format('truetype'), url('../fonts/miriam/Myriad-Pro_31655.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* MIRIAM */
 @font-face {
-	font-family: 'MyrianPro-Black';
-	src: url('../fonts/miriam/MyriadPro-Black.eot');
-	src: local('☺'), url('../fonts/miriam/MyriadPro-Black.woff') format('woff'), url('../fonts/miriam/MyriadPro-Black.ttf') format('truetype'), url('../fonts/miriam/MyriadPro-Black.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'MyrianPro-Black';
+  src: url('../fonts/miriam/MyriadPro-Black.eot');
+  src: local('☺'), url('../fonts/miriam/MyriadPro-Black.woff') format('woff'), url('../fonts/miriam/MyriadPro-Black.ttf') format('truetype'), url('../fonts/miriam/MyriadPro-Black.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'MyrianPro-Bold';
-	src: url('../fonts/miriam/Myriad-Pro-Bold_31631.eot');
-	src: local('☺'), url('../fonts/miriam/Myriad-Pro-Bold_31631.woff') format('woff'), url('../fonts/miriam/Myriad-Pro-Bold_31631.ttf') format('truetype'), url('../fonts/miriam/Myriad-Pro-Bold_31631.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'MyrianPro-Bold';
+  src: url('../fonts/miriam/Myriad-Pro-Bold_31631.eot');
+  src: local('☺'), url('../fonts/miriam/Myriad-Pro-Bold_31631.woff') format('woff'), url('../fonts/miriam/Myriad-Pro-Bold_31631.ttf') format('truetype'), url('../fonts/miriam/Myriad-Pro-Bold_31631.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'MyrianPro-Semibold';
-	src: url('../fonts/miriam/MyriadPro-Semibold.eot');
-	src: local('☺'), url('../fonts/miriam/MyriadPro-Semibold.woff') format('woff'), url('../fonts/miriam/MyriadPro-Semibold.ttf') format('truetype'), url('../fonts/miriam/MyriadPro-Semibold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'MyrianPro-Semibold';
+  src: url('../fonts/miriam/MyriadPro-Semibold.eot');
+  src: local('☺'), url('../fonts/miriam/MyriadPro-Semibold.woff') format('woff'), url('../fonts/miriam/MyriadPro-Semibold.ttf') format('truetype'), url('../fonts/miriam/MyriadPro-Semibold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
 @font-face {
-	font-family: 'bebas';
-	src: url('../fonts/bebas/BEBAS___.eot');
-	src: local('☺'), url('../fonts/bebas/BEBAS___.woff') format('woff'), url('../fonts/bebas/BEBAS___.ttf') format('truetype'), url('../fonts/bebas/BEBAS___.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'bebas';
+  src: url('../fonts/bebas/BEBAS___.eot');
+  src: local('☺'), url('../fonts/bebas/BEBAS___.woff') format('woff'), url('../fonts/bebas/BEBAS___.ttf') format('truetype'), url('../fonts/bebas/BEBAS___.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -65,51 +65,51 @@ body {
 }
 
 body.bgUser{
-	background: #f5f9fc;
+  background: #f5f9fc;
 }
 
 .fontMiriamProRegular{
-	font-family: 'MyrianPro-Regular';
+  font-family: 'MyrianPro-Regular';
 }
 
 .fontMiriamProSemiBold{
-	font-family: 'MyrianPro-Semibold';
+  font-family: 'MyrianPro-Semibold';
 }
 
 .fontMiriamProBlack{
-	font-family: 'MyrianPro-Black';
+  font-family: 'MyrianPro-Black';
 }
 
 .fontCovered{
-	font-family: 'Covered';
+  font-family: 'Covered';
 }
 
 .colorBlack{
-	color: #000000 !important;
+  color: #000000 !important;
 }
 
 .colorBlackSuave{
-	color: #1a1a1a !important;
+  color: #1a1a1a !important;
 }
 
 .colorGrisSuave{
-	color: #999999 !important;
+  color: #999999 !important;
 }
 
 .colorGrisMediumSuave{
-	color: #4d4d4d !important;
+  color: #4d4d4d !important;
 }
 
 .BgYellow{
-	background: #ffd00b;
+  background: #ffd00b;
 }
 
 .lineJustify{
-	text-align: justify !important;
+  text-align: justify !important;
 }
 
 .lineCenter{
-	text-align: center !important;
+  text-align: center !important;
 }
 
 /*******
@@ -1678,6 +1678,7 @@ p.typEEvento {
   width: 100%;
   height: 500px;
   background: white;
+  overflow: auto;
 }
 
 .col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatSendUsers {
@@ -1847,7 +1848,8 @@ form.formSearchChat>div {
 }
 
 .messages_display {
-  height: 300px; 
+  /* height: 300px;  */
+  height: auto;
   overflow: auto;
 }
 
@@ -1861,13 +1863,13 @@ form.formSearchChat>div {
 }
 
 .messages_display {
-  height: 500px;
+  /* height: 500px; */
   overflow: auto;
   border: 0;
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box>div {
-  width: 50%;
+  width: 100%;
 }
 
 .col-lg-12.MensaGedate.getUserReceive>div.GetAllMensage>div {
@@ -1875,17 +1877,17 @@ form.formSearchChat>div {
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage.Menrceive>div {
+.col-lg-12.MensaGedate.getUserReceive>div {
   color: #fff;
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.GetAllMensage.menSend>div {
+.col-lg-12.MensaGedate.getUserSend>div {
   color: rgba(0, 0, 0, 1);
   margin: 1px 0;
 }
 
-.col-lg-12.MensaGedate.getUserSend>div.col-lg-12.GetAllMensage.Menrceive>div>p {
+.col-lg-12.MensaGedate.getUserReceive>div>p {
   padding: 6px 12px;
   width: auto;
   float: left;
@@ -1898,7 +1900,7 @@ form.formSearchChat>div {
 }
 
 
-.col-lg-12.MensaGedate.getUserSend>div.col-lg-12.GetAllMensage.menSend>div>p {
+.col-lg-12.MensaGedate.getUserSend>div>p {
   padding: 6px 12px;
   width: auto;
   float: right;
@@ -1924,6 +1926,30 @@ form.formSearchChat>div {
 
 .col-lg-12.MensaGedate.getUserSend.getSednes {
   text-align: right;
+}
+
+.col-lg-12.MensaGedate.getUserSend {
+  text-align: right;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  width: 109%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  overflow: auto;
+}
+
+.ui.search.uiSearchUsers>div>input {
+  border-radius: 0;
+  width: 100%;
+}
+
+.ui.search.uiSearchUsers>div>i {
+  position: absolute;
+  left: 86%;
+  top: 30%;
+  font-size: 15px;
 }
 
 

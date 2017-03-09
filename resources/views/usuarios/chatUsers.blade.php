@@ -192,6 +192,7 @@
 
           <div class="col-md-12 datPublich">
             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/IcoPublich.png" alt="" data-toggle="modal" data-target="#myModal">
+            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/chatGrupo.png" alt="" data-toggle="modal" data-target="#myModalCHat">
           </div>
 
 
@@ -209,6 +210,92 @@
           <div class="modal-body">
             <div class="col-xs-12 col-sm-12 col-md-12 continPublish">
               <form action="home_submit" method="get" class="sectionPublichUser" accept-charset="utf-8">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <textarea name="" placeholder="Escribe un comentario"></textarea>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
+                  <div class="col-md-6 actionpuBlish">
+                    <div class="col-md-2 Adjuntar">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
+                    </div>
+                    <div class="col-md-2 AdjuntarFoto">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
+                    </div>
+                    <div class="col-md-2 DestacarPuslish">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
+                    </div>
+                    <div class="col-md-2 AlertPublish">
+                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 ButtinPublish">
+                    <input type="submit" value="Enviar"></input>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal chat -->
+    <div class="modal fade" id="myModalCHat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog contPusblishDialogo" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="col-xs-12 col-sm-12 col-md-12 continPublish publichChat">
+              <form action="home_submit" method="get" class="sectionPublichUser" accept-charset="utf-8">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sectionCreateCHat">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 selectActtions max example">
+                    <select name="skills" multiple="" class="ui fluid dropdown">
+                      <option value="">Agregar usuarios +</option>
+                      <option value="angular">Angular</option>
+                      <option value="css">CSS</option>
+                      <option value="design">Graphic Design</option>
+                      <option value="ember">Ember</option>
+                      <option value="html">HTML</option>
+                      <option value="ia">Information Architecture</option>
+                      <option value="javascript">Javascript</option>
+                      <option value="mech">Mechanical Engineering</option>
+                      <option value="meteor">Meteor</option>
+                      <option value="node">NodeJS</option>
+                      <option value="plumbing">Plumbing</option>
+                      <option value="python">Python</option>
+                      <option value="rails">Rails</option>
+                      <option value="react">React</option>
+                      <option value="repair">Kitchen Repair</option>
+                      <option value="ruby">Ruby</option>
+                      <option value="ui">UI Design</option>
+                      <option value="ux">User Experience</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 selectActtions max example">
+                    <select name="skills" multiple="" class="ui fluid dropdown">
+                      <option value="">Agregar por áreas</option>
+                      <option value="angular">Angular</option>
+                      <option value="css">CSS</option>
+                      <option value="design">Graphic Design</option>
+                      <option value="ember">Ember</option>
+                      <option value="html">HTML</option>
+                      <option value="ia">Information Architecture</option>
+                      <option value="javascript">Javascript</option>
+                      <option value="mech">Mechanical Engineering</option>
+                      <option value="meteor">Meteor</option>
+                      <option value="node">NodeJS</option>
+                      <option value="plumbing">Plumbing</option>
+                      <option value="python">Python</option>
+                      <option value="rails">Rails</option>
+                      <option value="react">React</option>
+                      <option value="repair">Kitchen Repair</option>
+                      <option value="ruby">Ruby</option>
+                      <option value="ui">UI Design</option>
+                      <option value="ux">User Experience</option>
+                    </select>
+                  </div>
+                </div>
+
                 <div class="col-xs-12 col-sm-12 col-md-12">
                   <textarea name="" placeholder="Escribe un comentario"></textarea>
                 </div>

@@ -48,7 +48,6 @@ jQuery(document).ready(function($) {
 					  $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').append('<div class="col-lg-12 MensaGedate getUserReceive getSenMenIds'+elem+'">'+dataFecha+'</div>');	
 			    	  $.each(arrayMensagge, function(index, element) {
 			    	    mensages = element;
-			    	    console.log($(this));
 			    		$('.getSenMenIds'+elem+'').append('<div class="col-lg-12 wrapMensage envMensgaRce'+elem+'"><p>'+mensages+'</p></div>');
 		    		  });
 	    			}

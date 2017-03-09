@@ -438,27 +438,47 @@ class HomeController extends Controller
                 $numeroPocicion =$keyUnionConversation;
             }
 
-            $restandoUnaPocicion =$numeroPocicion-1;
-            /** Al total obtenido le resto uno para luego buscar el array que contenta la pociion 
-            anteriormente creada, la idea es buscar el penultimo valor **/
-            foreach ($UnionConversation as $key2UnionConversation => $value2UnionConversation) {
-                if($key2UnionConversation == $restandoUnaPocicion){
-                    $PenultimoValueArray = $value2UnionConversation;
-                }
-            }
 
-            // Get ultimo registro
-            $UltimoValueInsert = end($UnionConversation);
+            /*Hacemos la siguiente condicion par determinar si en la comversacion solo el user logiado a enviado mensaje, eso determina que solo existe un valor*/
+            if($numeroPocicion != 0){
+              $restandoUnaPocicion = $numeroPocicion-1;
+              /** Al total obtenido le resto uno para luego buscar el array que contenta la pociion 
+              anteriormente creada, la idea es buscar el penultimo valor **/
+              foreach ($UnionConversation as $key2UnionConversation => $value2UnionConversation) {
+                  if($key2UnionConversation == $restandoUnaPocicion){
+                      $PenultimoValueArray = $value2UnionConversation;
+                  }
+              }
+              // Get ultimo registro
+              $UltimoValueInsert = end($UnionConversation);
 
-            /**conprovamos quien fue el ultimo en escribir y si la hora fue mayor */
-            if($UltimoValueInsert['userSend'] == 1 && $UltimoValueInsert['time_send'] > $PenultimoValueArray['time_send']){
-              // Si el ultimo que escribio en la conversacion fue el que esta logiado, traeme este orden
-              $SendAndRecive = array_merge_recursive($arrayMensagesFechas2, $arrayMensagesFechas);
-              sort($SendAndRecive);
+              /**conprovamos quien fue el ultimo en escribir y si la hora fue mayor */
+              if($UltimoValueInsert['userSend'] == 1 && $UltimoValueInsert['time_send'] > $PenultimoValueArray['time_send']){
+                // Si el ultimo que escribio en la conversacion fue el que esta logiado, traeme este orden
+                $SendAndRecive = array_merge_recursive($arrayMensagesFechas2, $arrayMensagesFechas);
+                sort($SendAndRecive);
+              }else{
+                $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
+                sort($SendAndRecive);
+              }
             }else{
-              $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
-              sort($SendAndRecive);
+
+              foreach ($UnionConversation as $key2UnionConversation => $value2UnionConversation) {
+              }
+              // Get ultimo registro
+              $UltimoValueInsert = end($UnionConversation);
+
+              /**conprovamos quien fue el ultimo en escribir y si la hora fue mayor */
+              if($UltimoValueInsert['userSend'] == 1 && $UltimoValueInsert['time_send'] ){
+                // Si el ultimo que escribio en la conversacion fue el que esta logiado, traeme este orden
+                $SendAndRecive = array_merge_recursive($arrayMensagesFechas2, $arrayMensagesFechas);
+                sort($SendAndRecive);
+              }else{
+                $SendAndRecive = array_merge_recursive($arrayMensagesFechas, $arrayMensagesFechas2);
+                sort($SendAndRecive);
+              }
             }
+            
 
             echo json_encode($SendAndRecive);
  

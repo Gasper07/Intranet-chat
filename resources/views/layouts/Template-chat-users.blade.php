@@ -219,6 +219,25 @@
         })
       ;
 
+      $('.dropdownSemantic')
+          .dropdown({
+            transition: 'drop'
+          });
+
+        $('.max.example .ui.fluid.dropdown')
+          .dropdown({
+            maxSelections: 15
+          })
+        ;
+        $('.dataClicDEsplace .accordion')
+          .accordion({
+            selector: {
+              trigger: '.title .fa-angle-down'
+            }
+          })
+        ;
+
+
       
 
 

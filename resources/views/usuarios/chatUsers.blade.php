@@ -13,12 +13,7 @@
         {{-- bloque chat --}}
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatCOntentUsers">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 userCOntentChat chat_box">    
-            <div class="form-control messages_display col-xs-12 col-sm-6 col-md-6 col-lg-6 chatOfUser">
               
-            </div>     
-            <div class="form-control messages_display col-xs-12 col-sm-6 col-md-6 col-lg-6 chatMy">
-              
-            </div>    
           </div>
         </div>
         {{-- bloque enviar Mensaje --}}
@@ -42,41 +37,62 @@
       <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 captionRecordNotas captionAllMessage">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 dataShoWmensajes">
 
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 FriendWithChat">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RemoveChatWithUser">
-             <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-               <i class="fa fa-times" aria-hidden="true"></i>
-             </form>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-              <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette <span> dice: </span></p>
-              <p class="cont_previwMenSage">no se te olvide llevar...</p>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 TimeSendMenssage">
-             <p>6H</p>
-            </div>
-          </div>
+            @foreach($GetUltimateMensage as $GetdataS)
+              {{-- @if($GetdataS['id_user'] == $users->id or $GetdataS['id_user_conversation'] == $users->id ) --}}
+                @if($GetdataS['id_user'] != Auth::user()->id and $GetdataS['userReceive'] == 1)
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 FriendWithChat">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RemoveChatWithUser">
+                     <form action="chatUsers_submit" method="get" accept-charset="utf-8">
+                       <i class="fa fa-times" aria-hidden="true"></i>
+                     </form>
+                    </div>
+                    @foreach($getUsers as $users)
+                      @if($users->id == $GetdataS['id_user'])
+                        <a href="#!" data-iduserchat="{{ $users->id }}">
+                          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
+                            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
+                            <p class="colorBlack fontMiriamProSemiBold TitleUserMen">{{ $users->name }} <span> dice: </span></p>
+                            <p class="cont_previwMenSage">{{ $GetdataS['mensages'] }}...</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 TimeSendMenssage">
+                           <p>6H</p>
+                          </div>
+                        </a>
+                      @endif
+                    @endforeach
+                   
+                  </div>
+                @elseif($GetdataS['id_user_conversation'] != Auth::user()->id and $GetdataS['userSend'] == 1)
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 FriendWithChat">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RemoveChatWithUser">
+                     <form action="chatUsers_submit" method="get" accept-charset="utf-8">
+                       <i class="fa fa-times" aria-hidden="true"></i>
+                     </form>
+                    </div>
+                    @foreach($getUsers as $users)
+                      @if($users->id == $GetdataS['id_user_conversation'])
+                        <a href="#!" data-iduserchat="{{ $users->id }}">
+                          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
+                            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
+                            <p class="colorBlack fontMiriamProSemiBold TitleUserMen">{{ $users->name }} <span> dice: </span></p>
+                            <p class="cont_previwMenSage">Tu: {{ $GetdataS['mensages'] }}...</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 TimeSendMenssage">
+                           <p>6H</p>
+                          </div>
+                        </a>
+                      @endif
+                    @endforeach
+                  </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 FriendWithChat">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RemoveChatWithUser">
-             <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-               <i class="fa fa-times" aria-hidden="true"></i>
-             </form>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-              <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette <span> dice: </span></p>
-              <p class="cont_previwMenSage">no se te olvide llevar...</p>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 TimeSendMenssage">
-             <p>6H</p>
-            </div>
-          </div>
+                @endif
+            @endforeach
 
         </div>
 
@@ -144,7 +160,7 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="input-group">
-                      <input type="text" class="form-control" >
+                      <input id="filtrar" type="text" class="form-control" >
                       <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
                       </span>
@@ -169,85 +185,7 @@
                     </div>             
                   </a>                
                 </div>  
-              @endforeach
-              
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                <a href="">
-                  <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
-                    </div>
-                  </form>                  
-                </a>                
-              </div>   
-              
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                <a href="">
-                  <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
-                    </div>
-                  </form>                  
-                </a>                
-              </div>   
-              
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                <a href="">
-                  <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
-                    </div>
-                  </form>                  
-                </a>                
-              </div>   
-              
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                <a href="">
-                  <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
-                    </div>
-                  </form>                  
-                </a>                
-              </div>   
-              
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                <a href="">
-                  <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
-                    </div>
-                  </form>                  
-                </a>                
-              </div>   
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                <a href="">
-                  <form action="chatUsers_submit" method="get" accept-charset="utf-8">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
-                      <p class="colorBlack fontMiriamProSemiBold TitleUserMen">Lissette Rivas</p>
-                    </div>
-                  </form>                  
-                </a>                
-              </div>   
+              @endforeach  
 
             </div>
           </div>

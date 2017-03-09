@@ -3,12 +3,13 @@
 	  // Enter a unique channel you wish your users to be subscribed in.
 	  var channel=pusher.subscribe('test_channel');
 	  channel.bind('my_event', function(data) {
+	  	// $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds">fecha</div>');	
 	    // Add the new message to the container
-	    $('.messages_display').append('<p class="message_item">' + data.message + '</p>');
+	    $('.getUserSend').append('<div class="col-lg-12 wrapMensage envMensga"><p>'+data.message+'</p></div>');
 	    // Display the send button
 	    $('.input_send_holder').html('<input type="submit" value="Send" class="btn btn-primary input_send" />');
 	    // Scroll to the bottom of the container when a new message becomes available
-	    $(".messages_display").scrollTop($(".messages_display")[0].scrollHeight);
+	    $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').scrollTop($(".col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box")[0].scrollHeight);
 	  });
 	 
 	 // AJAX request
@@ -55,7 +56,8 @@
 	      id_Usuario_conversation: $('.chat_box .input_name').val(),
 	      id_Usuario: $('.chat_box .input_id_user_logi').val(),
 	      conversation: message,
-	      message: '<strong>' + $('.chat_box .input_name').val() + '</strong>: ' + message
+	      // message: '<strong>' + $('.chat_box .input_name').val() + '</strong>: ' + message
+	      message: message
 	    }
 	    // Send the message to the server
 	    ajaxCall('message_relay.php', chat_message);

@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 		    		
 		    	});
 
-		        console.log('almacenado3');
+		        console.log('almacenado3 nuevo');
 		    },
 		    error: function() {
 		        console.log('Error');

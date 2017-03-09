@@ -21,6 +21,7 @@
 	    data: ajax_data,
 	    success: function(response, textStatus, jqXHR) {
 	      console.log(jqXHR.responseText);
+	      console.log('get 2');
 	    },
 	    error: function(msg) {}
 	  });

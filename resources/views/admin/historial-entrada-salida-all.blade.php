@@ -95,617 +95,129 @@
 {{-- SECTION BLOQUE NOTIFICACION Y MENSAJES --}}
 <section class="container-fluid sectionAdminNotifiMensa sectionPostDats postDatasAllUSerhihs">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 HistiResultUser HistoryForAllUsers">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RegistroFechas">
-      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 USerdataHoras">
-        <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-        <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentDatsFechas">
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-          <h3>Registro de</h3>
-          <div class="datasEntradasSalidas datasUserAllsEntSal">
-            <h4>Entrada</h4>
-            <h4>Salida</h4>          
-          </div>
+    @foreach($UsersAlls as $DataUser)
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RegistroFechas">
+        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 USerdataHoras">
+          <div class="label dataProfileHistoryAllUsers" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $DataUser->foto }}')"> </div>
+          <p class="fontMiriamProSemiBold">{{ $DataUser->nombre }} {{ $DataUser->apellidos }}</p>
         </div>
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 carouselhistirys carouselAllUserHistory">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentDatsFechas">
+          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+            <h3>Registro de</h3>
+            <div class="datasEntradasSalidas datasUserAllsEntSal">
+              <h4>Entrada</h4>
+              <h4>Salida</h4>          
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-        </div>
-      </div>
-    </div>
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 carouselhistirys carouselAllUserHistory">
+            <div id="carousel-example-generic{{ $DataUser->id_usuario}}" class="carousel slide" data-ride="carousel">
+           
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  {{-- Obtenniendo la hora de entrada y salida del dia actual --}}
+                  @if(count($DataHistoryHoy) >0)
+                  @foreach($DataHistoryHoy as $history)
+                    @if($history['id_usuario'] == $DataUser->id_usuario)
+                      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                        <h3>Día de hoy</h3>
+                        <div class="datasEntradasSalidas">
+                          @if($history['hora_entrada'] < '12:00')
+                            <h4>{{ $history['hora_entrada'] }} a.m.</h4>
+                          @else
+                           <h4>{{ $history['hora_entrada'] }} p.m.</h4>
+                          @endif
+                          
+                          @if($history['hora_salida'] != null)
+                            @if($history['hora_salida'] < '12:00')
+                              <h4>{{ $history['hora_salida'] }} a.m.</h4>
+                            @else
+                             <h4>{{ $history['hora_salida'] }} p.m.</h4>
+                            @endif 
+                          @else
+                            <h4>----</h4>
+                          @endif                    
+                        </div>
+                      </div>
+                    @endif
+                    
+                  @endforeach
+                  @else
+                    <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                      <h3>Día de hoy</h3>
+                      <div class="datasEntradasSalidas">
+                        <h4>----</h4>
+                        <h4>----</h4>
+                      </div>
+                    </div>
+                  @endif
 
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RegistroFechas">
-      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 USerdataHoras">
-        <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-        <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentDatsFechas">
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-          <h3>Registro de</h3>
-          <div class="datasEntradasSalidas datasUserAllsEntSal">
-            <h4>Entrada</h4>
-            <h4>Salida</h4>          
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 carouselhistirys carouselAllUserHistory">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
+                 {{-- Obtenniendo el historial de llegadas del usuario --}}
+                 <p class="gasper"> {{ $banderiHistory = 0}}</p>
+                 @foreach($AsistenciasAll as $asisAll)
+                  @if($asisAll->id_usuario == $DataUser->id_usuario)
+                    <p class="gasper">{{ $carbon = new \Carbon\Carbon() }}</p>
+                    <p class="gasper">{{ $fechaActual = $carbon->now()->format('Y-m-d') }}</p> 
+                    @if($asisAll->fecha != $fechaActual)
+                      @if($banderiHistory < 5)
+                       <p class="gasper"> {{ $banderiHistory = $banderiHistory+1}}</p>
+                       <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                         <h3>{{ $asisAll->fecha }}</h3>
+                         <div class="datasEntradasSalidas">
+                           @if($asisAll->hora_entrada < '12:00')
+                             <h4>{{ $asisAll->hora_entrada }} a.m.</h4>
+                           @else
+                            <h4>{{ $asisAll->hora_entrada }} p.m.</h4>
+                           @endif
+                           @if($asisAll->hora_salida < '12:00')
+                              <h4>{{ $asisAll->hora_salida }} a.m.</h4>
+                           @else
+                             <h4>{{ $asisAll->hora_salida }} p.m.</h4>
+                           @endif 
+                         </div>
+                       </div>
+                       @elseif($banderiHistory == 5)
+                         </div>
+                         <p class="gasper"> {{ $banderiHistory = 0}}</p>
+                         <div class="item">
+                           <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                             <h3>{{ $asisAll->fecha }}</h3>
+                             <div class="datasEntradasSalidas">
+                               @if($asisAll->hora_entrada < '12:00')
+                                 <h4>{{ $asisAll->hora_entrada }} a.m.</h4>
+                               @else
+                                <h4>{{ $asisAll->hora_entrada }} p.m.</h4>
+                               @endif
+                               @if($asisAll->hora_salida < '12:00')
+                                  <h4>{{ $asisAll->hora_salida }} a.m.</h4>
+                               @else
+                                 <h4>{{ $asisAll->hora_salida }} p.m.</h4>
+                               @endif 
+                             </div>
+                           </div>
+                       @endif
+                     @endif 
+                   @endif()
+                                    
+                  @endforeach                  
                 </div>
               </div>
-              <div class="item">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control controlsHistirys" href="#carousel-example-generic{{ $DataUser->id_usuario}}" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control controlsHistirys" href="#carousel-example-generic{{ $DataUser->id_usuario}}" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
-    </div>
+    @endforeach
     
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RegistroFechas">
-      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 USerdataHoras">
-        <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-        <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentDatsFechas">
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-          <h3>Registro de</h3>
-          <div class="datasEntradasSalidas datasUserAllsEntSal">
-            <h4>Entrada</h4>
-            <h4>Salida</h4>          
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 carouselhistirys carouselAllUserHistory">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RegistroFechas">
-      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 USerdataHoras">
-        <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-        <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentDatsFechas">
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-          <h3>Registro de</h3>
-          <div class="datasEntradasSalidas datasUserAllsEntSal">
-            <h4>Entrada</h4>
-            <h4>Salida</h4>          
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 carouselhistirys carouselAllUserHistory">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RegistroFechas">
-      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 USerdataHoras">
-        <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-        <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contentDatsFechas">
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-          <h3>Registro de</h3>
-          <div class="datasEntradasSalidas datasUserAllsEntSal">
-            <h4>Entrada</h4>
-            <h4>Salida</h4>          
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 carouselhistirys carouselAllUserHistory">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Día de hoy</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                  <h3>Fecha</h3>
-                  <div class="datasEntradasSalidas datasUserAllsEntSal">
-                    <h4>7:50 a.m.</h4>
-                    <h4>6:50 ap.m.</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control controlsHistirys" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
   </div>
 </section>
   

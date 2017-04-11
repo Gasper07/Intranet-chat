@@ -43,89 +43,86 @@
 {{-- SECTION EVALUCIONES ALL FOR AREA --}}
 <section class="container-fluid sectionAdminNotifiMensa">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+    @if(Session::has('Evaluacion'))
+      <p class="alert alert-success">{{Session::get('Evaluacion')}}</p>
+    @endif
 
     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 OtherUserEdit lateEdiEvalution">
       
     </div>
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 sectionCenterContenido sectionCenEdituse sectionEvalutionUSer">
       {{-- ALL AREAS --}}
-      
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 forAreaEvalua">
-        <h3>Área de Preventa</h3>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 foreareaCandidatos">
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 lineDIvider">
-            <h3>Encargado de área</h3>
-            <a href="">
-              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-              <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-              <div class="ui star rating" data-rating="5"></div>
-            </a>            
-          </div>
+      @foreach($EncargadosOfAreas as $encargados)
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 forAreaEvalua">
+          <h3>Área de {{ $encargados->area }}</h3>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 foreareaCandidatos">
+            @foreach($UsersAlls as $users)
+              @if($encargados->id_encargardo == $users->id_usuario)
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 lineDIvider">
+                  <h3>Encargado de área</h3>
+                  <a href="#!">
+                    <div class="label dataPrubeIm dataProfileEvaluaciones" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $users->foto }}')"></div>
+                    {{-- <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt=""> --}}
+                    <p class="fontMiriamProSemiBold">{{ $users->nombre }} {{ $users->apellidos }}</p>
+                    @foreach ($RankingGeneral as $keyRankingGeneral => $valueRankingGeneral) 
+                      @if($users->id_usuario == $valueRankingGeneral['id_user'])
+                        @if($valueRankingGeneral['puntosRanking'] <= 15)
+                          <div class="ui star rating" data-rating="1"></div>
+                        @elseif ($valueRankingGeneral['puntosRanking'] > 15 && $valueRankingGeneral['puntosRanking'] <= 30) 
+                          <div class="ui star rating" data-rating="2"></div>
+                        @elseif ($valueRankingGeneral['puntosRanking'] > 30 && $valueRankingGeneral['puntosRanking'] <= 45) 
+                          <div class="ui star rating" data-rating="3"></div>
+                        @elseif ($valueRankingGeneral['puntosRanking'] > 45 && $valueRankingGeneral['puntosRanking'] < 75) 
+                          <div class="ui star rating" data-rating="4"></div>
+                        @elseif ($valueRankingGeneral['puntosRanking'] >= 75) 
+                          <div class="ui star rating" data-rating="5"></div>
+                        @endif
+                      @endif
+                    @endforeach
+                  </a>            
+                </div>
+              @endif
+            @endforeach
+            
 
-          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 UserOfArea">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis">
-              <a href="">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-                <div class="ui star rating" data-rating="5"></div>
-              </a>              
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis">
-              <a href="">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-                <div class="ui star rating" data-rating="5"></div>
-              </a>              
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis">
-              <a href="">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-                <div class="ui star rating" data-rating="5"></div>
-              </a>              
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 forAreaEvalua">
-        <h3>Área de Creativa</h3>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 foreareaCandidatos">
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 lineDIvider">
-            <h3>Encargado de área</h3>
-            <a href="">
-              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-              <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-              <div class="ui star rating" data-rating="5"></div>
-            </a>            
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 UserOfArea">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis">
-              <a href="">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-                <div class="ui star rating" data-rating="5"></div>
-              </a>              
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis">
-              <a href="">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-                <div class="ui star rating" data-rating="5"></div>
-              </a>              
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis">
-              <a href="">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-                <div class="ui star rating" data-rating="5"></div>
-              </a>              
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 UserOfArea">
+              @foreach($JoinTableUserDatas as $users)
+                @if($users->jefe_inmediato == $encargados->id_encargardo)
+                  <p class="gasper"> {{ $validaIdUser = '' }} </p>
+                  @foreach($HistorialEvaluaciones as $evaluaciones)
+                    @if($evaluaciones->id_usuario == $users->id_usuario)                      
+                      <p class="gasper">{{ $carbon = new \Carbon\Carbon() }}</p>
+                      <p class="gasper">{{ $MesActual = $carbon->now()->format('m') }}</p>
+                      @if($evaluaciones->proxima_evaluacion > $MesActual)
+                        @if($evaluaciones->mes_evaluacion == $MesActual)
+                          <p class="gasper"> {{ $validaIdUser = $users->id_usuario }} </p>
+                          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis UserYarealizo">
+                            <a href="evaluaciones-mensuales/{{ $encargados->id_encargardo }}/{{ $users->id_usuario }}">
+                              <div class="label dataPrubeIm dataProfileEvaluaciones" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $users->foto }}')"></div>
+                              <p class="fontMiriamProSemiBold">{{ $users->nombre }} {{ $users->apellidos }}</p>
+                              <div class="ui star rating" data-rating="5"></div>
+                            </a>              
+                          </div>
+                        @endif
+                      @endif
+                    @endif
+                  @endforeach
+                  @if($validaIdUser != $users->id_usuario)
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 othersUsersEstadis">
+                      <a href="evaluaciones-mensuales/{{ $encargados->id_encargardo }}/{{ $users->id_usuario }}">
+                        <div class="label dataPrubeIm dataProfileEvaluaciones" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $users->foto }}')"></div>
+                        <p class="fontMiriamProSemiBold">{{ $users->nombre }} {{ $users->apellidos }}</p>
+                        <div class="ui star rating" data-rating="5"></div>
+                      </a>              
+                    </div>
+                  @endif                  
+                @endif
+              @endforeach
+              
             </div>
           </div>
         </div>
-      </div>
-
+      @endforeach
 
     </div>
     <div class="col-md-12 datPublich publishChatAdmin publichDocuemnts">

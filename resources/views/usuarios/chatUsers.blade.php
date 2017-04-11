@@ -6,8 +6,8 @@
       <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 captionPosteos captionChat">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatWithUser">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatWithUserDatas">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
+             <div class="label dataPrubeIm dataProfileAllUsersListChatSelect recibeSelectChat" ></div>
+             <p class="colorBlack fontMiriamProSemiBold"></p>
            </div>
         </div>
         {{-- bloque chat --}}
@@ -38,7 +38,7 @@
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 dataShoWmensajes">
 
             @foreach($GetUltimateMensage as $GetdataS)
-              {{-- @if($GetdataS['id_user'] == $users->id or $GetdataS['id_user_conversation'] == $users->id ) --}}
+              {{-- @if($GetdataS['id_user'] == $users->id_usuario or $GetdataS['id_user_conversation'] == $users->id_usuario ) --}}
                 @if($GetdataS['id_user'] != Auth::user()->id and $GetdataS['userReceive'] == 1)
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 FriendWithChat">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RemoveChatWithUser">
@@ -47,18 +47,18 @@
                      </form>
                     </div>
                     @foreach($getUsers as $users)
-                      @if($users->id == $GetdataS['id_user'])
-                        <a href="#!" data-iduserchat="{{ $users->id }}">
+                      @if($users->id_usuario == $GetdataS['id_user'])
+                        <a href="#!" data-iduserchat="{{ $users->id_usuario }}">
                           <input type="hidden" name="_token" value="{{ csrf_token() }}">
                           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
+                            <div class="label dataPrubeIm dataProfileAllUsersListChat" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $users->foto }}')"></div>
                           </div>
                           <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                             <p class="colorBlack fontMiriamProSemiBold TitleUserMen">{{ $users->name }} <span> dice: </span></p>
                             <p class="cont_previwMenSage">{{ $GetdataS['mensages'] }}...</p>
                           </div>
                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 TimeSendMenssage">
-                           <p>6H</p>
+                           {{-- <p>6H</p> --}}
                           </div>
                         </a>
                       @endif
@@ -73,11 +73,11 @@
                      </form>
                     </div>
                     @foreach($getUsers as $users)
-                      @if($users->id == $GetdataS['id_user_conversation'])
-                        <a href="#!" data-iduserchat="{{ $users->id }}">
+                      @if($users->id_usuario == $GetdataS['id_user_conversation'])
+                        <a href="#!" data-iduserchat="{{ $users->id_usuario }}">
                           <input type="hidden" name="_token" value="{{ csrf_token() }}">
                           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
+                            <div class="label dataPrubeIm dataProfileAllUsersListChat" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $users->foto }}')"></div>
                           </div>
                           <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                             <p class="colorBlack fontMiriamProSemiBold TitleUserMen">{{ $users->name }} <span> dice: </span></p>
@@ -99,59 +99,44 @@
         {{-- BLOQUE CALENDAR --}}
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listConection lineChat">
         {{-- CAPTION USER LIVES --}}
-          <div class="captionUsersInLive">
-            <div class="ui accordion">
-              <h3 class="fontMiriamProRegular"><span class='estusLive'>•</span>En Linea</h3>
-              <div class="title">
-                
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
+        <div class="captionUsersInLive">
+          <div class="ui accordion">
+            <h3 class="fontMiriamProRegular"><span class='estusLive'>•</span>En Linea</h3>
+            <div class="title">
+              <p class="gasper"> {{ $banderaOnline = 0}}</p>
+              @foreach($AllOnlineUser as $onlineUsers)
+                <p class="gasper"> {{ $banderaOnline = $banderaOnline+1 }}</p>
+                <div class="captionCircleUser captionDenoews">
+                  <a href="" class="userLive" data-idonline='{{ $onlineUsers['id_user'] }}'>
+                    <div class="label dataPrubeIm vloqImageUser dataProfileAllUsersOnline" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $onlineUsers['foto'] }}')">
+                    </div>
                   </a>
                 </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </div>              
-              </div>
-              <div class="content">
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-              </div>
+                @if($banderaOnline > 3 )
+                  <div class="captionCircleUser">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div> 
+                  <p class="gasper"> {{ $banderaOnline = 0 }}</p>
+                  @break
+                @endif
+              @endforeach
+                                           
+            </div>
+            <div class="content">
+              @foreach($AllOnlineUser as $onlineUsers)
+                <p class="gasper"> {{ $banderaOnline = $banderaOnline+1 }}</p>                  
+                @if($banderaOnline >= 4 )
+                  <div class="captionCircleUser captionDenoews">
+                    <a href="" class="userLive" data-idonline='{{ $onlineUsers['id_user'] }}'>
+                      <div class="label dataPrubeIm vloqImageUser dataProfileAllUsersOnline" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $onlineUsers['foto'] }}')">
+                      </div>            
+                    </a>
+                  </div>
+                @endif
+              @endforeach
             </div>
           </div>
+        </div>
 
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ChatListAllUser">
             {{-- FILTAR BUISQUEDA --}}
@@ -175,10 +160,11 @@
 
               @foreach($getUsers as $users)
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 AlluserReegitradosPorBloque">
-                  <a href="#!" data-iduserchat="{{ $users->id }}">
+                  <a href="#!" data-iduserchat="{{ $users->id_usuario }}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 vloqImageUser">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
+                      <img class="img-responsive typeImgNull" src="http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $users->foto }}" alt="">
+                      <div class="label dataPrubeIm dataProfileAllUsersListChat" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $users->foto }}')"></div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 blqueDatasUser">
                       <p class="colorBlack fontMiriamProSemiBold TitleUserMen">{{ $users->name }}</p>
@@ -204,40 +190,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog contPusblishDialogo" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="col-xs-12 col-sm-12 col-md-12 continPublish">
-              <form action="home_submit" method="get" class="sectionPublichUser" accept-charset="utf-8">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <textarea name="" placeholder="Escribe un comentario"></textarea>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
-                  <div class="col-md-6 actionpuBlish">
-                    <div class="col-md-2 Adjuntar">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
-                    </div>
-                    <div class="col-md-2 AdjuntarFoto">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
-                    </div>
-                    <div class="col-md-2 DestacarPuslish">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
-                    </div>
-                    <div class="col-md-2 AlertPublish">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-6 ButtinPublish">
-                    <input type="submit" value="Enviar"></input>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('usuarios.partials.field-public-post')
 
     <!-- Modal chat -->
     <div class="modal fade" id="myModalCHat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -325,4 +278,9 @@
       </div>
     </div>
 </div>
+
+<div class="alert alert-info dataClMoPosPEr" role="alert">¡Publicacion Agregada!</div>
+{{-- Mensajes entrada salida --}}
+@include('usuarios.partials.fields-entrada-salida-mensajes')
+
 @endsection

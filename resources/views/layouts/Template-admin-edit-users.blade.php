@@ -22,14 +22,17 @@
     <!-- STYLE FONT AWESOME -->
     {!! Html::style('public/assets/css/font-awesome.css') !!}
     <!-- Datepicker Files -->
-    {!! Html::style('public/assets/datePicker/css/bootstrap-datepicker3.css') !!}
+    {!! Html::style('public/assets/css/datePicker/bootstrap-datepicker3.css') !!}
     {!! Html::style('public/assets/css/bootstrap-datetimepicker.min.css') !!}
     {{-- ClockPicker --}}
     {!! Html::style('public/assets/css/clock/bootstrap-clockpicker.min.css') !!}
     {{-- ColorPicker --}}
     {!! Html::style('public/assets/css/admin/colorpicker/spectrum.css') !!}
     {{-- Main style --}}
+    <link href="http://hayageek.github.io/jQuery-Upload-File/4.0.10/uploadfile.css" rel="stylesheet">
     {!! Html::style('public/assets/css/admin/main.css') !!}
+
+
 
     <!-- Scripts -->
     <script>
@@ -231,6 +234,7 @@
         new gnMenu( document.getElementById( 'gn-menu' ) );
     </script>
 
+
     <!-- Semantic Ui js -->
     {!! Html::script('public/assets/js/semantic.js') !!}
 
@@ -305,7 +309,7 @@
            });
        });
    </script>
-    {!! Html::script('public/assets/datePicker/js/bootstrap-datepicker.js') !!}
+    {!! Html::script('public/assets/js/datePicker/bootstrap-datepicker.js') !!}
    <script type="text/javascript">
       $('#sandbox-container .input-daterange').datepicker({
           format: "yyyy-mm-dd",
@@ -352,7 +356,13 @@
          ]
      });
    </script>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="http://hayageek.github.io/jQuery-Upload-File/4.0.10/jquery.uploadfile.min.js"></script>
+
     {!! Html::script('public/assets/js/admin/main.js') !!}
+    {!! Html::script('public/assets/js/admin/main_horarios.js') !!}
+    {!! Html::script('public/assets/js/admin/main_horarios_edit.js') !!}
 
    
 </body>

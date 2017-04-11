@@ -4,643 +4,249 @@
 <div class="container continerWithSite">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 captionPosteos captionProfiles">
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 captionProfileMy">
-          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-          <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-          <a href="" class="returnBoard">
-            <p>Regresar a Board de trabajo</p>
-          </a>
-        </div>
+        @foreach($JoinTableUserDatas as $dataUsers)
+           @if($dataUsers->id_usuario == Auth::user()->id)
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 captionProfileMy">
+              <div class="containerPhotoProfile" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $dataUsers->foto }}')">
+              </div>
+              <p class="colorBlack fontMiriamProSemiBold">{{ $dataUsers->nombre }} {{ $dataUsers->apellidos }}</p>
+              <a href="http://127.0.0.1/Sites/Intranet-chat/home" class="returnBoard">
+                <p>Regresar a Board de trabajo</p>
+              </a>
+            </div>
+           @endif
+        @endforeach
 
         {{-- CAPTION USER LIVES --}}
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="captionUsersInLive">
-            <div class="ui accordion">
-              <h3 class="fontMiriamProRegular">Usuarios</h3>
-              <div class="title">
-                
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </div>              
-              </div>
-              <div class="content">
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        @include('usuarios.partials.fields-users-all-chat')
         
         {{-- HORARRIOS DE USURIOS --}}
+        @include('usuarios.partials.fields-horarios-other-user')
 
-        <div class="col-xs-12 col-sm-12 col-md-12 HorariosUser horriosVisitProfile">
-          <div class="col-xs-12 col-sm-12 col-md-12 sectionHorarios">
-            <p id='titleHorrarios'>Horarios</p>
-
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <p class="ListDays fontMiriamProSemiBold">Lunes, Martes, Miercoles</p>
-              <p class="ListHours fontMiriamProRegular">8:00 a.m. a 6:00 p.m.</p>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <p class="ListDays fontMiriamProSemiBold">Sábado</p>
-              <p class="ListHours fontMiriamProRegular">8:00 a.m. a 1:00 p.m.</p>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <p class="ListDays fontMiriamProSemiBold">Días de descanso</p>
-              <p class="ListHours fontMiriamProRegular DayDescans">Sábado</p>
-              <p class="ListHours fontMiriamProRegular DayDescans">Domingo</p>
-            </div>
-          </div>          
-        </div>
-
-        {{-- manuales --}}
-        <div class="col-xs-12 col-sm-12 col-md-12 LinksForEmpleados datManualVIsitante">
-          <ul>
-              <li>
-                <a href="">
-                 Manual de empleado
-                </a>
-              </li>
-              <li>
-                <a href="">
-                 Reglamento institucional
-                </a>
-              </li>
-              <li>
-                <a href="">
-                 Ayuda
-                </a>
-              </li>
-          </ul>
-        </div>
+        {{-- Manuales --}}
+        @include('usuarios.partials.fields-manuales')
 
      </div>
 
      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 sectionProfiles">
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ProfileFotosStarts">
-         <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-         <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-         <div class="ui star rating" data-rating="5"></div>
-       </div>
 
-        {{-- Information empleado --}}
-       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 InformacionEmpleado">
-        <form action="profile_submit" method="get" accept-charset="utf-8">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataEmpleados">
-            {{-- ONE COLUMN --}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Departamento</p>
-                <input class="detallInformation" type="text" value="Creativo" disabled="disabled">
+        @foreach($JoinTableUserDatas as $dataUsers)
+         @if($dataUsers->id_usuario == $idUserLogin)
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ProfileFotosStarts">
+             <div class="containerPhotoProfile" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $dataUsers->foto }}')">
+             </div>
+             <p class="colorBlack fontMiriamProSemiBold">{{ $dataUsers->nombre }} {{ $dataUsers->apellidos }}</p>
+             @foreach ($RankingGeneral as $keyRankingGeneral => $valueRankingGeneral) 
+               @if($dataUsers->id_usuario == $valueRankingGeneral['id_user'])
+                 @if($valueRankingGeneral['puntosRanking'] <= 15)
+                   <div class="ui star rating" data-rating="1"></div>
+                 @elseif ($valueRankingGeneral['puntosRanking'] > 15 && $valueRankingGeneral['puntosRanking'] <= 30) 
+                   <div class="ui star rating" data-rating="2"></div>
+                 @elseif ($valueRankingGeneral['puntosRanking'] > 30 && $valueRankingGeneral['puntosRanking'] <= 45) 
+                   <div class="ui star rating" data-rating="3"></div>
+                 @elseif ($valueRankingGeneral['puntosRanking'] > 45 && $valueRankingGeneral['puntosRanking'] < 75) 
+                   <div class="ui star rating" data-rating="4"></div>
+                 @elseif ($valueRankingGeneral['puntosRanking'] >= 75) 
+                   <div class="ui star rating" data-rating="5"></div>
+                 @endif
+               @endif
+             @endforeach
+           </div>
+            {{-- Information empleado --}}
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 InformacionEmpleado">
+            <form action="profile_submit" method="get" class="profile_userEdit" accept-charset="utf-8">
+               <input type="hidden" name="id_user_update" value="{{ $idUserLogin }}">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataEmpleados">
+                {{-- ONE COLUMN --}}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Departamento</p>
+                    <input class="detallInformation dtaYesEdit" name="update_departament" type="text" value="{{ $dataUsers->area_departamento }}" disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Cargo</p>
+                    <input class="detallInformation" type="text" value="{{ $dataUsers->cargo }}" disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Jefe inmediato</p>
+                   @foreach($getUsers as $DataUsers)
+                     @if($dataUsers->jefe_inmediato == $DataUsers->id_usuario)
+                       <input class="detallInformation" type="text" name="" value="{{ $DataUsers->name }} {{ $DataUsers->apellidos }}" disabled="disabled">
+                     @endif
+                   @endforeach
+                    
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">ADP</p>
+                    <input class="detallInformation" type="text" value="Ninguno" disabled="disabled">
+                  </div>
+                </div>
+
+                {{-- Two COLUMN --}}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Género</p>
+                    <input class="detallInformation dtaYesEdit" name="update_genero" type="text" value="{{ $dataUsers->genero }}" disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Estado Civil</p>
+                    <input class="detallInformation dtaYesEdit" name="update_estado_civil" type="text" value="{{ $dataUsers->estado_civil }}" disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Dirección</p>
+                    <input class="detallInformation dtaYesEdit" name="update_direccion" type="text" value="{{ $dataUsers->direccion }}" disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Correo</p>
+                    <input class="detallInformation" type="text" value="{{ $dataUsers->correo_corporativo }}" disabled="disabled">
+                  </div>
+                </div>
+
+                {{-- Three COLUMN --}}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Cumpleaños</p>
+                    <input class="detallInformation dtaYesEdit" name="update_cumple" type="text" value="{{ $dataUsers->cumpleanos }}" disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Número de celular</p>
+                    <input class="detallInformation dtaYesEdit" name="update_cel" type="text" value="{{ $dataUsers->celular }}" disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Extención</p>
+                    <input class="detallInformation dtaYesEdit" name="update_ext" type="text" value="{{ $dataUsers->extencion }}" disabled="disabled">
+                  </div>
+
+                </div>
+
               </div>
 
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Cargo</p>
-                <input class="detallInformation" type="text" value="Diseñadora Gráfica" disabled="disabled">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataEmpleados TwoSection">
+                {{-- ONE COLUMN --}}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Técnico</p>
+                    <input class="detallInformation dtaYesEdit" name="update_tecnico" type="text" value="@if($dataUsers->tecnico != '') {{ $dataUsers->tecnico }} @else -- @endif " disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Posgrado</p>
+                    <input class="detallInformation dtaYesEdit" name="update_posgrado" type="text" value="@if($dataUsers->postgrado != '') {{ $dataUsers->postgrado }} @else -- @endif " disabled="disabled">
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Diplomado</p>
+                    <input class="detallInformation dtaYesEdit" name="update_diplomado" type="text" value="@if($dataUsers->diplomado != '') {{ $dataUsers->diplomado }} @else -- @endif " disabled="disabled">
+                  </div>
+
+                </div>
+
+                {{-- Two COLUMN --}}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Habilidades</p>
+                    <input class="detallInformation dtaYesEdit" name="update_hibilidades" type="text" value="{{ $dataUsers->habilidades }}" disabled="disabled">
+                  </div>
+
+                </div>
+
+                {{-- Three COLUMN --}}
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
+                    <p class="titleInformation">Otros conocimientos</p>
+                    <input class="detallInformation dtaYesEdit" name="update_other_conocimientos" type="text" value="@if($dataUsers->postgrado != '') {{ $dataUsers->other_conocimiento }} @else -- @endif " disabled="disabled">
+                  </div>
+
+                </div>
+
               </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Jefe inmediato</p>
-                <input class="detallInformation" type="text" value="Ing. Juan Carlos Valdez" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">ADP</p>
-                <input class="detallInformation" type="text" value="Ninguno" disabled="disabled">
-              </div>
-            </div>
-
-            {{-- Two COLUMN --}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Género</p>
-                <input class="detallInformation" type="text" value="Femenino" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Estado Civil</p>
-                <input class="detallInformation" type="text" value="Divorciada" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Dirección</p>
-                <input class="detallInformation" type="text" value="Mordor" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Correo</p>
-                <input class="detallInformation" type="text" value="liss.@valdezmobile.com" disabled="disabled">
-              </div>
-            </div>
-
-            {{-- Three COLUMN --}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Cumpleaños</p>
-                <input class="detallInformation" type="text" value="31 de Octubre de 1990" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Número de celular</p>
-                <input class="detallInformation" type="text" value="7843-8903" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Número de casa</p>
-                <input class="detallInformation" type="text" value="Número de casa" disabled="disabled">
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataEmpleados TwoSection">
-            {{-- ONE COLUMN --}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Técnico</p>
-                <input class="detallInformation" type="text" value="Técnico en" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Posgrado</p>
-                <input class="detallInformation" type="text" value="Marketing" disabled="disabled">
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Diplomado</p>
-                <input class="detallInformation" type="text" value="--" disabled="disabled">
-              </div>
-
-            </div>
-
-            {{-- Two COLUMN --}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Habilidades</p>
-                <input class="detallInformation" type="text" value="Diseñadora Gráfica" disabled="disabled">
-              </div>
-
-            </div>
-
-            {{-- Three COLUMN --}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ColumnsData">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ColumnsDataText">
-                <p class="titleInformation">Otros conocimientos</p>
-                <input class="detallInformation" type="text" value="Creativo" disabled="disabled">
-              </div>
-
-            </div>
-
-          </div>
-        </form>
-          
-       </div>
+            </form>
+              
+           </div>
+         @endif
+        @endforeach
 
        {{-- EVENTOS COMPARTIDOS --}}
        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataEventos">
         <h3>Eventos compartidos</h3>
        </div>
        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 captionPosteos captionPostesOfUser">
-         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-           <div class="col-md-12">
-               <div class="ui feed uifeedAvatar">
-                 <div class="event">
-                   <div class="label">
-                     <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                   </div>
-                   <div class="content">
-                     <div class="summary">
-                       <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                         Leonardo
-                       </a>
-                       <div class="date fontMiriamProRegular colorGrisMediumSuave">
-                         1 Hour
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/bg-post.jpg" alt="post-user">
-               <div class="ui feed uifeedActions">
-                 <div class="event">
-                   <div class="label">
-                     <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/etiqueta-ico.png">
-                   </div>
-                   <div class="content contLike">
-                     <div class="summary">
-                       <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                         45 Valdecitos
-                       </a>
-                       <div class="date datePint fontMiriamProRegular colorGrisMediumSuave">
-                         <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/pines-ico.png">
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
+           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+             @foreach($DataArrayPostImpar as $dataArrPostImpar => $PostImpar)
+               @if($PostImpar['id_usuario'] == $idUserLogin)
+                 @if($PostImpar['id_tipo_publicacion'] == 1 or $PostImpar['id_tipo_publicacion'] == 2 && $PostImpar['imagen'] != '')
+                   @include('usuarios.partials.posts.fields-tipo-posnormal-impar')
 
-               <div class="ui feed uifeedComnetUser">
-                 <div class="event">
-                   <div class="label">
-                     <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                   </div>
-                   <div class="content">
-                     <div class="summary">
-                       <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                         Leonardo
-                       </a>
-                       <div class="date fontMiriamProRegular colorGrisMediumSuave comentUser">
-                         Awww que bonito
-                       </div>                           
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               <form class="ui form formComentUser">
-                 <div class="field">
-                   <input type="text" name="first-name" placeholder="Comentario">
-                 </div>
-                 
-               </form>
+                 @elseif($PostImpar['id_tipo_publicacion'] == 1 or $PostImpar['id_tipo_publicacion'] == 2 && $PostImpar['documentos'] != '')
+                    @include('usuarios.partials.posts.fields-tipo-posnormal-impar-with-document-impar')
+
+                 @elseif($PostImpar['id_tipo_publicacion'] == 1 or $PostImpar['id_tipo_publicacion'] == 2 && $PostImpar['imagen'] == '' && $PostImpar['documentos'] == '')
+                 @include('usuarios.partials.posts.fields-tipo-posnormal-impar-with-document-imagen-impar')
+
+                 {{-- Si el post es tipo vacaciones --}}
+                 @elseif($PostImpar['id_tipo_publicacion'] == 4)
+                   @include('usuarios.partials.posts.fields-tipo-vacaciones-impar')
+                   
+                   {{-- Si el post es tipo EVENTO --}}
+                   @elseif($PostImpar['id_tipo_publicacion'] == 6)
+                     @include('usuarios.partials.posts.fields-tipo-Eventos-IMPAR')
+
+                 @elseif($PostImpar['id_tipo_publicacion'] == 5)
+                   @include('usuarios.partials.posts.fields-tipo-cumple-impar')
+                   
+                 @endif
+               @endif
+               
+             @endforeach
            </div>
 
-          <div class="col-md-12">
-              <div class="ui feed uifeedAvatar">
-                <div class="event">
-                  <div class="label">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                  </div>
-                  <div class="content">
-                    <div class="summary">
-                      <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                        Leonardo
-                      </a>
-                      <div class="date fontMiriamProRegular colorGrisMediumSuave">
-                        1 Hour
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p class="textCOment fontMiriamProRegular colorGrisMediumSuave">Awww que bonito loremp imsum loremp imsum loremp imsum loremp imsum</p>
-              <div class="ui feed uifeedActions">
-                <div class="event">
-                  <div class="label">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/etiqueta-ico.png">
-                  </div>
-                  <div class="content contLike">
-                    <div class="summary">
-                      <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                        45 Valdecitos
-                      </a>
-                      <div class="date datePint fontMiriamProRegular colorGrisMediumSuave">
-                        <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/pines-ico.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+           {{-- BLOQUE LATERAL --}}
+           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-              <div class="ui feed uifeedComnetUser">
-                <div class="event">
-                  <div class="label">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                  </div>
-                  <div class="content">
-                    <div class="summary">
-                      <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                        Leonardo
-                      </a>
-                      <div class="date fontMiriamProRegular colorGrisMediumSuave comentUser">
-                        Awww que bonito
-                      </div>                           
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <form class="ui form formComentUser">
-                <div class="field">
-                  <input type="text" name="first-name" placeholder="Comentario">
-                </div>
-                
-              </form>
-          </div>
+             @foreach($DataArrayPostPar as $dataArrPostPar => $PostPar)
+              @if($PostPar['id_usuario'] == $idUserLogin)
+                 @if($PostPar['id_tipo_publicacion'] == 1 or $PostPar['id_tipo_publicacion'] == 2 && $PostPar['imagen'] != '')
+                   @elseif($PostPar['id_tipo_publicacion'] == 1 or $PostPar['id_tipo_publicacion'] == 2 && $PostPar['documentos'] != '')
+                     @include('usuarios.partials.posts.fields-tipo-posnormal-par-with-document-PAR')
 
-       </div>
+                   @elseif($PostPar['id_tipo_publicacion'] == 1 or $PostPar['id_tipo_publicacion'] == 2 && $PostPar['imagen'] == '' && $PostPar['documentos'] == '')
+                    @include('usuarios.partials.posts.fields-tipo-posnormal-par-with-document-imagen-PAR')
 
-       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-         <div class="col-md-12">
-             <div class="ui feed uifeedAvatar">
-               <div class="event">
-                 <div class="label">
-                   <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                 </div>
-                 <div class="content">
-                   <div class="summary">
-                     <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                       Leonardo
-                     </a>
-                     <div class="date fontMiriamProRegular colorGrisMediumSuave">
-                       1 Hour
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <p class="textCOment fontMiriamProRegular colorGrisMediumSuave">Awww que bonito loremp imsum loremp imsum loremp imsum loremp imsum</p>
-             <div class="ui feed uifeedActions">
-               <div class="event">
-                 <div class="label">
-                   <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/etiqueta-ico.png">
-                 </div>
-                 <div class="content contLike">
-                   <div class="summary">
-                     <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                       45 Valdecitos
-                     </a>
-                     <div class="date datePint fontMiriamProRegular colorGrisMediumSuave">
-                       <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/pines-ico.png">
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
+                    {{-- Si el post es tipo vacaciones --}}
+                    @elseif($PostPar['id_tipo_publicacion'] == 4)
+                      @include('usuarios.partials.posts.fields-tipo-vacaciones-PAR')
 
-             <div class="ui feed uifeedComnetUser">
-               <div class="event">
-                 <div class="label">
-                   <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                 </div>
-                 <div class="content">
-                   <div class="summary">
-                     <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                       Leonardo
-                     </a>
-                     <div class="date fontMiriamProRegular colorGrisMediumSuave comentUser">
-                       Awww que bonito
-                     </div>                           
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <form class="ui form formComentUser">
-               <div class="field">
-                 <input type="text" name="first-name" placeholder="Comentario">
-               </div>
-               
-             </form>
-         </div>
+                    {{-- Si el post es tipo EVENTO --}}
+                    @elseif($PostPar['id_tipo_publicacion'] == 6)
+                      @include('usuarios.partials.posts.fields-tipo-Eventos-PAR')
 
-         <div class="col-md-12">
-             <div class="ui feed uifeedAvatar">
-               <div class="event">
-                 <div class="label">
-                   <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                 </div>
-                 <div class="content">
-                   <div class="summary">
-                     <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                       Leonardo
-                     </a>
-                     <div class="date fontMiriamProRegular colorGrisMediumSuave">
-                       1 Hour
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <p class="textCOment fontMiriamProRegular colorGrisMediumSuave">Awww que bonito loremp imsum loremp imsum loremp imsum loremp imsum</p>
-             <div class="ui feed uifeedActions">
-               <div class="event">
-                 <div class="label">
-                   <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/etiqueta-ico.png">
-                 </div>
-                 <div class="content contLike">
-                   <div class="summary">
-                     <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                       45 Valdecitos
-                     </a>
-                     <div class="date datePint fontMiriamProRegular colorGrisMediumSuave">
-                       <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/pines-ico.png">
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-
-             <div class="ui feed uifeedComnetUser">
-               <div class="event">
-                 <div class="label">
-                   <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/rostro-ico.jpg">
-                 </div>
-                 <div class="content">
-                   <div class="summary">
-                     <a class="user colorGrisMediumSuave fontMiriamProSemiBold">
-                       Leonardo
-                     </a>
-                     <div class="date fontMiriamProRegular colorGrisMediumSuave comentUser">
-                       Awww que bonito
-                     </div>                           
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <form class="ui form formComentUser">
-               <div class="field">
-                 <input type="text" name="first-name" placeholder="Comentario">
-               </div>
-               
-             </form>
+                    @elseif($PostPar['id_tipo_publicacion'] == 5)
+                      @include('usuarios.partials.posts.fields-tipo-cumple-PAR')
+                   
+                 @endif
+               @endif
+             @endforeach
          </div>
        </div>
-
-
-      </div>
      </div>
 
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 captionRecordNotas SecCalendar">
 
         {{-- BLOQUE CALENDAR --}}
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="captionCalendar">
-            <div class="dayMonth">
-              <p class="fontMiriamProSemiBold">Agenda</p>
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 fechaData">
-                <p class="DayAgenda">Lunes</p>
-                <p class="DayNumberAgenda">4</p>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 fechaData fechType">
-                <p class="typEEvento">Hoy capacitación </br>para técnicos</p>
-              </div>
-            </div>
-            <div class="calendarDatas">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner carouselWithMeses" role="listbox">
-                  <div class="item active nameMonth">
-                     <h3>January</h3>
-                     <div class="daysCalendar">
-                       <div class="dataDays">s</div>
-                       <div class="dataDays">m</div>
-                       <div class="dataDays">t</div>
-                       <div class="dataDays">w</div>
-                       <div class="dataDays">t</div>
-                       <div class="dataDays">f</div>
-                       <div class="dataDays">s</div>
-                     </div>
-                     <div class="daysNumberCalendar">
-                       <div class="dataDays dayDomingo">    
-                       </div>
-                       <div class="dataDays">                         
-                       </div>
-                       <div class="dataDays">                         
-                       </div>
-                       <div class="dataDays">                         
-                       </div>
-                       <div class="dataDays">                         
-                       </div>
-                       <div class="dataDays">1</div>
-                       <div class="dataDays">2</div>
-                       <div class="dataDays dayDomingo">3</div>
-                       <div class="dataDays">4</div>
-                       <div class="dataDays">5</div>
-                       <div class="dataDays">6</div>
-                       <div class="dataDays">7</div>
-                       <div class="dataDays">8</div>
-                       <div class="dataDays">9</div>
-                       <div class="dataDays dayDomingo">10</div>
-                       <div class="dataDays">11</div>
-                       <div class="dataDays">12</div>
-                       <div class="dataDays">13</div>
-                       <div class="dataDays">14</div>
-                       <div class="dataDays dayEvento">                        
-                        <div class="ui button">15</div>
-                        <div class="ui special popup">
-                          <div class="header">Día de pago</div>
-                        </div>
-                       </div>
-                       <div class="dataDays">16</div>
-                       <div class="dataDays dayDomingo">17</div>
-                       <div class="dataDays">18</div>
-                       <div class="dataDays">19</div>
-                       <div class="dataDays">20</div>
-                       <div class="dataDays">21</div>
-                       <div class="dataDays">22</div>
-                       <div class="dataDays">23</div>
-                       <div class="dataDays dayDomingo">24</div>
-                       <div class="dataDays">25</div>
-                       <div class="dataDays">26</div>
-                       <div class="dataDays">27</div>
-                       <div class="dataDays">28</div>
-                       <div class="dataDays">29</div>
-                       <div class="dataDays">30</div>
-                       <div class="dataDays dayEvento">31</div>
-                       <div class="dataDays">
-                       </div>
-                       <div class="dataDays">
-                       </div>
-                       <div class="dataDays">
-                       </div>
-                       <div class="dataDays">
-                       </div>
-                       <div class="dataDays">
-                       </div>
-                       <div class="dataDays">
-                       </div>
-                     </div>
-
-                  </div>
-                </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {{-- SECTION ADD EVENT CALENDAR --}}
-          
-          <div class="captionAddEvento">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation"><a href="#profile" class="fontMiriamProRegular" aria-controls="profile" role="tab" data-toggle="tab">Agregar evento a calendario</a></li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content tabconteAddComent">
-              <div role="tabpanel" class="tab-pane fade" id="profile">
-                <form action="">
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Escribe el evento"></textarea>
-                  <div id='sandbox-container'>                    
-                    <div class="input-daterange input-group" id="datepicker">
-                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 captioNFehcIni">     
-                        <input type="text" class="input-sm form-control" name="fecha-start" />
-                      </div>                 
-                    </div>
-                    <h4 class="colorGrisMediumSuave fontMiriamProRegular">Seleccionar fecha</h4>
-                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 captioNFehcFina">
-                      <input type="submit" class="form-control Submit" name="end"  value='Aceptar'/>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+          {{-- SECTION CALENDAR AND ADD EVENT CALENDAR --}}
+          @include('usuarios.partials.fields-lateral-calendar')
           
           {{-- GALERIA DE FOTOS --}}
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 geleriFotosUser">
-            <h3>Galería de fotos</h3>
-            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/galeriFotos.jpg" alt="" data-toggle="modal" data-target="#myModal">
-            <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/galeriFotos.jpg" alt="" data-toggle="modal" data-target="#myModal">
-          </div>
+          @include('usuarios.partials.fields-galeria-fotos-user')
 
         </div>
         
@@ -654,39 +260,13 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog contPusblishDialogo" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="col-xs-12 col-sm-12 col-md-12 continPublish">
-              <form action="home_submit" method="get" class="sectionPublichUser" accept-charset="utf-8">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <textarea name="" placeholder="Escribe un comentario"></textarea>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
-                  <div class="col-md-6 actionpuBlish">
-                    <div class="col-md-2 Adjuntar">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
-                    </div>
-                    <div class="col-md-2 AdjuntarFoto">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
-                    </div>
-                    <div class="col-md-2 DestacarPuslish">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
-                    </div>
-                    <div class="col-md-2 AlertPublish">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-6 ButtinPublish">
-                    <input type="submit" value="Enviar"></input>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('usuarios.partials.field-public-post')
 </div>
+
+<div class="alert alert-info dataClMoPosPEr" role="alert">¡Publicacion Agregada!</div>
+{{-- Mensajes entrada salida --}}
+@include('usuarios.partials.fields-entrada-salida-mensajes')
+
+{{-- WINDOWS CHAT --}}
+@include('usuarios.partials.fields-windows-chat')
 @endsection

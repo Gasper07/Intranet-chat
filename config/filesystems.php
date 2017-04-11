@@ -54,6 +54,16 @@ return [
             'visibility' => 'public',
         ],
 
+        'ubUploads' => [
+            'driver' => 'local',
+            'root'   => 'public/assets/images/documents-admin/',
+        ],
+
+        'ubUploadsChange' => [
+            'driver' => 'local',
+            'root'   => 'public/assets/documents-admin/',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => 'your-key',

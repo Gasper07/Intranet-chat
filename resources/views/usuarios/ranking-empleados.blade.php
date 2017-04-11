@@ -4,46 +4,59 @@
 <div class="container continerWithSite">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 captionPosteos captionRabkinEmpleados">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 profilesRabking">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ProfileFotosStarts">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-             <p class="PuntuancionRanlinkNumber">4.5</p>
-             <div class="ui star rating" data-rating="5"></div>
-           </div>
-        </div>
+        @foreach($JoinTableUserDatosPersonalesDatosEmpleado as $UsersEmpleados)
+          @if($UsersEmpleados->id_usuario == $UserMejorRanking['id_user'])
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 profilesRabking">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ProfileFotosStarts">
+                 <div class="label dataPrubeIm dataProfileRankingUser" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $UsersEmpleados->foto }}')"></div>
+                 <p class="colorBlack fontMiriamProSemiBold">{{ $UsersEmpleados->nombre }} {{ $UsersEmpleados->apellidos }}</p>
+                 {{-- <p class="PuntuancionRanlinkNumber">4.5</p> --}}
+                 @foreach ($RankingGeneral as $keyRankingGeneral => $valueRankingGeneral) 
+                   @if($UsersEmpleados->id_usuario == $valueRankingGeneral['id_user'])
+                     @if($valueRankingGeneral['puntosRanking'] <= 15)
+                       <div class="ui star rating" data-rating="1"></div>
+                     @elseif ($valueRankingGeneral['puntosRanking'] > 15 && $valueRankingGeneral['puntosRanking'] <= 30) 
+                       <div class="ui star rating" data-rating="2"></div>
+                     @elseif ($valueRankingGeneral['puntosRanking'] > 30 && $valueRankingGeneral['puntosRanking'] <= 45) 
+                       <div class="ui star rating" data-rating="3"></div>
+                     @elseif ($valueRankingGeneral['puntosRanking'] > 45 && $valueRankingGeneral['puntosRanking'] < 75) 
+                       <div class="ui star rating" data-rating="4"></div>
+                     @elseif ($valueRankingGeneral['puntosRanking'] >= 75) 
+                       <div class="ui star rating" data-rating="5"></div>
+                     @endif
+                   @endif
+                 @endforeach
+               </div>
+            </div>
+          @endif
+        @endforeach
+        
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 profilesRabking profileMoreUSaer">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ProfileFotosStartsMoreUser">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-             <div class="ui star rating" data-rating="5"></div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ProfileFotosStartsMoreUser">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-             <div class="ui star rating" data-rating="5"></div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ProfileFotosStartsMoreUser">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-             <div class="ui star rating" data-rating="5"></div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ProfileFotosStartsMoreUser">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-             <div class="ui star rating" data-rating="5"></div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ProfileFotosStartsMoreUser">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-             <div class="ui star rating" data-rating="5"></div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ProfileFotosStartsMoreUser">
-             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>
-             <div class="ui star rating" data-rating="5"></div>
-          </div>
+          @foreach($JoinTableUserDatosPersonalesDatosEmpleado as $UsersEmpleados)
+            @if($UsersEmpleados->id_usuario != $idMejorRanking)
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ProfileFotosStartsMoreUser">
+                 <div class="label dataPrubeIm dataProfileRankingUserOthers" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $UsersEmpleados->foto }}')"></div>
+                 <p class="colorBlack fontMiriamProSemiBold">{{ $UsersEmpleados->nombre }} {{ $UsersEmpleados->apellidos }}</p>
+                 @foreach ($RankingGeneral as $keyRankingGeneral => $valueRankingGeneral) 
+                  @if($UsersEmpleados->id_usuario == $valueRankingGeneral['id_user'])
+                    @if($valueRankingGeneral['puntosRanking'] <= 15)
+                      <div class="ui star rating" data-rating="1"></div>
+                    @elseif ($valueRankingGeneral['puntosRanking'] > 15 && $valueRankingGeneral['puntosRanking'] <= 30) 
+                      <div class="ui star rating" data-rating="2"></div>
+                    @elseif ($valueRankingGeneral['puntosRanking'] > 30 && $valueRankingGeneral['puntosRanking'] <= 45) 
+                      <div class="ui star rating" data-rating="3"></div>
+                    @elseif ($valueRankingGeneral['puntosRanking'] > 45 && $valueRankingGeneral['puntosRanking'] < 75) 
+                      <div class="ui star rating" data-rating="4"></div>
+                    @elseif ($valueRankingGeneral['puntosRanking'] >= 75) 
+                      <div class="ui star rating" data-rating="5"></div>
+                    @endif
+                  @endif
+                @endforeach
+              </div>
+            @endif
+          @endforeach
+          
         </div>
 
       </div>
@@ -71,119 +84,15 @@
         {{-- BLOQUE CALENDAR --}}
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 listConection">
           <div class="col-xs-12 col-sm-12 col-md-12 backReturn">
-            <a href="">
+            <a href="home">
               <p>Regresar a Board de trabajo</p>
             </a>
           </div>
         {{-- CAPTION USER LIVES --}}
-          <div class="captionUsersInLive">
-            <div class="ui accordion">
-              <h3 class="fontMiriamProRegular"><span class='estusLive'>•</span>En Linea</h3>
-              <div class="title">
-                
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </div>              
-              </div>
-              <div class="content">
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          @include('usuarios.partials.fields-user-online')
 
         {{--ALL USERS --}}
-          <div class="captionUsersInLive">
-            <div class="ui accordion">
-              <h3 class="fontMiriamProRegular">Usuarios</h3>
-              <div class="title">
-                
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </div>              
-              </div>
-              <div class="content">
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-donald.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-lise.png" alt="">            
-                  </a>
-                </div>
-                <div class="captionCircleUser">
-                  <a href="" class="userLive">
-                    <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/user-leo.png" alt="">            
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          @include('usuarios.partials.fields-users-all-chat')
 
 
           <div class="captionActivitiesRecientes activitisInRanking">
@@ -256,40 +165,13 @@
 
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog contPusblishDialogo" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="col-xs-12 col-sm-12 col-md-12 continPublish">
-              <form action="home_submit" method="get" class="sectionPublichUser" accept-charset="utf-8">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <textarea name="" placeholder="Escribe un comentario"></textarea>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
-                  <div class="col-md-6 actionpuBlish">
-                    <div class="col-md-2 Adjuntar">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
-                    </div>
-                    <div class="col-md-2 AdjuntarFoto">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
-                    </div>
-                    <div class="col-md-2 DestacarPuslish">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
-                    </div>
-                    <div class="col-md-2 AlertPublish">
-                      <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-6 ButtinPublish">
-                    <input type="submit" value="Enviar"></input>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('usuarios.partials.field-public-post')
 </div>
+
+<div class="alert alert-info dataClMoPosPEr" role="alert">¡Publicacion Agregada!</div>
+{{-- Mensajes entrada salida --}}
+@include('usuarios.partials.fields-entrada-salida-mensajes')
+
+{{-- WINDOWS CHAT --}}
+@include('usuarios.partials.fields-windows-chat')
 @endsection

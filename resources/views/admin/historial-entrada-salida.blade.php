@@ -95,7 +95,10 @@
 {{-- SECTION BLOQUE NOTIFICACION Y MENSAJES --}}
 <section class="container-fluid sectionAdminNotifiMensa sectionPostDats">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 HistiResultUser">
-    <h1>Lissette Rivas</h1>
+    @foreach($UsersAlls as $DataUser)
+      <h1>{{ $DataUser->nombre }} {{ $DataUser->apellidos }}</h1>
+    @endforeach
+    
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 RegistroFechas">
       <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
         <h3>Registro de</h3>
@@ -111,92 +114,87 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Día de hoy</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
+              {{-- Obtenniendo la hora de entrada y salida del dia actual --}}
+              @if($DataHistoryHoy >0)
+                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                  <h3>Día de hoy</h3>
+                  <div class="datasEntradasSalidas">
+                    @if($DataHistoryHoy['hora_entrada'] < '12:00')
+                      <h4>{{ $DataHistoryHoy['hora_entrada'] }} a.m.</h4>
+                    @else
+                     <h4>{{ $DataHistoryHoy['hora_entrada'] }} p.m.</h4>
+                    @endif
+                    
+                    @if($DataHistoryHoy['hora_salida'] != null)
+                      @if($DataHistoryHoy['hora_salida'] < '12:00')
+                        <h4>{{ $DataHistoryHoy['hora_salida'] }} a.m.</h4>
+                      @else
+                       <h4>{{ $DataHistoryHoy['hora_salida'] }} p.m.</h4>
+                      @endif 
+                    @else
+                      <h4>----</h4>
+                    @endif                    
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
+              @else
+                <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                  <h3>Día de hoy</h3>
+                  <div class="datasEntradasSalidas">
+                    <h4>----</h4>
+                    <h4>----</h4>
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Día de hoy</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
-                <h3>Fecha</h3>
-                <div class="datasEntradasSalidas">
-                  <h4>7:50 a.m.</h4>
-                  <h4>6:50 ap.m.</h4>
-                </div>
-              </div>
+              @endif
+
+             {{-- Obtenniendo el historial de llegadas del usuario --}}
+             <p class="gasper"> {{ $banderiHistory = 0}}</p>
+             @foreach($AsistenciasAll as $asisAll)
+               <p class="gasper">{{ $carbon = new \Carbon\Carbon() }}</p>
+               <p class="gasper">{{ $fechaActual = $carbon->now()->format('Y-m-d') }}</p> 
+               @if($asisAll->fecha != $fechaActual)
+                 @if($banderiHistory < 5)
+                  <p class="gasper"> {{ $banderiHistory = $banderiHistory+1}}</p>
+                  <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                    <h3>{{ $asisAll->fecha }}</h3>
+                    <div class="datasEntradasSalidas">
+                      @if($asisAll->hora_entrada < '12:00')
+                        <h4>{{ $asisAll->hora_entrada }} a.m.</h4>
+                      @else
+                       <h4>{{ $asisAll->hora_entrada }} p.m.</h4>
+                      @endif
+                      @if($asisAll->hora_salida < '12:00')
+                         <h4>{{ $asisAll->hora_salida }} a.m.</h4>
+                      @else
+                        <h4>{{ $asisAll->hora_salida }} p.m.</h4>
+                      @endif 
+                    </div>
+                  </div>
+                  @elseif($banderiHistory == 5)
+                    </div>
+                    <p class="gasper"> {{ $banderiHistory = 0}}</p>
+                    <div class="item">
+                      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 registerDays">
+                        <h3>{{ $asisAll->fecha }}</h3>
+                        <div class="datasEntradasSalidas">
+                          @if($asisAll->hora_entrada < '12:00')
+                            <h4>{{ $asisAll->hora_entrada }} a.m.</h4>
+                          @else
+                           <h4>{{ $asisAll->hora_entrada }} p.m.</h4>
+                          @endif
+                          @if($asisAll->hora_salida < '12:00')
+                             <h4>{{ $asisAll->hora_salida }} a.m.</h4>
+                          @else
+                            <h4>{{ $asisAll->hora_salida }} p.m.</h4>
+                          @endif 
+                        </div>
+                      </div>
+                  @endif
+
+               @endif
+               
+              @endforeach
+              
+              
             </div>
           </div>
 

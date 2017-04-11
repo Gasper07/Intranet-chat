@@ -5,7 +5,7 @@
 	  channel.bind('my_event', function(data) {
 	  	// $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds">fecha</div>');	
 	    // Add the new message to the container
-	    $('.getUserSend').append('<div class="col-lg-12 wrapMensage envMensga"><p>'+data.message+'</p></div>');
+	    $('.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box>div:last').append('<div class="col-lg-12 MensaGedate getUserSend getSenMenIds3"><div class="col-lg-12 wrapMensage envMensga"><p>'+data.message+'</p></div></div>');
 	    // Display the send button
 	    $('.input_send_holder').html('<input type="submit" value="Send" class="btn btn-primary input_send" />');
 	    // Scroll to the bottom of the container when a new message becomes available
@@ -21,7 +21,6 @@
 	    data: ajax_data,
 	    success: function(response, textStatus, jqXHR) {
 	      console.log(jqXHR.responseText);
-	      console.log('get 2');
 	    },
 	    error: function(msg) {}
 	  });
@@ -61,7 +60,7 @@
 	      message: message
 	    }
 	    // Send the message to the server
-	    ajaxCall('message_relay.php', chat_message);
+	    ajaxCall('http://127.0.0.1/Sites/Intranet-chat/message_relay.php', chat_message);
 	    
 	    // Clear the message input field
 	    $('.chat_box .input_message').val('');

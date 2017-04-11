@@ -69,96 +69,100 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueUserRankings">
         
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings DataUserRankingsHistory">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 horaEntrada">
-                <p class="llegadaTarde">8:50 a.m.</p>
-                <p class="coloADP">Colocar ADP</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 CountADP horaSalida">
-                <h3>6:00 p.m.</h3>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 starRankinHistiry">
-                <div class="ui star rating" data-rating="5"></div>
-                <div class="dropdown drowOptionHistriaul">
-                  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dLabel">
-                    <li class="selecEdit">
-                      <a href="#!">Ver historial</a>        
-                      <a href="#!">Enviar mensaje</a>        
-                    </li>
-                  </ul>          
-                </div>
-              </div>
-            </div>
-          </div>
+        @foreach($Asistencias as $asis)
+          @foreach($UsersAlls as $datos)
+            @if($asis->id_usuario == $datos->id_usuario)
+              @foreach($arrayLosHorariosOfUser as $UserHorarios)
+                @if($datos->id_usuario == $UserHorarios['id_user_h'])
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings DataUserRankingsHistory">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
+                      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
+                        <div class="label dataPrubeIm dataProfileHistory" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $datos->foto }}')">
+                        </div>
+                        {{-- <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt=""> --}}
+                        <p class="fontMiriamProSemiBold nameUSerHisroty">{{ $datos->nombre }} {{ $datos->apellidos }}</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 horaEntrada">                        
+                        @include('admin.partials.fields-horarios-entrada')
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 CountADP horaSalida">
+                        @include('admin.partials.fields-horarios-salida')
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 starRankinHistiry">
+                        @foreach ($RankingGeneral as $keyRankingGeneral => $valueRankingGeneral) 
+                          @if($datos->id_usuario == $valueRankingGeneral['id_user'])
+                            @if($valueRankingGeneral['puntosRanking'] <= 15)
+                              <div class="ui star rating" data-rating="1"></div>
+                            @elseif ($valueRankingGeneral['puntosRanking'] > 15 && $valueRankingGeneral['puntosRanking'] <= 30) 
+                              <div class="ui star rating" data-rating="2"></div>
+                            @elseif ($valueRankingGeneral['puntosRanking'] > 30 && $valueRankingGeneral['puntosRanking'] <= 45) 
+                              <div class="ui star rating" data-rating="3"></div>
+                            @elseif ($valueRankingGeneral['puntosRanking'] > 45 && $valueRankingGeneral['puntosRanking'] < 75) 
+                              <div class="ui star rating" data-rating="4"></div>
+                            @elseif ($valueRankingGeneral['puntosRanking'] >= 75) 
+                              <div class="ui star rating" data-rating="5"></div>
+                            @endif
+                          @endif
+                        @endforeach
+                        <div class="dropdown drowOptionHistriaul">
+                          <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            <li class="selecEdit">
+                              <a href="history/{{ $datos->id_usuario }}">Ver historial</a>        
+                              <a href="chat">Enviar mensaje</a>        
+                            </li>
+                          </ul>          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {{-- @foreach($UserHorarios['horarios'] as $keyUserHorarios => $valueUserHorarios)
+                    
+                  @endforeach --}}
+                @endif
+              @endforeach
+            @endif
+            
+          @endforeach
+        @endforeach
         
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings DataUserRankingsHistory">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 horaEntrada">
-                <p>8:50 a.m.</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 CountADP horaSalida">
-                <h3 class="horaSalidaAntes">6:00 p.m.</h3>
-                <p class="coloADP">Colocar ADP</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 starRankinHistiry">
-                <div class="ui star rating" data-rating="5"></div>
-                <div class="dropdown drowOptionHistriaul">
-                  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dLabel">
-                    <li class="selecEdit">
-                      <a href="#!">Ver historial</a>        
-                      <a href="#!">Enviar mensaje</a>        
-                    </li>
-                  </ul>          
-                </div>
+        
+          
+        
+        <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings DataUserRankingsHistory">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
+              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
+              <p class="fontMiriamProSemiBold">Lissette Rivas</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 horaEntrada">
+              <p>8:50 a.m.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 CountADP horaSalida">
+              <h3 class="horaSalidaAntes">6:00 p.m.</h3>
+              <p class="coloADP">Colocar ADP</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 starRankinHistiry">
+              <div class="ui star rating" data-rating="5"></div>
+              <div class="dropdown drowOptionHistriaul">
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li class="selecEdit">
+                    <a href="#!">Ver historial</a>        
+                    <a href="#!">Enviar mensaje</a>        
+                  </li>
+                </ul>          
               </div>
             </div>
           </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings DataUserRankingsHistory">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 horaEntrada">
-                <p>8:50 a.m.</p>
-                <p class="coloADP">Colocar ADP</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 CountADP horaSalida">
-                <h3>6:00 p.m.</h3>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 starRankinHistiry">
-                <div class="ui star rating" data-rating="5"></div>
-                <div class="dropdown drowOptionHistriaul">
-                  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dLabel">
-                    <li class="selecEdit">
-                      <a href="#!">Ver historial</a>        
-                      <a href="#!">Enviar mensaje</a>        
-                    </li>
-                  </ul>          
-                </div>
-              </div>
-            </div>
-          </div>
-
+        </div>
+         -->
 
 
       </div>
@@ -178,40 +182,35 @@
   </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog contPusblishDialogo" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="col-xs-12 col-sm-12 col-md-12 continPublish">
-          <form action="home_submit" method="get" class="sectionPublichUser" accept-charset="utf-8">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <textarea name="" placeholder="Escribe un comentario"></textarea>
+  <!-- Modal -->
+  @include('usuarios.partials.field-public-post')
+
+  <div class="alert alert-info dataClMoPosPEr" role="alert">¡Publicacion Agregada!</div>  
+
+  @if(Session::has('Colocacion_Adp'))
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalSolicitudRespuestCorrect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog contAcotionModlas" role="document">
+        <div class="modal-content">
+          <div class="modal-body captionBodySolicRespuesa">
+            <div class="col-xs-12 col-sm-12 col-md-12 contRevibeSOlic">
+              <div class="col-xs-12 col-sm-12 col-md-12 clAdpsCLo">
+                @foreach(Session::get('Colocacion_Adp') as $DataUserAdp)
+                  <h5 class="aceptSol">La acción de personal fue colocado exitosamente a:</h5>
+                  <div class="captionEvulveImg" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $DataUserAdp->foto }}')">              
+                  </div>
+                   <h4 class="nameSoliUser">{{ $DataUserAdp->nombre }} {{ $DataUserAdp->apellidos }}</h4>
+                @endforeach                
+                <p class="Aceptado" data-dismiss="modal">Aceptar</p>
+              </div>          
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
-              <div class="col-md-6 actionpuBlish">
-                <div class="col-md-2 Adjuntar">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
-                </div>
-                <div class="col-md-2 AdjuntarFoto">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
-                </div>
-                <div class="col-md-2 DestacarPuslish">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
-                </div>
-                <div class="col-md-2 AlertPublish">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
-                </div>
-              </div>
-              <div class="col-md-6 ButtinPublish">
-                <input type="submit" value="Enviar"></input>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  @endif
+  
+  
   
 @endsection

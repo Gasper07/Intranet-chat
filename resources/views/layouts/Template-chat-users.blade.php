@@ -22,7 +22,7 @@
     {!! Html::style('public/assets/css/font-awesome.css') !!}
 
     <!-- Datepicker Files -->
-    {!! Html::style('public/assets/datePicker/css/bootstrap-datepicker3.css') !!}
+    {!! Html::style('public/assets/css/datePicker/bootstrap-datepicker3.css') !!}
     {!! Html::style('public/assets/css/bootstrap-datetimepicker.min.css') !!}
 
     {{-- Main style --}}
@@ -77,26 +77,32 @@
                                         <li class="gn-search-item">
                                             <a href="">
                                              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                                             <p class="colorBlack fontMiriamProSemiBold">Lissette Rivas</p>                            
+                                             <p class="colorBlack fontMiriamProSemiBold">{{ Auth::user()->name }}</p>                            
                                             </a>
                                         </li>
                                         <li class="bloquesMarca marEntrada">
                                             <a class="BgYellow fontMiriamProSemiBold colorBlackSuave">Marcar entrada</a>
+                                            <div class='secEntrada'>
+                                              <input type="hidden" name="id_user_login" class="IdloginUser" value="{{ Auth::user()->id }}">
+                                            </div>
                                         </li>
                                         <li class="bloquesMarca marSalida">
                                             <a class="BgYellow fontMiriamProSemiBold colorBlackSuave">Marcar salida</a>
+                                            <div class='secEntrada'>
+                                              <input type="hidden" name="id_user_login" class="IdloginUser" value="{{ Auth::user()->id }}">
+                                            </div>
                                         </li>
                                         <li class="bloquesMarca accionesPerfil">
-                                            <a class="fontMiriamProRegular colorGrisMediumSuave lineJustify">Editar perfil</a>
+                                            <a href="profile" class="fontMiriamProRegular colorGrisMediumSuave lineJustify">Editar perfil</a>
                                         </li>
                                         <li class="bloquesMarca accionesPerfil">
-                                            <a class="fontMiriamProRegular colorGrisMediumSuave lineJustify">Mensajes privados</a>
+                                            <a href="chatUsers" class="fontMiriamProRegular colorGrisMediumSuave lineJustify">Mensajes privados</a>
                                         </li>
                                         <li class="bloquesMarca accionesPerfil">
-                                            <a class="fontMiriamProRegular colorGrisMediumSuave lineJustify borderLineGris">Ver galerias</a>
+                                            <a href="profile" class="fontMiriamProRegular colorGrisMediumSuave lineJustify borderLineGris">Ver galerias</a>
                                         </li>
                                         <li class="bloquesMarca accionesPerfil accionesBussines">
-                                            <a class="fontMiriamProRegular colorGrisSuave lineJustify">Manual de empleado</a>
+                                            <a href="http://127.0.0.1/Sites/Intranet-chat/public/assets/pdf/Manual-de-empleado.pdf" target="_blank" class="fontMiriamProRegular colorGrisSuave lineJustify">Manual de empleado</a>
                                         </li>
                                         <li class="bloquesMarca accionesPerfil accionesBussines">
                                             <a class="fontMiriamProRegular colorGrisSuave lineJustify">Reglamento institucional</a>
@@ -110,7 +116,7 @@
                         </li>
                     </ul>
                     <ul class="centerNameUserMenu">
-                        <li class="colorBlack fontMiriamProRegular">¡Hola! Lisseth</li>
+                        <li class="colorBlack fontMiriamProRegular">¡Hola! {{ Auth::user()->name }}</li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -186,6 +192,37 @@
         new gnMenu( document.getElementById( 'gn-menu' ) );
     </script>
 
+    <script>
+      $(window).bind("beforeunload", function() { 
+        var iduserLoIn = {{ $idUserLogin }} ;
+
+          $.ajaxSetup({
+              headers: { 'X-CSRF-Token': $('input[name=_token]').attr('value') }
+          });
+          $.ajax({
+              url: 'http://127.0.0.1/Sites/Intranet-chat/datalogout',
+              type: 'POST',
+              headers: { 'X-CSRF-Token': $('input[name=_tokens]').attr('value') },
+              data: "idlogin="+iduserLoIn+"&_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
+              dataType: 'json',
+              success: function(result, index, value, data) {
+                // Iniciamos contador
+                console.log('ss');
+                // setTimeout(function(){
+                //   return 
+                // }, 25000);
+
+              },
+              error: function() {
+                  console.log('Error');
+              }
+          }); 
+
+
+          // return confirm("deseas cerrar la ventana?"); 
+      });
+    </script>
+
     <!-- Semantic Ui CSS -->
     <script class="diSemantic" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/js/semantic.js"></script>
 
@@ -245,6 +282,62 @@
 
    {!! Html::script('public/assets/js/jquery-1.11.1.min.js') !!}
 
+   <script >
+
+     var iduserLoIn = {{ $idUserLogin }} ;
+     function loadUserOnline(){
+        $.ajaxSetup({
+            headers: { 'X-CSRF-Token': $('input[name=_token]').attr('value')},
+        });
+        $.ajax({
+            url: 'http://127.0.0.1/Sites/Intranet-chat/onlineUser',
+            type: 'POST',
+            headers: { 'X-CSRF-Token': $('input[name=_tokens]').attr('value') },
+            data: "_tokens=YIIXEDMNztyGoKqDrX7B9V20THP2hP0fAZFeiK3L",
+            dataType: 'json',
+            success: function(result, index, value, data) {
+              // Iniciamos contador
+              console.log('ss');
+              var banderaVeriCOunt = 0;
+
+              $('.captionUsersInLive>div.accordion>div.title>div.captionDenoews').remove();
+              $('.captionUsersInLive>div.accordion>div.content>div').remove();
+              $('.captionUsersInLive>div.accordion>div.content>p').remove();
+              // $('.captionUsersInLive>div.accordion').append('<div class="title"></div>');
+              $.each(result, function(index, element) {
+                var dataUseronlineID = element.id_user;
+                var dataUseronFoto = element.foto;
+                banderaVeriCOunt = banderaVeriCOunt+1;
+                var clStyImg = 'styRos'+dataUseronlineID+'';
+
+                if(banderaVeriCOunt <= 4){
+                 $('.captionUsersInLive>div.accordion>div.title').prepend('<div class="captionCircleUser captionDenoews AlluserReegitradosPorBloque"><a href="#!" class="userLive" data-idonline='+dataUseronlineID+' data-iduserchat='+dataUseronlineID+'> <div class="label dataPrubeIm vloqImageUser dataProfileAllUsersOnline '+clStyImg+'"> </div></a></div>');
+                 $('.'+clStyImg).css('background-image', 'url("http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/'+dataUseronFoto+'")');
+                }else if(banderaVeriCOunt > 4){
+                  $('.captionUsersInLive>div.accordion>.content').append('<div class="captionCircleUser captionDenoews AlluserReegitradosPorBloque"><a href="#!" class="userLive" data-idonline='+dataUseronlineID+' data-iduserchat='+dataUseronlineID+'> <div class="label dataPrubeIm vloqImageUser dataProfileAllUsersOnline '+clStyImg+'"> </div> </a></div>');
+                  $('.'+clStyImg).css('background-image', 'url("http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/'+dataUseronFoto+'")');
+                }
+                console.log('entro');
+                
+              });
+
+            },
+            error: function() {
+                console.log('Error');
+            }
+        }); 
+     }  
+
+     var mulpleForMile = iduserLoIn*2000;
+
+     var CreateTimeInterval = 5000 + mulpleForMile;
+
+     console.log(CreateTimeInterval);
+
+     setInterval(loadUserOnline, CreateTimeInterval);
+
+   </script>
+
    {!! Html::script('public/assets/js/moment.js') !!}
    {!! Html::script('public/assets/js/bootstrap-datetimepicker.min.js') !!}
    <script type="text/javascript">
@@ -256,7 +349,7 @@
        });
    </script>
 
-   {!! Html::script('public/assets/datePicker/js/bootstrap-datepicker.js') !!}
+   {!! Html::script('public/assets/js/datePicker/bootstrap-datepicker.js') !!}
    <script type="text/javascript">
       $('#sandbox-container .input-daterange').datepicker({
           format: "yyyy-mm-dd",

@@ -47,7 +47,10 @@
 <section class="container-fluid sectionAdminNotifiMensa secNotifiRanking">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 sectionCenterContenido conteniRanking">
-
+      @if(Session::has('Colocacion_Adp_ranking'))
+        <p class="alert alert-success">{{Session::get('Colocacion_Adp_ranking')}}</p>
+      @endif
+    
      {{-- rankings --}}
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloquesRankins">
         {{-- Bloque Subtitles sections --}}
@@ -68,80 +71,60 @@
         {{-- END Bloque Subtitles sections --}}
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueUserRankings">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
-                <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/profile-user-circle.png" alt="">
-                <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 starRankin">
-                <div class="ui star rating" data-rating="5"></div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 CountADP">
-                <h3>0</h3>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 editionAction">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 editerRabling">
-                  <form action="ranking_submit" method="get" accept-charset="utf-8">
-                    <select name="">
-                      <option value="Colocar ADP">Colocar ADP</option>
-                      <option value="Colocar ADP">Colocar ADP</option>
-                    </select>
-                    <input type="submit" value="Aceptar">
-                  </form>                  
+          @foreach($JoinTableUserDatosPersonalesDatosEmpleado as $usersRanking)
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz ranlingSty">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
+                  <div class="label dataPrubeIm dataProfileAllUsersRanking" style="background-image: url('http://127.0.0.1/Sites/Intranet-chat/public/assets/profiles/{{ $usersRanking->foto }}')"></div>
+                  <p class="fontMiriamProSemiBold">{{ $usersRanking->nombre }} {{ $usersRanking->apellidos }}</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 starRankin">
+                  @foreach ($RankingGeneral as $keyRankingGeneral => $valueRankingGeneral) 
+                    @if($usersRanking->id_usuario == $valueRankingGeneral['id_user'])
+                      @if($valueRankingGeneral['puntosRanking'] <= 15)
+                        <div class="ui star rating" data-rating="1"></div>
+                      @elseif ($valueRankingGeneral['puntosRanking'] > 15 && $valueRankingGeneral['puntosRanking'] <= 30) 
+                        <div class="ui star rating" data-rating="2"></div>
+                      @elseif ($valueRankingGeneral['puntosRanking'] > 30 && $valueRankingGeneral['puntosRanking'] <= 45) 
+                        <div class="ui star rating" data-rating="3"></div>
+                      @elseif ($valueRankingGeneral['puntosRanking'] > 45 && $valueRankingGeneral['puntosRanking'] < 75) 
+                        <div class="ui star rating" data-rating="4"></div>
+                      @elseif ($valueRankingGeneral['puntosRanking'] >= 75) 
+                        <div class="ui star rating" data-rating="5"></div>
+                      @endif
+                    @endif
+                  @endforeach
+                  
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 CountADP">
+                  <p class="gasper">{{ $totalAdps = 0}}</p>
+                  @foreach($HistoryAdps as $adpsColocadas)
+                    @if($usersRanking->id_usuario == $adpsColocadas->id_usuario)
+                     <p class="gasper">{{ $totalAdps = $totalAdps+1 }}</p>
+                    @endif
+                  @endforeach
+                  <h3>{{ $totalAdps }}</h3>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 editionAction">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 editerRabling">
+                    <form action="ranking_adp" method="post" accept-charset="utf-8">
+                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                      <input type="hidden" name="_id_usuario" value="{{ $usersRanking->id_usuario }}">
+                      <select name="id_adp">
+                        <option value="Colocar ADP">Colocar ADP</option>
+                        @foreach($AllAdps as $adps)
+                          @if($adps->tipo_adp != 'Llegadas tarde')
+                            <option value="{{ $adps->id }}">{{ $adps->tipo_adp }}</option>
+                          @endif
+                        @endforeach
+                      </select>
+                      <input type="submit" value="Aceptar">
+                    </form>                  
+                  </div>
                 </div>
               </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
-              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/yaniImage.png" alt="">
-              <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 starRankin">
-              <div class="ui star rating" data-rating="5"></div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 CountADP">
-              <h3>0</h3>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 editionAction">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 editerRabling">
-                <form action="ranking_submit" method="get" accept-charset="utf-8">
-                  <select name="">
-                    <option value="Colocar ADP">Colocar ADP</option>
-                    <option value="Colocar ADP">Colocar ADP</option>
-                  </select>
-                  <input type="submit" value="Aceptar">
-                </form>                  
-              </div>
-            </div>
           </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 DataUserRankings">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueactionsRankingsSz">
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 UserImgData">
-              <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/userManImage.png" alt="">
-              <p class="fontMiriamProSemiBold">Lissette Rivas</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 starRankin">
-              <div class="ui star rating" data-rating="5"></div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 CountADP">
-              <h3>0</h3>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 editionAction">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 editerRabling">
-                <a href="">
-                  <p>Editar</p>
-                </a>          
-              </div>
-            </div>
-          </div>
-        </div>
-
+          @endforeach
       </div>
 
       {{-- end section rankings --}}

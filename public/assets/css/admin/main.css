@@ -694,7 +694,12 @@ div#app>nav {
 
 .col-xs-12.col-sm-12.col-md-8.col-lg-8.sectionCenterContenido {
   text-align: left;
-  width: 66%;
+  width: 64%;
+}
+
+.col-xs-12.col-sm-12.col-md-8.col-lg-8.sectionCenterContenido.sectionContenidoDocuemnts{
+  text-align: left;
+  width: 84%;
 }
 
 .col-xs-12.col-sm-12.col-md-8.col-lg-8.sectionCenterContenido>h1 {
@@ -1429,6 +1434,10 @@ form.selectMensage>input {
   cursor: pointer;
 }
 
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.sectionRecordatorios {
+  margin-top: 6%;
+}
+
 /* CONTANENROP */
 
 
@@ -1758,6 +1767,146 @@ p.textCOment.fontMiriamProRegular.colorGrisMediumSuave {
   font-size: 99px;
   margin-top: 0;
   line-height: 100px;
+}
+
+
+form.ui.form.formComentUser>div>textarea {
+  height: 50px;
+  min-height: 0;
+  width: 100%;
+  float: left;
+}
+
+form.ui.form.formComentUser>div {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+form.ui.form.formComentUser {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 7%;
+  margin-bottom: 11%;
+}
+
+form.ui.form.formComentUser>a {
+  display: block;
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding-left: 4%;
+}
+
+form.ui.form.formComentUser>a>p {
+  background: #0071bc;
+  color: white;
+  padding: 3%;
+  width: 100%;
+}
+
+.dataPrubeIm {
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ui.feed.uifeedAvatar>.event>div.label {
+  width: 10%;
+  padding: 0;
+  border-radius: 37px;
+}
+
+a.dataDpcuCl>img {
+  width: 19%;
+  margin: 0 auto;
+}
+
+p.textCOment.fontMiriamProRegular.colorGrisMediumSuave {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+.colorGrisMediumSuave {
+  color: #4d4d4d !important;
+}
+
+.fontMiriamProRegular {
+  font-family: 'MyrianPro-Regular';
+} 
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div>img {
+  width: 100%;
+}
+
+img.img-responsive.clImgView {
+  cursor: pointer;
+}
+
+form.ui.form.formComentUser {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 7%;
+  margin-bottom: 11%;
+}
+
+form.ui.form.formComentUser>div {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+form.ui.form.formComentUser>div>input {
+  border: 1px solid #e6e6e6;
+}
+
+form.ui.form.formComentUser>a {
+  display: block;
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding-left: 4%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionlokComen {
+  padding: 0;
+  margin-bottom: 3%;
+}
+
+.ui.feed.uifeedComnetUser {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+.ui.feed.uifeedComnetUser>.event>div.dataPrubeIm {
+  width: 11%;
+  padding: 0;
+  border-radius: 37px;
+}
+
+.ui.feed.uifeedComnetUser>.event>.content>.summary>a {
+  font-size: 13px;
+  color: #0071bc !important;
+}
+
+.ui.feed.uifeedComnetUser {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+.content>.summary.postPosss>div.date>img.alertPost {
+  width: 37%;
+  height: auto;
 }
 
 
@@ -2547,6 +2696,269 @@ section.container-fluid.sectionAdminNotifiMensa.continChatAdmins {
   margin-bottom: 2%;
 }
 
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box > div {
+  width: 100%;
+}
+
+
+
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box > div {
+  width: 100%;
+}
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos > div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatCOntentUsers {
+  width: 100%;
+  height: 500px;
+  background: white;
+  overflow: auto;
+}
+
+
+
+.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat {
+  box-shadow: 0px 0px 0px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.dataShoWmensajes {
+  background: white;
+  height: 676px;
+  box-shadow: 0px 2px 10px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.FriendWithChat {
+  padding: 0;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.RemoveChatWithUser {
+  text-align: right;
+  padding-top: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.RemoveChatWithUser>form>i {
+  color: #666666;
+  font-size: 16px;
+}
+
+.col-xs-12.col-sm-6.col-md-8.col-lg-8.blqueDatasUser>p.TitleUserMen {
+  color: #0071bc !important;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  font-size: 13px;
+}
+
+.col-xs-12.col-sm-6.col-md-8.col-lg-8.blqueDatasUser {
+  padding: 0;
+}
+
+p.cont_previwMenSage {
+  color: #666666;
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.TimeSendMenssage>p {
+  color: #b3b3b3;
+  font-size: 9px;
+  text-align: right;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.RemoveChatWithUser>form {
+  top: 6px;
+  position: relative;
+}
+
+.col-xs-12.col-sm-6.col-md-6.col-lg-6.listConection.lineChat>.captionUsersInLive {
+  margin-top: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SearchSection {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.SearchSection>form>div>div {
+  padding: 0;
+}
+
+form.formSearchChat>div>div>div>input {
+  border: 0px solid #ccc;
+}
+
+form.formSearchChat>div>div>div>span>button {
+  border: 0px solid #ccc;
+}
+
+form.formSearchChat>div>div {
+  border: 1px solid #e6e6e6;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  background: white;
+  height: 500px;
+  padding: 0;
+  box-shadow: 0px 2px 10px 0px #e2e2e2;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitrados {
+  padding: 0;
+}
+
+form.formSearchChat>div {
+  width: 100%;
+  margin: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque {
+  padding: 0;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>div>p {
+  color: #0071bc !important;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  font-size: 13px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>div {
+  padding: 0;
+  padding-left: 4%;
+} 
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>div>img {
+  width: 66%;
+  margin: 0 auto;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitradosPorBloque>.col-xs-12.col-sm-6.col-md-8.col-lg-8.blqueDatasUser>p {
+  margin-top: 8%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  margin-top: 6%;
+}
+
+.messages_display {
+  /* height: 300px;  */
+  height: auto;
+  overflow: auto;
+}
+
+.messages_display .message_item {
+  padding: 0; 
+  margin: 0; 
+}
+
+.bg-danger {
+  padding: 10px;
+}
+
+.messages_display {
+  /* height: 500px; */
+  overflow: auto;
+  border: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box>div {
+  width: 100%;
+}
+
+
+
+.form-control.messages_display.col-xs-12.col-sm-6.col-md-6.col-lg-6.chatOfUser {
+  width: 100%;
+}
+
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  width: 109%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatListAllUser {
+  overflow: auto;
+}
+
+.ui.search.uiSearchUsers>div>input {
+  border-radius: 0;
+  width: 100%;
+}
+
+.ui.search.uiSearchUsers>div>i {
+  position: absolute;
+  left: 86%;
+  top: 30%;
+  font-size: 15px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.sectionCreateCHat {
+  z-index: 100;
+}
+
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box>div {
+    width: 100%;
+}
+
+
+
+.datafechasND {
+    color: rgba(0, 0, 0, .40);
+    font-size: 12px;
+    font-family: 'MyrianPro-Regular';
+    margin-bottom: 2%;
+    text-align-last: center;
+}
+
+.col-lg-12.MensaGedate.getUserReceive>.col-lg-12.wrapMensage {
+    color: #fff;
+    margin: 1px 0;
+}
+
+.col-lg-12.MensaGedate.getUserReceive>.col-lg-12.wrapMensage>p {
+    padding: 6px 12px;
+    width: auto;
+    float: left;
+    display: block;
+    text-align: right;
+    background-color: #0071bc;
+    border-radius: 10px;
+    font-family: 'MyrianPro-Regular';
+    font-size: 13px;
+}
+
+.col-lg-12.MensaGedate.getUserSend>.col-lg-12.wrapMensage {
+    color: rgba(0, 0, 0, .40);
+    font-size: 12px;
+    font-family: 'MyrianPro-Regular';
+    margin-bottom: 2%;
+    text-align-last: center;
+}
+
+.col-lg-12.MensaGedate.getUserSend {
+    text-align: right;
+}
+
+.col-lg-12.MensaGedate.getUserSend>div.col-lg-12.wrapMensage {
+    color: rgba(0, 0, 0, 1);
+    margin: 1px 0;
+}
+
+.col-lg-12.MensaGedate.getUserSend>div>p {
+    padding: 6px 12px;
+    width: auto;
+    float: right;
+    display: block;
+    /* position: absolute; */
+    background-color: #f1f0f0;
+    border-radius: 10px;
+    font-family: 'MyrianPro-Regular';
+    font-size: 13px;
+}
+
 /* END chat */
 
 
@@ -2616,17 +3028,18 @@ section.container-fluid.sectionAdminNotifiMensa.containSugerencias {
   font-family: 'MyrianPro-Semibold';
 }
 
-form.formReturnMennsage.transition.visible>div>div.textAreaReturn>textarea {
+form.formReturnMennsage>div>div.textAreaReturn>textarea {
   width: 100%;
   border: 1px solid #cccccc;
   height: 74px;
+  padding-left: 2%;
 }
 
 .col-xs-12.col-sm-12.col-md-9.col-lg-9.textAreaReturn {
   padding: 0;
 }
 
-form.formReturnMennsage.transition.visible>div {
+form.formReturnMennsage>div {
   padding-left: 0;
 }
 
@@ -2721,6 +3134,34 @@ form.formReturnMennsage.transition.visible>div {
   font-family: 'MyrianPro-Regular';
   font-weight: 100;
   font-size: 14px;
+}
+
+
+.col-xs-12.col-sm-4.col-md-1.col-lg-1.captionCOmetsReceibeIMgUser>.col-xs-12.col-sm-2.col-md-1.col-lg-1.secFotoUser {
+  width: 74%;
+  padding-right: 0;
+  height: 36px;
+}
+
+.col-xs-12.col-sm-4.col-md-1.col-lg-1.captionCOmetsReceibeIMgUser {
+  padding-right: 0;
+}
+
+.col-xs-12.col-sm-8.col-md-11.col-lg-11.captionCOmetsReceibeDescriUserCOmen {
+  text-align: left;
+}
+
+.col-xs-12.col-sm-8.col-md-11.col-lg-11.captionCOmetsReceibeDescriUserCOmen>h4 {
+  margin-bottom: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionCOmetsReceibe {
+  margin-bottom: 3%;
+}
+
+.col-xs-12.col-sm-8.col-md-11.col-lg-11.captionCOmetsReceibeDescriUserCOmen > h4 > img {
+  display: block;
+  margin-left: 2%;
 }
 
 
@@ -2880,6 +3321,20 @@ form.formReturnMennsage.transition.visible>div {
   padding-left: 19%;
 }
 
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionCOmetsReceibe.captionComenSolicitud {
+  padding-left: 18%;
+  margin-top: 2%;
+}
+
+.content.conFormularioReturnMenSage > form.conteFormSolicitru {
+  display: none !important;
+}
+
+.content.conFormularioReturnMenSage > form.validaSendMnessa {
+  display: block !important;
+}
+
+
 
 /* END PAGE SOLICTUD PERMISO */
 
@@ -2947,7 +3402,7 @@ form.formReturnMennsage.transition.visible>div {
   font-size: 22px;
 }
 
-.ui.special.popup.top.left.transition.visible>div {
+.ui.special.popup.top.left>div {
   font-size: 16px;
 }
 
@@ -3043,12 +3498,14 @@ form.formReturnMennsage.transition.visible>div {
   width: 16%;
 }
 
-.col-xs-12.col-sm-12.col-md-6.col-lg-6.ChatWithUserDatas.vDataPublicTypeUSer>p {
-  display: inline-block;
-  margin-left: 3%;
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.ChatWithUserDatas.vDataPublicTypeUSer > p {
+  margin-left: 4%;
   font-size: 13px;
   color: #0071bc !important;
   font-family: 'MyrianPro-Semibold';
+  display: inline-block;
+  margin-top: 4%;
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.fechasEventos {
@@ -3123,13 +3580,59 @@ section.container-fluid.sectionAdminNotifiMensa.containSugerencias.containCalend
   margin-bottom: 5%;
 }
 
+.left.carousel-control.leftcalendarEventsDescrip {
+  background: transparent;
+}
+
+.right.carousel-control.RightcalendarEventsDescrip {
+  background: transparent;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.v > .col-xs-12.col-sm-12.col-md-6.col-lg-6.vTypeEvento > h2 {
+  font-size: 21px;
+}
+
+.right.carousel-control.RightcalendarEventsDescrip {
+  z-index: -1;
+}
+
+.left.carousel-control.leftcalendarEventsDescrip {
+  z-index: -1;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.vDataPublicType > .col-xs-12.col-sm-12.col-md-12.col-lg-12.fechasEventos {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dataImhgEvent {
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15%;
+  padding: 0;
+  border-radius: 37px;
+  height: 26px;
+  display: inline-block;
+  float: left;
+}
+
 /* END CALENDAR */
 
 
 
 /* PAGE DOCUEMNYOS */
 
-.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloquesAdjuntoArchives>div>p {
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloquesAdjuntoArchives>div>a>p {
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  margin-top: 5%;
+  font-family: 'MyrianPro-Regular';
+}
+
+div.dataDowload>a>p {
   font-size: 12px;
   color: #666666;
   text-align: center;
@@ -3138,14 +3641,32 @@ section.container-fluid.sectionAdminNotifiMensa.containSugerencias.containCalend
 }
 
 
+.dataDowload >a> p {
+  width: 100%;
+  text-align: center;
+}
+
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.bloquesAdjuntoArchives>div {
   padding: 2%;
-  width: 17%;
+  width: 13%;
   margin-left: 1%;
   margin-right: 1%;
   padding-top: 0;
-  cursor: pointer;
+  cursor: pointer;  
+  height: 150px;
+  margin-bottom: 1%;
+}
+
+.activeActionDocument{
   border: 1px solid #eaeaea;
+}
+
+.noneIcon{
+  visibility: hidden !important;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloquesAdjuntoArchives>div>a>p {
+  text-align: center;
 }
 
 li.dreopDocument>div>button {
@@ -3174,6 +3695,44 @@ ul.listActionDocuemntps {
   margin-top: 9%;
 }
 
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloquesAdjuntoArchives {
+  padding: 0;
+}
+
+div.activeActionDocument>i {
+  float: right;
+  padding-top: 6%;
+}
+
+.bg-activeDocuemm{
+  background: #daedf5;
+}
+
+div.dataDowload > a.activeDecoration {
+  text-decoration: underline !important;
+  padding-bottom: 2%;
+  color: #666666;
+}
+
+.fileInputUploadDocu{
+  display: none !important;
+}
+
+.fileInputUploadDocu2{
+  display: none !important;
+}
+
+.col-xs-6.col-sm-4.col-md-2.col-lg-2.fileUploDat > img {
+  margin-top: 30%;
+}
+
+form.uploadArchivoNew2{
+  display: none;
+}
+
+form.createNewDirec{
+  display: none;
+}
 
 /* END PAGE DOCUEMNTOS */
 
@@ -3232,6 +3791,7 @@ section.container-fluid.sectionAdminNotifiMensa.secNotifiRanking {
   font-size: 14px;
   font-family: 'MyrianPro-Regular';
   font-weight: 100;
+  margin-top: 0%;
 }
 
 .col-xs-12.col-sm-6.col-md-2.col-lg-2.CountADP {
@@ -3253,7 +3813,7 @@ section.container-fluid.sectionAdminNotifiMensa.secNotifiRanking {
   background: white;
   padding-top: 3%;
   padding-bottom: 3%;
-  height: 500px;
+  height: 100%;
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.bloquesRankins {
@@ -3270,6 +3830,19 @@ section.container-fluid.sectionAdminNotifiMensa.secNotifiRanking {
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.DataUserRankings {
   margin-bottom: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ranlingSty>div {
+  padding-left: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ranlingSty>div>p {
+  margin-top: 8%;
+  margin-left: 7%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ranlingSty>div.col-xs-12.col-sm-6.col-md-2.col-lg-2.starRankin {
+  padding-left: 15px;
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.editerRabling>a>p {
@@ -3332,6 +3905,31 @@ form.col-xs-12.col-sm-12.col-md-12.col-lg-12.formSearch.formSearchRanking {
 
 .dropdown.DropOptinUsersD {
   display: inline-block;
+}
+
+.dropdown.optionAllUsers {
+  float: left;
+}
+
+input.datSelectEdit {
+  margin-left: 4%;
+  float: left;
+  display: none;
+}
+
+.formSelectGropu{
+  display: none;
+}
+
+form.formSelectGropu>input {
+  background: #039be5;
+  color: white;
+  border: 0;
+  padding: 6%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.sectionMenuInterno>ul>li.GetGroup {
+  padding: 0;
 }
 
 .dropdown.DropOptinUsersD>button {
@@ -3411,7 +4009,7 @@ form.col-xs-12.col-sm-12.col-md-12.col-lg-12.formSearch.formSearchRanking {
 /* PAGE HISTORIAL DE LLEGADAS */
 
 .col-xs-12.col-sm-6.col-md-3.col-lg-3.starRankinHistiry {
-  margin-top: 2%;
+  margin-top: 1%;
   text-align: center;
   padding-right: 0;
 }
@@ -3439,6 +4037,7 @@ p.coloADP {
   background: #039be5;
   color: white;
   padding: 3%;
+  cursor: pointer;
 }
 
 .horaSalida>h3{
@@ -3450,6 +4049,13 @@ p.coloADP {
 }
 
 .col-xs-12.col-sm-6.col-md-3.col-lg-3.horaSalida>p{
+  display: inline-block;
+  text-align: center;
+  margin-left: 1%;
+  width: 48%;
+}
+
+.col-xs-12.col-sm-6.col-md-3.col-lg-3.horaSalida>form{
   display: inline-block;
   text-align: center;
   margin-left: 1%;
@@ -3471,13 +4077,13 @@ p.coloADP {
 }
 
 .col-xs-12.col-sm-6.col-md-3.col-lg-3.horaEntrada {
-  margin-top: 1.5%;
+  margin-top: 1%;
   text-align: center;
   padding: 0;
 }
 
 .col-xs-12.col-sm-6.col-md-3.col-lg-3.horaSalida {
-  margin-top: 1.5%;
+  margin-top: 0.3%;
   text-align: center;
   padding: 0;
 }
@@ -3512,6 +4118,10 @@ p.coloADP {
 
 .horaSalida>h3.horaSalidaAntes{
   color: #39b54a;
+}
+
+.col-xs-12.col-sm-6.col-md-3.col-lg-3.CountADP.horaSalida > h3 {
+  margin-top: 2.5%;
 }
 
 /* END PAGE HISTORIAL DE LLEGADAS */
@@ -3728,6 +4338,194 @@ a.carousel-control.controlsHistirys>span {
   margin-top: 4%;
 }
 
+.label.dataPrubeIm.dataProfileHistory {
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19%;
+  float: left;
+  display: block;
+  height: 34px;
+  border-radius: 30px;
+  margin-right: 3%;
+}
+
+.label.dataProfileHistoryAllUsers {
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32%;
+  /* float: left; */
+  display: block;
+  height: 34px;
+  border-radius: 30px;
+  margin-right: 3%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 24%;
+  margin-bottom: 4%;
+}
+
+.label.dataPrubeIm.dataProfileAllUsers {
+  padding-bottom: 3%;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14%;
+  float: left;
+  display: block;
+  height: 34px;
+  border-radius: 30px;
+  margin-right: 0%;
+  margin-left: 9%;
+  bottom: 8px;
+  position: relative;
+}
+
+.label.dataPrubeIm.dataProfileAllUsersRanking {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30%;
+  float: left;
+  display: block;
+  height: 52px;
+  border-radius: 60px;
+  margin-right: 0%;
+  margin-left: 0;
+  /* bottom: 14px; */
+  position: relative;
+}
+
+.label.dataPrubeIm.dataProfileEditGroup {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  float: left;
+  display: block;
+  height: 89px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 9%;
+  bottom: 8px;
+  position: relative;
+  display: block;
+}
+
+.label.dataPrubeIm.dataProfileEditUsers {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  float: left;
+  display: block;
+  height: 95px;
+  border-radius: 69px;
+  margin-right: 0%;
+  margin-left: 9%;
+  bottom: 8px;
+  position: relative;
+}
+
+.label.dataPrubeIm.dataProfileEditUsersAlls {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  float: left;
+  display: block;
+  height: 95px;
+  border-radius: 69px;
+  margin-right: 0%;
+  margin-left: 9%;
+  bottom: 8px;
+  position: relative;
+}
+
+.label.dataPrubeIm.dataProfileEvaluaciones {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75%;
+  float: left;
+  display: block;
+  height: 130px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 11%;
+  bottom: 8px;
+  position: relative;
+  display: block;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.label.dataPrubeIm.dataProfileEvaluacionesDetall {
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 72%;
+  float: left;
+  display: block;
+  height: 105px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 20%;
+  bottom: 8px;
+  position: relative;
+  display: block;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts.profilesForDetall.roflDetallAd>.col-xs-12.col-sm-6.col-md-2.col-lg-2.detallImgProfile {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.label.dataPrubeIm.dataProfileEvaluacionesDetallEvaluando {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  float: left;
+  display: block;
+  height: 120px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 0;
+  bottom: 8px;
+  position: relative;
+  display: block;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+
+p.fontMiriamProSemiBold.nameUSerHisroty {
+  margin-top: 5%;
+}
+
+.repetah4 {
+  margin-top: 0%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioCompletos.bloOONes {
+  margin-top: 0%;
+}
+
+
 
 /* END PAGE HISTORIAL DE ENTRADA Y SALIDA ALLL USERS */
 
@@ -3807,7 +4605,16 @@ a.carousel-control.controlsHistirys>span {
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.formInputsDats>input {
   width: 46%;
+  text-align: left;
+  padding-left: 2%;
+  border: 1px solid #cccccc;
+  height: 38px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.inputEditDatps>input {
+  width: 46%;
   text-align: center;
+  padding-left: 2%;
   border: 1px solid #cccccc;
   height: 38px;
 }
@@ -3826,7 +4633,8 @@ a.carousel-control.controlsHistirys>span {
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.formInputsDats>select {
   width: 46%;
-  text-align: center;
+  text-align-last: center;
+  padding-left: 2%;
   border: 1px solid #cccccc;
   height: 38px;
 }
@@ -3953,6 +4761,21 @@ a.carousel-control.controlsHistirys>span {
   cursor: pointer;
 }
 
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueDayss>.DayForDayEdit {
+  width: 14%;
+  float: left;
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 17px;
+  color: #4d4d4d;
+  font-family: 'MyrianPro-Regular';
+  cursor: pointer;
+}
+
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.databLoquOclockDetallDiasCompleto {
   border-bottom: 1px solid #cccccc;
   padding-bottom: 4%;
@@ -4041,6 +4864,164 @@ a.carousel-control.controlsHistirys>span {
   color: #666666;
 }
 
+h3.separe_block {
+  margin-top: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.formInputsDats.inputFilesd>input {
+  margin: 0 auto;
+  padding-top: 1%;
+}
+
+a.newHorario>p {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+a.newHorarioMedio>p {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioCompletos {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioMediosdis {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioCompletos.block2 {
+  margin-top: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioCompletos.block3 {
+  margin-top: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioMediosdis.blockMedio2 {
+  margin-top: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioMediosdis.blockMedio3 {
+  margin-top: 5%;
+}
+
+
+a.newHorario {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+a.newHorarioMedio {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.block2{
+  display: none;
+}
+
+.blockMedio2{
+  display: none;
+}
+
+.block3{
+  display: none;
+}
+
+.blockMedio3{
+  display: none;
+}
+
+.DaySelectActive{
+  background: #039be5 !important;
+  color: white !important;
+  pointer-events: none;
+}
+
+.DaySelectActiveEdit{
+  background: #039be5 !important;
+  color: white !important;
+}
+
+.disabledbutton{
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.mnsAlertVacio {
+  display: none;
+  background: #ef6e6e;
+  float: left;
+  margin-left: 15%;
+  width: 50%;
+  padding-left: 2%;
+  padding: 1%;
+  color: #131212;
+  font-family: 'MyrianPro-Regular';
+}
+
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueHorarioCompletos {
+  margin-top: 5%;
+}
+
+.ajax-upload-dragdrop {
+  border: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.ajax-file-upload {
+  background: transparent;
+  color: #b3b3b3;
+  border: 0;
+  box-shadow: 0 0px 0 0 transparent;
+  font-size: 15px;
+  font-family: 'MyrianPro-Regular';
+  cursor: pointer !important;
+}
+
+.ajax-file-upload:hover {
+  background: transparent;
+  -moz-box-shadow: 0 0px 0 0 transparent;
+  -webkit-box-shadow: 0 0px 0 0 transparent;
+  box-shadow: 0 0px 0 0 transparent;
+}
+
+.ajax-file-upload-statusbar > img {
+  display: none !important;
+}
+
+.divBgUSerAll{
+  width: 30%;
+  padding-right: 0;
+  margin-left: 9%;
+}
+
+
+.label.dataPrubeIm.dataProfileEditUsersAlls {
+  padding-bottom: 3%;
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19%;
+  float: left;
+  display: block;
+  height: 39px;
+  border-radius: 169px;
+  margin-right: 0%;
+  margin-left: 9%;
+  bottom: 8px;
+  position: relative;
+  margin-left: 19%;
+}
 
 /* END PAGE EIDT USER */
 
@@ -4058,6 +5039,11 @@ a.carousel-control.controlsHistirys>span {
   position: absolute;
   top: 48%;
   left: 40%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.dataImgAndranking.datarankingGropu>.col-xs-12.col-sm-4.col-md-2.col-lg-2.imgProfiEdit {
+  width: 13%;
+  padding-left: 0;
 }
 
 
@@ -4139,6 +5125,10 @@ div.foreareaCandidatos>.col-xs-12.col-sm-6.col-md-4.col-lg-4>h3 {
 
 .col-xs-12.col-sm-12.col-md-2.col-lg-2.OtherUserEdit.lateEdiEvalution {
   width: 13%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.othersUsersEstadis.UserYarealizo {
+  opacity: 0.6;
 }
 
 /* END PAGE EVALUCIAONES MENSUALES */
@@ -4283,7 +5273,7 @@ ul.Redconocistes>li>div {
   margin: 0 auto;
   text-align: center;
   display: block;
-  width: 68%;
+  width: 71%;
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.textConesta.bgQuesdtions>ul {
@@ -4346,6 +5336,26 @@ ul.Redconocistes>li>div>img {
   text-align: left;
   font-size: 22px;
   font-family: 'MyrianPro-Bold';
+}
+
+.activeSeleccionCarita{
+  display: none;
+}
+
+.errorSelec {
+  background: #ffa4a4;
+  margin-top: 3%;
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.errorSelec>p {
+  color: #1d1c1c !important;
+  padding: 2%;
+  margin: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts.profilesForDetall.roflDetallAd>.col-xs-12.col-sm-6.col-md-5.col-lg-5.detallNameProfile {
+  margin-left: 2%;
 }
 
 /* END PAGE EVALUACIONES MENSUALES DETALLS */
@@ -4418,6 +5428,8 @@ div.panegruopAddNoti>.panel.panel-default>div#headingTwo>h4.panel-title {
   text-align: right;
   margin-top: 4%;
   float: right;
+  z-index: 100;
+
 }
 
 .col-xs-12.col-sm-12.col-md-12.bloquesActions.bloqueActionAddNodui>div.ui {
@@ -4538,3 +5550,277 @@ div.panegruopAddNoti>.panel.panel-default>div#headingTwo>h4.panel-title {
 }
 
 /* END MODAL NOTIFIACIONES CREATES */
+
+.gasper{
+  display: none !important;
+}
+
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div.contenMoreDocuments {
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div {
+  display: inline-block;
+  width: 49%;
+  float: none;
+  padding-right: 0;
+  margin-top: 2%;
+}
+
+.contenMoreDocuments {
+  background: #e0e0f7;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.contenMoreDocuments>input {
+  display: none;
+}
+
+.contenMoreImages {
+  background: #e0e0f7;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.contenMoreImages>input {
+  display: none;
+}
+
+.contenMoreImages>p {
+  display: inline-block;
+  margin: 0;
+}
+
+.contenMoreImages>i {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.contenMoreImages>i {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contenMoreDocuments>p {
+  display: inline-block;
+  margin: 0;
+}
+
+.contenMoreDocuments>i {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.contenMoreDocuments>i {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div.contenMoreDocuments {
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div.contenMoreImages {
+  display: none;
+}
+
+.col-md-6.actionpuBlish>div>img {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.col-md-2.DestacarPuslish.active {
+  background: #e0e0f7;
+}
+
+.col-md-2.AlertPublish.active {
+  background: #e0e0f7;
+}
+
+.alert.alert-info.dataClMoPosPEr.dataENtradaMarcada {
+  color: #b2b5b7;
+  background-color: #263740;
+  border-color: #263740;
+}
+
+.alert.alert-info.dataClMoPosPEr {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  left: 27%;
+  display: none;
+} 
+
+
+.col-xs-12.col-sm-2.col-md-1.col-lg-1.secFotoUser {
+  height: 64px;
+  border-radius: 112px;
+  width: 7%;
+  background-position: center center;
+  background-size: 190%;
+  background-repeat: no-repeat ; 
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.nameUisersMensage > h3 > img {
+  cursor: pointer;
+}
+
+.formReturnMennsage>div>div.contenMoreDocuments {
+  display: none !important;
+}
+
+.formReturnMennsage>div>div.contenMoreImages {
+  display: none !important;
+}
+
+.formReturnMennsage > div > div.contenMoreImages > p {
+  display: none !important;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueImageretu > p {
+  background: #e0e0f7;
+  padding: 1%;
+  width: 34%;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.modal-body.captionBodySolicRespuesa > .col-xs-12.col-sm-12.col-md-12.contRevibeSOlic {
+  float: none;
+  display: block;
+}
+
+.modal-body.captionBodySolicRespuesa > .col-xs-12.col-sm-12.col-md-12.contRevibeSOlic > div {
+  float: none;
+  width: 100%;
+}
+
+.captionEvulveImg {
+  height: 92px;
+  border-radius: 112px;
+  width: 28%;
+  background-position: center center;
+  background-size: 190%;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0 auto;
+  border: 4px solid #29abe2;
+}
+
+.col-xs-12.col-sm-12.col-md-12.contRevibeSOlic > div {
+  text-align: center;
+}
+
+.modal-body.captionBodySolicRespuesa > .col-xs-12.col-sm-12.col-md-12.contRevibeSOlic > div > h5 {
+  font-size: 12px;
+  color: #333333;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  font-family: 'MyrianPro-Regular';  
+}
+
+.modal-body.captionBodySolicRespuesa > .col-xs-12.col-sm-12.col-md-12.contRevibeSOlic > div > h4 {
+  font-size: 17px;
+  color: #000000;
+  margin-top: 1%;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.modal-body.captionBodySolicRespuesa > .col-xs-12.col-sm-12.col-md-12.contRevibeSOlic > div > h6{
+  font-size: 11px;
+  color: #333333;
+  margin-top: 1%;
+  font-family: 'MyrianPro-Regular'; 
+}
+
+.modal-body.captionBodySolicRespuesa > .col-xs-12.col-sm-12.col-md-12.contRevibeSOlic > div > button{
+  background: #039be5;
+  border: 0;
+  color: white;
+  width: 27%;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.modal-body.captionBodySolicRespuesa > .col-xs-12.col-sm-12.col-md-12.contRevibeSOlic > div > p.return{
+  background: #666666;
+  border: 0;
+  color: white;
+  width: 27%;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+  display: inline-block;
+  padding: 2%;
+  cursor: pointer;
+}
+
+p.AcepAdp {
+  background: #039be5;
+  border: 0;
+  color: white;
+  width: 27%;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+  padding: 2%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+p.Aceptado {
+  background: #039be5;
+  border: 0;
+  color: white;
+  width: 27%;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+  padding: 2%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.modal-dialog.contAcotionModlas {
+  width: 30%;
+}
+
+.modal-body.captionBodySolicRespuesa > div {
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+  padding-bottom: 4%;
+  padding-top: 4%;
+}
+
+.modal-body.captionBodySolicRespuesa > div > div {
+  padding: 0;
+}
+
+.captionDiasvaciones.col-md-12 > .capsubDays {
+  background: #039be5;
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+  float: none;
+}
+
+.captionDiasvaciones.col-md-12>.capsubDays>p {
+  color: white;
+  font-size: 55px;
+  font-family: 'MyrianPro-Black';
+}
+
+.userDayFaltante {
+  color: #333333;
+  font-size: 11px;
+  font-family: 'MyrianPro-Regular'; 
+}
+
+.captionDiasvaciones.col-md-12 {
+  margin-bottom: 2%; 
+}
+
+.userDayFaltante>span {
+  font-family: 'MyrianPro-Semibold';
+}

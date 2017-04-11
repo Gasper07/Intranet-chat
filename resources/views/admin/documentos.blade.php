@@ -45,9 +45,27 @@
 <section class="container-fluid">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sectionMenuInterno">
     <ul class="listActionDocuemntps">
-        <li class="active"><a href="">Crear carpeta</a></li>
-        <li><a href="">Subir</a></li>
-        <li><a href="">Descargar</a></li>
+        <li><a href="#!" class="createCarpeta">Crear carpeta</a></li>
+        <form action="http://127.0.0.1/Sites/Intranet-chat/admin/documentCreateDirectorie" method="post" accept-charset="utf-8" class="createNewDirec" >
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="_url" value="{{ $idurl }}">
+          <input type="hidden" name="_url2" value="{{ $idurl2 }}">
+          <input type="hidden" name="_url3" value="{{ $idurl3 }}">
+          <input type="hidden" name="_url4" value="{{ $idurl4 }}">
+          <input type="hidden" name="_url5" value="{{ $idurl5 }}">
+          <input type="hidden" class="CreateNewActionDirective" name="name_carpeta_new" />
+        </form>
+        <li><a href="#!" onclick="FileNewDocu()">Subir</a></li>
+        <form action="http://127.0.0.1/Sites/Intranet-chat/admin/documentUpload" method="post" accept-charset="utf-8" class="uploadArchivoNew2" enctype="multipart/form-data">
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+          <input type="hidden" name="_url" value="{{ $idurl }}">
+          <input type="hidden" name="_url2" value="{{ $idurl2 }}">
+          <input type="hidden" name="_url3" value="{{ $idurl3 }}">
+          <input type="hidden" name="_url4" value="{{ $idurl4 }}">
+          <input type="hidden" name="_url5" value="{{ $idurl5 }}">
+          <input type="file" class="fileInputUploadDocu2" name="file_input_docuemnt_upload" />
+        </form>
+        {{-- <li><a href="">Descargar</a></li> --}}
         <li class="dreopDocument">
           <div class="dropdown dwropOptionMensgae">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,13 +73,19 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
               <li>
-                <a href="#!">Eliminar</a>        
+                <form action="http://127.0.0.1/Sites/Intranet-chat/admin/documentRemove" method="get" accept-charset="utf-8" class="removeElement">
+                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                  <input type="hidden" name="_url" value="{{ \Request::url() }}">
+                  <input type="submit" value="Eliminar">
+                </form>       
               </li>
-              <li>
-                <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
-                  <input type="submit" value="Mover a">
+              {{-- <li>
+                <form action="documentDowload" method="post" accept-charset="utf-8" class="moveELements">
+                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                  <input type="hidden" name="_url" value="{{ \Request::url() }}">
+                  <input type="submit" value="Descargar">
                 </form>         
-              </li>
+              </li> --}}
             </ul>          
           </div>
         </li>
@@ -76,45 +100,70 @@
     <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
       
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 sectionCenterContenido">
-
-     {{-- notificaciones --}}
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 sectionCenterContenido sectionContenidoDocuemnts">
+      @if(Session::has('Remove_documentos'))
+        <p class="alert alert-success">{{Session::get('Remove_documentos')}}</p>
+      @endif
+      @if(Session::has('Upload_document'))
+        <p class="alert alert-success">{{Session::get('Upload_document')}}</p>
+      @endif
+      @if(Session::has('Create_directorie'))
+        <p class="alert alert-success">{{Session::get('Create_directorie')}}</p>
+      @endif
+      {{-- En esta pagina vamos obtener los archivos del directorio carpeta admin --}}
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloquesAdjuntoArchives">
-      
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">          
-          <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </form>
-          <img class="img-responsive" id="contenedor" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/carpetaVacia.png" alt="">
-          <p>Carpeta vacía</p>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-          <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </form>
-          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/carpetaLLena.png" alt="">
-          <p>Carpeta llena</p>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2" id="parrafo" draggable="true" ondragstart="drag(this, event)">
-          <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </form>
-          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/dcumento.png" alt="">
-          <p>Politicas</p>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-          <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </form>
-          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/dcumento.png" alt="">
-          <p>Politicas</p>
-        </div>
-        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-          <form action="home_submit" method="get" accept-charset="utf-8" class="removeMensage">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </form>
-          <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/addFile.png" alt="">
-          <p>Politicas</p>
+        @foreach($ArrayCarpetas as $carpetas => $valueCarpeta)
+          @if($valueCarpeta['VaueContenido'] == '1')
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-identificador="{{$valueCarpeta['identiFI']}}">          
+               <i class="fa fa-check noneIcon direCar" aria-hidden="true"></i>
+              <a href="{{ $valueCarpeta['nameCarpeta2'] }}">
+                <img class="img-responsive" id="contenedor" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" src="http://127.0.0.1/Sites/Intranet-chat/public/assets/images/icons/carpetaLlena.png" alt="">
+                <p class="namedataCarpeta">{{ $valueCarpeta['nameCarpeta'] }}</p>
+              </a>
+            </div>
+          @else
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 " data-identificador="{{$valueCarpeta['identiFI']}}">          
+               <i class="fa fa-check noneIcon direCar" aria-hidden="true"></i>
+              <a href="{{ $valueCarpeta['nameCarpeta2'] }}">
+                <img class="img-responsive" id="contenedor" ondrop="drop(this, event)" ondragenter="return false" ondragover="return false" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/carpetaVacia.png" alt="">
+                <p>{{ $valueCarpeta['nameCarpeta'] }}</p>
+              </a>
+            </div>
+          @endif
+        @endforeach
+
+         @foreach($getDirectoryArchivos as $archivos)
+          <p class="gasper">{{ $randomNmm = rand(5, 12323352) }}</p>
+           <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 dataDowload" data-identificador="cla{{$randomNmm}}" id="parrafo{{$randomNmm}}" draggable="true" ondragstart="drag(this, event)">
+              <i class="fa fa-check noneIcon FilCa" aria-hidden="true"></i>
+             <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/dcumento.png" alt="">
+             <form action="http://127.0.0.1/Sites/Intranet-chat/admin/documentDowload" method="post" accept-charset="utf-8" class="dewoDowloas">
+               <input type="hidden" name="_token" value="{{ csrf_token() }}">
+               <input type="hidden" name="_url" value="{{ $idurl }}">
+               <input type="hidden" name="_url2" value="{{ $idurl2 }}">
+               <input type="hidden" name="_url3" value="{{ $idurl3 }}">
+               <input type="hidden" name="_url4" value="{{ $idurl4 }}">
+               <input type="hidden" name="_url5" value="{{ $idurl5 }}">
+               <input type="hidden" name="_name_archivo" value="{{ basename($archivos) }}">
+             </form> 
+             <a href="#!">
+               <p>{{ basename($archivos) }}</p>
+             </a>
+           </div>
+         @endforeach
+        
+        
+        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 fileUploDat">
+          <img class="img-responsive" onclick="FileNewDocu()" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/icons/addFile.png" alt="">
+          <form action="http://127.0.0.1/Sites/Intranet-chat/admin/documentUpload" method="post" accept-charset="utf-8" class="uploadArchivoNew" enctype="multipart/form-data">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="_url" value="{{ $idurl }}">
+            <input type="hidden" name="_url2" value="{{ $idurl2 }}">
+            <input type="hidden" name="_url3" value="{{ $idurl3 }}">
+            <input type="hidden" name="_url4" value="{{ $idurl4 }}">
+            <input type="hidden" name="_url5" value="{{ $idurl5 }}">
+            <input type="file" class="fileInputUploadDocu" name="file_input_docuemnt_upload" />
+          </form> 
         </div>
       </div>
 
@@ -134,39 +183,8 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog contPusblishDialogo" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="col-xs-12 col-sm-12 col-md-12 continPublish">
-          <form action="home_submit" method="get" class="sectionPublichUser" accept-charset="utf-8">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <textarea name="" placeholder="Escribe un comentario"></textarea>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 bloquesActions">
-              <div class="col-md-6 actionpuBlish">
-                <div class="col-md-2 Adjuntar">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarIco.png" alt="">
-                </div>
-                <div class="col-md-2 AdjuntarFoto">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/adjuntarFoto.png" alt="">
-                </div>
-                <div class="col-md-2 DestacarPuslish">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/destacarIco.png" alt="">
-                </div>
-                <div class="col-md-2 AlertPublish">
-                  <img class="img-responsive" src="http://app-fd8d1fda-4b1b-423f-aa23-358cd43f64b3.cleverapps.io/public/assets/images/avatar/alertIco.png" alt="">
-                </div>
-              </div>
-              <div class="col-md-6 ButtinPublish">
-                <input type="submit" value="Enviar"></input>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+@include('usuarios.partials.field-public-post')
+
+<div class="alert alert-info dataClMoPosPEr" role="alert">¡Publicacion Agregada!</div>  
   
 @endsection

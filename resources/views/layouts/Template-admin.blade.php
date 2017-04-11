@@ -22,7 +22,7 @@
     {!! Html::style('public/assets/css/font-awesome.css') !!}
 
     <!-- Datepicker Files -->
-    {!! Html::style('public/assets/datePicker/css/bootstrap-datepicker3.css') !!}
+    {!! Html::style('public/assets/css/datePicker/bootstrap-datepicker3.css') !!}
     {!! Html::style('public/assets/css/bootstrap-datetimepicker.min.css') !!}
 
     {{-- Main style --}}
@@ -221,6 +221,9 @@
 
     <!-- Scripts -->
     {!! Html::script('public/js/app.js') !!}
+    <script type="text/javascript">
+      $('#myModalSolicitudRespuestCorrect').modal('show');
+    </script>
     {!! Html::script('public/assets/js/menu/classie.js') !!}
     {!! Html::script('public/assets/js/menu/gnmenu.js') !!}
 
@@ -228,14 +231,38 @@
         new gnMenu( document.getElementById( 'gn-menu' ) );
     </script>
 
+    <script>
+      $(window).bind("beforeunload", function() { 
+          return confirm("deseas cerrar la ventana?"); 
+      });
+    </script>
+
     <!-- Semantic Ui CSS -->
     {!! Html::script('public/assets/js/semantic.js') !!}
+     <script>
+         $('.dropdownSemantic')
+           .dropdown({
+             transition: 'drop'
+           });
+
+    </script>
 
     <script>
+      $('.button')
+        .popup({
+          inline: true
+        });
         $('.dropdownSemantic')
-          .dropdown({
-            transition: 'drop'
-          });
+        .dropdown({
+          transition: 'drop'
+        });
+        $('.accordion')
+          .accordion({
+            selector: {
+              trigger: '.title div .fa-angle-down'
+            }
+          })
+        ;
 
         $('.max.example .ui.fluid.dropdown')
           .dropdown({
@@ -272,7 +299,7 @@
        });
    </script>
 
-   {!! Html::script('public/assets/datePicker/js/bootstrap-datepicker.js') !!}
+   {!! Html::script('public/assets/js/datePicker/bootstrap-datepicker.js') !!}
    <script type="text/javascript">
       $('#sandbox-container .input-daterange').datepicker({
           format: "yyyy-mm-dd",
@@ -293,6 +320,8 @@
      });//]]>  
    
    </script>
+
+   
    {!! Html::script('public/assets/js/admin/main.js') !!}
 </body>
 </html>

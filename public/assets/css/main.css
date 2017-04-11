@@ -319,7 +319,7 @@ ul.nav.navbar-nav.navbar-right.navulRIght {
   padding-right: 0.8%;
   z-index: 200;
   position: relative;
-  width: 17%;
+  width: 22%;
 }
 
 .ui.dropdown.dropdownSemantic.notifiICos {
@@ -377,8 +377,9 @@ li.dropdown.uSerLogue.colorBlackSuave {
 }
 
 .ui.feed.uifeedAvatar>.event>div.label {
-  width: 11%;
+  width: 10%;
   padding: 0;
+  border-radius: 37px;
 }
 
 .ui.feed.uifeedAvatar {
@@ -446,14 +447,85 @@ li.dropdown.uSerLogue.colorBlackSuave {
 
 .ui.feed.uifeedComnetUser {
   padding-top: 0%;
-  padding-bottom: 4%;
+  padding-bottom: 0%;
   padding-left: 7%;
   padding-right: 7%;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+.dataPrubeIm {  
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dataImhgEvent {  
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.containerPhotoProfile {
+  padding-bottom: 3%;
+  background-size: 109%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18%;
+  padding: 0;
+  border-radius: 62px;
+  height: 131px;
+  margin: 0 auto;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ColumnsDataText>input.profileEidtars{
+  background: white;
+  border: 1px solid #e8e4e4;
+  padding-left: 3%;
+}
+
+.dataSaveChanges{
+  display: none;
+}
+
+.dataSaveChangesActive{
+  display: block !important;
+}
+
+.disabelBOtEdit{
+  display: none;
+}
+
+a.dataSaveChanges.dataSaveChangesActive {
+  background: #ffd00b;
+  width: 14%;
+  text-align: center;
+  float: right;
+  padding: 1%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.DataEditar>a.dataSaveChanges.dataSaveChangesActive>p {
+  text-align: center !important;
+  color: black;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionlokComen {
+  padding: 0;
+  margin-bottom: 3%;
 }
 
 .ui.feed.uifeedComnetUser>.event>div.label {
   width: 11%;
   padding: 0;
+}
+
+.ui.feed.uifeedComnetUser>.event>div.dataPrubeIm {
+  width: 11%;
+  padding: 0;
+  border-radius: 37px;
 }
 
 .ui.feed.uifeedComnetUser>.event>.content>.summary>a {
@@ -675,6 +747,132 @@ p.textCOment.fontMiriamProRegular.colorGrisMediumSuave {
   line-height: 100px;
 }
 
+.col-md-6.actionpuBlish>div>img {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.contenMoreDocuments {
+  background: #e0e0f7;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.contenMoreDocuments>i {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contenMoreDocuments>input {
+  display: none;
+}
+
+.contenMoreDocuments>p {
+  display: inline-block;
+  margin: 0;
+}
+
+.contenMoreDocuments>i {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.contenMoreDocuments>input {
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div.contenMoreDocuments{
+  display: none;
+}
+
+
+.contenMoreImages {
+  background: #e0e0f7;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.contenMoreImages>i {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contenMoreImages>input {
+  display: none;
+}
+
+.contenMoreImages>p {
+  display: inline-block;
+  margin: 0;
+}
+
+.contenMoreImages>i {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.contenMoreImages>input {
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions>div.contenMoreImages{
+  display: none;
+}
+
+
+.hideFiles{
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.col-md-2.DestacarPuslish.active {
+  background: #e0e0f7;
+} 
+
+.col-md-2.AlertPublish.active {
+  background: #e0e0f7;
+} 
+
+a.dataDpcuCl>img {
+  width: 19%;
+  margin: 0 auto;
+}
+
+img.img-responsive.clImgView {
+  cursor: pointer;
+}
+
+.alert.alert-info.dataClMoPosPEr {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  left: 27%;
+  display: none;
+} 
+
+.captionPostGuardados>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos {
+  width: 100%;
+  padding: 0;
+  margin-top: 6%;
+}
+
+.captionPostGuardados>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>.col-xs-12.col-sm-6.col-md-6.col-lg-6 {
+  width: 100%;
+}
+
+.captionPostGuardados>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>.col-xs-12.col-sm-6.col-md-6.col-lg-6>.col-md-12>form.ui.form.formComentUser>.field {
+  width: 100%;
+}
+
+.captionPostGuardados>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>.col-xs-12.col-sm-6.col-md-6.col-lg-6>.col-md-12>form.ui.form.formComentUser>a.dataComenyt {
+  /* float: none; */
+  width: 50%;
+  padding-bottom: 5%;
+}
+
 
 /* CALENDAR STYLE COLUMN */
 
@@ -855,6 +1053,11 @@ div#sandbox-container>h4 {
   margin-top: 10%;
 }
 
+.content>.summary.postPosss>div.date>img.alertPost {
+  width: 37%;
+  height: auto;
+}
+
 .captionRankingUser>h3 {
   text-align: center;
   color: #000000;
@@ -888,6 +1091,40 @@ div#sandbox-container>h4 {
 .col-md-12.capInteRankingSube>h2 {
   text-align: center;
   font-size: 23px;
+}
+
+.col-md-12.capInteRankingSube>a>h2 {
+  text-align: center;
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.carouselRank{
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0) 100%) !important;
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0) 100%)!important;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-inner>a.carouselRank>span{
+  color: black;
+  font-size: 15px;
+  top: 16px;
+  left: 11%;
+}
+
+div#carousel-example-genericRan>div.carousel-inner>div.item>div>a>p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  color: #000000;
+  height: 25px;
+}
+
+div#carousel-example-genericRan>.carousel-inner {
+  margin-bottom: 4%;
 }
 
 .col-md-12.capInteRankingSube {
@@ -971,6 +1208,58 @@ div#sandbox-container>h4 {
 
 .icoFotos {
   background: url('../images/avatar/ico-fotografia.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.icoDocumn {
+  background: url('../images/avatar/ico-documento.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.icoUrgente {
+  background: url('../images/avatar/icoAlert.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.icoNotifiEvent {
+  background: url('../images/avatar/notifiEvn.png');
+  background-size: cover;
+  width: 9%;
+  height: 21px;
+  display: block;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.icoCalendar {
+  background: url('../images/avatar/ico-calendar.png');
   background-size: cover;
   width: 9%;
   height: 21px;
@@ -1118,6 +1407,7 @@ form.sectionPublichUser>div {
   width: 49%;
   float: none;
   padding-right: 0;
+  margin-top: 2%;
 }
 
 .col-md-2.AdjuntarFoto {
@@ -1168,7 +1458,40 @@ form.sectionPublichUser>div {
   border: 0px solid rgba(0, 0, 0, .2);
 }
 
+form.ui.form.formComentUser>div>textarea {
+  height: 50px;
+  min-height: 0;
+  width: 100%;
+  float: left;
+}
 
+form.ui.form.formComentUser {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 7%;
+  margin-bottom: 11%;
+}
+
+form.ui.form.formComentUser>div {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+form.ui.form.formComentUser>a {
+  display: block;
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding-left: 4%;
+}
+
+form.ui.form.formComentUser>a>p {
+  background: #0071bc;
+  color: white;
+  padding: 3%;
+  width: 100%;
+}
 
 /* PROFILE PAGE */
 
@@ -1633,6 +1956,65 @@ p.typEEvento {
 }
 
 
+.label.dataPrubeIm.dataProfileRankingUser {
+  padding-bottom: 0%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20%;
+  display: block;
+  height: 130px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 11%;
+ /* bottom: 8px; */
+ position: relative;
+ display: block;
+ /* margin: 0 auto; */
+ text-align: center;
+ margin: 0 auto;
+}
+
+.label.dataPrubeIm.dataProfileRankingUserOthers {
+  padding-bottom: 0%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 62%;
+  display: block;
+  height: 130px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 11%;
+ /* bottom: 8px; */
+ position: relative;
+ display: block;
+ /* margin: 0 auto; */
+ text-align: center;
+ margin: 0 auto;
+}
+
+.label.dataPrubeIm.dataProfileAllUsersOnline {
+  padding-bottom: 3%;
+  background-size: 113%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  float: left;
+  display: block;
+  height: 43px;
+  border-radius: 30px;
+  margin-right: 0%;
+  margin-left: 9%;
+  bottom: 4px;
+  position: relative;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitrados.columnChatss.captionLikechatsFlotante.captionLikechatsFlotanteDta>div {
+  width: 17%;
+}
+
+
 /* PAGE CHAT USERS */
 
 
@@ -1921,7 +2303,7 @@ form.formSearchChat>div {
   color: rgba(0, 0, 0, .40);
   font-size: 12px;
   font-family: 'MyrianPro-Regular';
-  margin-bottom: 2%;
+  margin-bottom: 0%;
 }
 
 .col-lg-12.MensaGedate.getUserSend.getSednes {
@@ -1955,6 +2337,64 @@ form.formSearchChat>div {
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.sectionCreateCHat {
   z-index: 100;
 }
+
+.col-lg-12.MensaGedate.getUserReceive>div.datafechasND {
+  color: rgba(0, 0, 0, .40);
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
+  margin-bottom: 2%;
+  text-align-last: center;
+}
+
+.col-lg-12.MensaGedate.getUserSend>div.datafechasND {
+  color: rgba(0, 0, 0, .40);
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
+  margin-bottom: 2%;
+  text-align-last: center;
+}
+
+
+.label.dataPrubeIm.dataProfileAllUsersListChat {
+  padding-bottom: 3%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  float: left;
+  display: block;
+  height: 39px;
+  border-radius: 30px;
+  margin-right: 0%;
+  margin-left: 9%;
+  bottom: 8px;
+  position: relative;
+}
+
+.label.dataPrubeIm.dataProfileAllUsersListChatSelect {
+  padding-bottom: 3%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 5%;
+  float: left;
+  display: block;
+  height: 39px;
+  border-radius: 30px;
+  margin-right: 0%;
+  margin-left: 0%;
+  bottom: 8px;
+  position: relative;
+}
+
+.col-lg-12.nullCOnversation>p {
+  text-align: center;
+}
+
+.typeImgNull{
+  display: none;
+}
+
 
 /* CALENDAR STYLE */
 
@@ -2117,10 +2557,16 @@ form.formSearchChat>div {
 
 .col-xs-12.col-sm-12.col-md-6.col-lg-6.ChatWithUserDatas.vDataPublicTypeUSer>p {
   display: inline-block;
-  margin-left: 3%;
+  margin-left: 4%;
   font-size: 13px;
   color: #0071bc !important;
   font-family: 'MyrianPro-Semibold';
+  display: inline-block;
+  margin-top: 4%;
+}
+
+div#carousel-example-generic2>a {
+  background: transparent;
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.fechasEventos {
@@ -2140,6 +2586,30 @@ form.formSearchChat>div {
   padding-left: 10%;
 }
 
+.ui.special.popup.top.left>div {
+    font-size: 16px;
+}
+
+.dataImhgEvent {
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15%;
+  padding: 0;
+  border-radius: 37px;
+  height: 31px;
+  display: inline-block;
+  float: left;
+}
+
+.right.carousel-control.RightcalendarEventsDescrip {
+  z-index: -1;
+}
+
+.left.carousel-control.leftcalendarEventsDescrip {
+  z-index: -1;
+}
 
 
 /* PROFILE VISITANTE */
@@ -2181,7 +2651,21 @@ form.formSearchChat>div {
   margin-top: 3%;
 }
 
+.col-xs-12.col-sm-12.col-md-12.sectionHorarios.sectionHorarioOthers {
+  margin-top: 8%;
+}
 
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionProfileMy>.containerPhotoProfile {
+  width: 58%;
+  margin-bottom: 3%;
+}
+
+
+.alert.alert-info.dataClMoPosPEr.dataENtradaMarcada {
+  color: #b2b5b7;
+  background-color: #263740;
+  border-color: #263740;
+}
 
 
 /* PAGE SOLICITUD DE PERMISO */
@@ -2321,7 +2805,6 @@ div#datetimepicker12>.bootstrap-datetimepicker-widget.timepicker-sbs>div>.timepi
 }
 
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.solicitudAceptada {
-  margin-top: 5%;
   background: white;
   padding: 4%;
 }
@@ -2337,6 +2820,258 @@ div#datetimepicker12>.bootstrap-datetimepicker-widget.timepicker-sbs>div>.timepi
   border-bottom: 0;
 }
 
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.selecDatTime.slectccionadoAction>a>p {
+  background: #333333;
+}
+
+
+
+.col-xs-12.col-sm-2.col-md-1.col-lg-1.secFotoUser {
+  height: 43px;
+  border-radius: 112px;
+  width: 7%;
+  background-position: center center;
+  background-size: 190%;
+  background-repeat: no-repeat;
+}
+.col-xs-12.col-sm-2.col-md-1.col-lg-1.secFotoUser {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.nameUisersMensage > h3 {
+  color: #000000;
+  font-size: 17px;
+  font-family: 'MyrianPro-Semibold';
+  margin-bottom: 1%;
+}
+
+.col-xs-12.col-sm-7.col-md-11.col-lg-11.sectioForMEnsagen.secdataTextMensage > .col-xs-12.col-sm-12.col-md-12.col-lg-12.typeUisersMensage > .dataClicDEsplace {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+  margin-top: -17px;
+}
+
+.col-xs-12.col-sm-7.col-md-11.col-lg-11.sectioForMEnsagen.secdataTextMensage > .col-xs-12.col-sm-12.col-md-12.col-lg-12.typeUisersMensage > p {
+  width: 80%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.typeUisersMensage > p {
+  color: #666666;
+  font-size: 13px;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.createMotive {
+  margin-bottom: 1%;
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.typeUisersMensage {
+  padding-right: 0;
+}
+
+.col-xs-3.col-sm-3.col-md-3.col-lg-3.motivePermiso {
+  padding: 0;
+  width: 22%;
+  text-align: right;
+}
+
+.col-xs-3.col-sm-3.col-md-3.col-lg-3.motivePermiso > span {
+  color: #666666;
+  font-size: 13px;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-6.col-sm-6.col-md-6.col-lg-6.descriptMotivo {
+  width: 77%;
+}
+
+.col-xs-12.col-sm-7.col-md-11.col-lg-11.sectioForMEnsagen.secdataTextMensage > .col-xs-12.col-sm-12.col-md-12.col-lg-12.typeUisersMensage > div > div > p {
+  display: inline-block;
+  margin-bottom: 0;
+  color: #666666;
+  font-size: 13px;
+  font-family: 'MyrianPro-Regular';
+  font-weight: 100;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.fchaUisersMensage > p {
+  text-align: right;
+  color: #cccccc;
+  font-size: 11px;
+  font-family: 'MyrianPro-Regular';
+  position: absolute;
+  left: 73%;
+}
+
+.dataClicDEsplace.deplaceDatSolictudes.col-xs-12.col-sm-12.col-md-12.col-lg-12 > div > div > i {
+  position: absolute;
+  bottom: 150%;
+  left: 93%;
+}
+
+.dataClicDEsplace > div > div > i {
+  font-size: 27px;
+  color: #999999;
+}
+
+.dataClicDEsplace.deplaceDatSolictudes.col-xs-12.col-sm-12.col-md-12.col-lg-12 > .ui.accordion > .content.conFormularioReturnMenSage > p {
+  padding-left: 19%;
+}
+
+.content.conFormularioReturnMenSage > p {
+  text-align: left;
+  color: #999999;
+  font-size: 14px;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.dataClicDEsplace.deplaceDatSolictudes.col-xs-12.col-sm-12.col-md-12.col-lg-12 > .ui.accordion > .content.conFormularioReturnMenSage > div.col-xs-12.col-sm-12.col-md-8.col-lg-8.formsActions.formsActions {
+  padding-left: 19%;
+  width: 100%;
+} 
+
+.dataClicDEsplace.deplaceDatSolictudes.col-xs-12.col-sm-12.col-md-12.col-lg-12 > .ui.accordion > .content.conFormularioReturnMenSage > .col-xs-12.col-sm-12.col-md-8.col-lg-8.formsActions {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.Sendmensage {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-8.col-lg-8.formsActions {
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-8.col-lg-8.formsActions > .col-xs-12.col-sm-6.col-md-4.col-lg-4.trueSolicituc {
+  background: #039be5;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  width: 31%;
+  margin-right: 1%;
+}
+
+.disabledbutton {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.col-xs-12.col-sm-12.col-md-8.col-lg-8.formsActions > .col-xs-12.col-sm-6.col-md-4.col-lg-4.trueSolicituc > a {
+  color: white;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.DenegeSolicituc {
+  background: #808080;
+  padding: 2%;
+  text-align: center;
+  width: 31%;
+  margin-right: 1%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.DenegeSolicituc > a {
+  color: white;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.Sendmensage {
+  background: #cccccc;
+  padding: 2%;
+  text-align: center;
+  width: 31%;
+  margin-right: 1%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.Sendmensage > div#accordion {
+  margin: 0;
+  background: transparent;
+}
+
+.content.conFormularioReturnMenSage > form.conteFormSolicitru {
+  display: none !important;
+}
+
+form.formReturnMennsage > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-9.col-lg-9.textAreaReturn {
+  padding: 0;
+}
+
+form.formReturnMennsage > div > div.textAreaReturn > textarea {
+  width: 100%;
+  border: 1px solid #cccccc;
+  height: 74px;
+  padding-left: 2%;
+}
+
+.formReturnMennsage > div > div.contenMoreDocuments {
+  display: none !important;
+}
+
+.contenMoreDocuments {
+  background: #e0e0f7;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.contenMoreDocuments > input {
+  display: none;
+}
+
+.contenMoreImages > input {
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-3.col-lg-3.submitSendSugerencia > input {
+  background: #039be5;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  font-family: 'MyrianPro-Semibold';
+  height: 74px;
+  width: 100%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueImageretu {
+  text-align: left;
+  padding-left: 20%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueImageretu > img {
+  display: inline-block;
+  text-align: left;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueImageretu > img {
+  display: inline-block;
+  text-align: left;
+}
+
+.content.conFormularioReturnMenSage > form.validaSendMnessa {
+  display: block !important;
+}
+
+.formReturnMennsage > div > div.contenMoreImages {
+  display: none !important;
+}
+
+.col-xs-12.col-sm-12.col-md-12.bloquesActions > div.contenMoreImages {
+  display: none;
+}
+
+.formReturnMennsage > div > div.contenMoreImages {
+  display: none !important;
+}
 
 
 /* MOTIVO DE EMERGENCIA */
@@ -2438,6 +3173,68 @@ div#datetimepicker12>.bootstrap-datetimepicker-widget.timepicker-sbs>div>.timepi
   position: relative;
   text-align: center;
   margin: 0 auto;
+  cursor: pointer;
+
+}
+
+.label.dataPrubeIm.dataProfileEvaluaciones {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75%;
+  float: left;
+  display: block;
+  height: 140px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 20%;
+  bottom: 8px;
+  position: relative;
+  display: block;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.label.dataPrubeIm.dataProfileEvaluacionesEvaluados {
+  padding-bottom: 3%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 82%;
+  float: left;
+  display: block;
+  height: 150px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 10%;
+  bottom: 8px;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.label.dataPrubeIm.dataProfileEvaluacionesDetall {
+  padding-bottom: 3%;
+  background-size: 195%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 67%;
+  float: left;
+  display: block;
+  height: 90px;
+  border-radius: 66px;
+  margin-right: 0%;
+  margin-left: 20%;
+  bottom: 8px;
+  position: relative;
+  display: block;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+.UserYarealizo {
+  opacity: 0.6;
 }
 
 
@@ -2546,9 +3343,39 @@ ul.Redconocistes>li>div {
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>div>p {
   color: #333333;
   font-size: 17px;
+  /* margin-top: 5%; */
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: 'MyrianPro-Regular';
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.sectionProfiles.sectionPermissionRequest.sectionEvalutionToPersonal > div > .col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts > div > p {
+  color: #333333;
+  font-size: 17px;
   margin-top: 5%;
   margin-bottom: 1%;
   font-family: 'MyrianPro-Regular';
+  margin-left: 10%;
+}
+
+.activeSeleccionCarita{
+  display: none;
+}
+
+.errorSelec {
+  background: #ffa4a4;
+  margin-top: 3%;
+  display: none;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.errorSelec>p {
+  color: #1d1c1c !important;
+  padding: 2%;
+  margin: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.sectionProfiles.sectionPermissionRequest.sectionEvalutionToPersonal > div > .col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts > div > div.rating {
+  margin-left: 10%;
 }
 
 .col-xs-12.col-sm-6.col-md-4.col-lg-4.dataNamesUsers {
@@ -2564,6 +3391,33 @@ ul.Redconocistes>li>div {
   font-family: 'MyrianPro-Regular';
   font-weight: 100;
 }
+
+.col-xs-12.col-sm-12.col-md-6.col-lg-6.sectionProfiles.sectionPermissionRequest.sectionEvalutionToPersonal>div>form>.col-xs-12.col-sm-12.col-md-12.col-lg-12.ProfileFotosStarts.profilesForDetall > .col-xs-12.col-sm-6.col-md-2.col-lg-2.detallImgProfile {
+  width: 22%;
+}
+
+.label.dataPrubeIm.dataProfileEvaluacionesDetallUser {
+  padding-bottom: 3%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 85%;
+  float: left;
+  height: 130px;
+  border-radius: 66px;
+  bottom: 8px;
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.detallImgProfile.profileSession {
+  width: 26%;
+  padding-right: 0;
+}
+
 
 
 /* FINISH EVALUATION */
@@ -2587,3 +3441,231 @@ ul.Redconocistes>li>div {
 .col-xs-12.col-sm-12.col-md-12.col-lg-12.EvaluationPersonal.FinishMEnsageEvalution {
   padding-top: 32%;
 }
+
+.gasper{
+  display: none;
+}
+
+.captionCircleUser.captionDenoews>p{
+  display: none !important;
+}
+
+
+/* CHAT VENTANA FLOTANTE */
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.chatVentanan {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  width: 20%;
+  right: 0;
+  text-align: center;
+  height: 58%;
+  padding: 0;
+  border: 1px solid #e6e2e2;
+  box-shadow: 0px 2px 10px 1px #e2e2e2;
+  margin-right: 1%;
+  display: none;
+}
+
+.bg-bar-name {
+  background: #ffd00b;
+  font-size: 12px;
+  font-family: 'MyrianPro-Regular';
+  text-align: left;
+  padding-left: 3%;
+}
+
+.bg-bar-name>p {
+  padding: 2%;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatCOntentUsers {
+  width: 100%;
+  height: 215px;
+  background: white;
+  overflow: auto;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos.captionChat {
+  width: 100%;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend>div{
+  width: 100%;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos.captionChat {
+  padding: 0;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend {
+  padding-top: 2%;
+  padding-bottom: 7%;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentSend>div>input.input_send {
+  padding: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitrados.columnChatss.captionLikechatsFlotante>div {
+  display: inline-block;
+  /* float: left; */
+  /* width: 82%; */
+  position: relative;
+  width: 20%;
+  /* margin-top: 0; */
+  margin-top: 3px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitrados.columnChatss.captionLikechatsFlotante>div>a>div {
+  width: 100%;
+  padding: 0;
+}
+
+.captionUsersInLive.liveDataHome>div>h3 {
+  margin-bottom: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitrados.columnChatss.captionLikechatsFlotante {
+  padding-bottom: 3%;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatCOntentUsers>.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box>.col-lg-12.MensaGedate.getUserReceive.getSenMenIds3>.col-lg-12.wrapMensage.envMensgaRce3 {
+  margin-top: 4%;
+}
+
+.data-footerSend>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>div.col-xs-12.col-sm-12.col-md-12.col-lg-12.ChatCOntentUsers>.col-xs-12.col-sm-12.col-md-12.col-lg-12.userCOntentChat.chat_box>div.col-lg-12.MensaGedate.getUserSend {
+  margin-top: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.AlluserReegitrados.columnChatss.captionLikechatsFlotante>div>a>div.col-xs-12.col-sm-6.col-md-4.col-lg-4.vloqImageUser {
+  width: 100%;
+  padding: 0;
+  border-radius: 37px;
+  height: 100%;
+  background-size: 118%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 36px;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.chatVentanan.heightMinCHatFloat{
+  height: 5%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.chatVentanan{
+  cursor: pointer;
+}
+
+.col-lg-12.nullCOnversation > p {
+  margin-top: 32%;
+  color: #877474;
+}
+
+.captionPostGuardados>.col-xs-12.col-sm-6.col-md-7.col-lg-7.captionPosteos>.col-xs-12.col-sm-6.col-md-6.col-lg-6>.col-md-12>.ui.feed.uifeedAvatar>.event>.label.dataPrubeIm {
+  width: 14%;
+  padding: 0;
+  border-radius: 37px;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.Sendmensage {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-7.col-md-11.col-lg-11.sectioForMEnsagen.secdataTextMensage {
+  padding-right: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.contectAllMenssages {
+  padding: 0;
+  margin-bottom: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionCOmetsReceibe.captionComenSolicitud {
+  padding-left: 18%;
+  margin-top: 2%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.captionCOmetsReceibe {
+  margin-bottom: 3%;
+}
+
+.col-xs-12.col-sm-4.col-md-1.col-lg-1.captionCOmetsReceibeIMgUser {
+  padding-right: 0;
+}
+
+
+.col-xs-12.col-sm-4.col-md-1.col-lg-1.captionCOmetsReceibeIMgUser > .col-xs-12.col-sm-2.col-md-1.col-lg-1.secFotoUser {
+  width: 100%;
+  padding-right: 0;
+  height: 30px;
+}
+
+.col-xs-12.col-sm-2.col-md-1.col-lg-1.secFotoUser {
+  height: 42px;
+  border-radius: 112px;
+  width: 7%;
+  background-position: center center;
+  background-size: 190%;
+  background-repeat: no-repeat;
+}
+
+.col-xs-12.col-sm-2.col-md-1.col-lg-1.secFotoUser {
+  padding: 0;
+}
+
+.col-xs-12.col-sm-8.col-md-11.col-lg-11.captionCOmetsReceibeDescriUserCOmen {
+  text-align: left;
+}
+
+.col-xs-12.col-sm-8.col-md-11.col-lg-11.captionCOmetsReceibeDescriUserCOmen > h4 {
+  margin-bottom: 1%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.soliAceptadaD {
+  /* background: #5e8ada;
+  color: white;
+  padding: 2%; */
+  text-align: center;
+  font-family: 'MyrianPro-Regular';
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.soliDetemnegadae {
+  background: #fb4b4b;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  font-family: 'MyrianPro-Regular';
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
+}
+
+.col-xs-12.col-sm-6.col-md-4.col-lg-4.Sendmensage {
+  padding: 0.5%;
+  width: 100%;
+  background: transparent;
+}
+
+.col-xs-12.col-sm-12.col-md-9.col-lg-9.textAreaReturn {
+  padding-left: 20%;
+  width: 80%;
+}
+
+.col-xs-12.col-sm-12.col-md-3.col-lg-3.submitSendSugerencia {
+  width: 20%;
+  padding-right: 0;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.bloqueImageretu > p {
+  background: #e0e0f7;
+  padding: 1%;
+  width: 50%;
+  text-align: center;
+  margin-top: 2%;
+}
+

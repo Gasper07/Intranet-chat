@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <{!! Html::style('public/css/app.css') !!}
+    {!! Html::style('public/css/app.css') !!}
     <!-- Bootstrap CSS-->
     {!! Html::style('public/assets/css/bootstrap.css') !!}
     {{-- Style Menu Desplace --}}
@@ -22,7 +22,7 @@
     {!! Html::style('public/assets/css/font-awesome.css') !!}
 
     <!-- Datepicker Files -->
-    {!! Html::style('public/assets/datePicker/css/bootstrap-datepicker3.css') !!}
+    {!! Html::style('public/assets/css/datePicker/bootstrap-datepicker3.css') !!}
     {!! Html::style('public/assets/css/bootstrap-datetimepicker.min.css') !!}
 
     {{-- Main style --}}
@@ -163,6 +163,12 @@
         new gnMenu( document.getElementById( 'gn-menu' ) );
     </script>
 
+    <script>
+      $(window).bind("beforeunload", function() { 
+          return confirm("deseas cerrar la ventana?"); 
+      });
+    </script>
+
     <!-- Semantic Ui CSS -->
     {!! Html::script('public/assets/js/semantic.js') !!}
 
@@ -209,7 +215,7 @@
        });
    </script>
 
-   {!! Html::script('public/assets/datePicker/js/bootstrap-datepicker.js') !!}
+   {!! Html::script('public/assets/js/datePicker/bootstrap-datepicker.js') !!}
    <script type="text/javascript">
       $('#sandbox-container .input-daterange').datepicker({
           format: "yyyy-mm-dd",
